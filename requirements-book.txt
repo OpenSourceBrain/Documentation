@@ -1,0 +1,5 @@
+# To build the docs using jupyter-book
+jupyter-book
+matplotlib
+numpy
+ghp-import

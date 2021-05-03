@@ -1,0 +1,14 @@
+.venv/
+source/_build/*
+tags.*
+/bin
+/build
+/lib
+/pyvenv.cfg
+.ipynb_checkpoints/
+*.gv
+*.mod
+x86_64/
+*.dat
+*nrn.py
+__pycache__
