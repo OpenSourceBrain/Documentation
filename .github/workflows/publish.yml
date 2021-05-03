@@ -1,0 +1,32 @@
+name: Publish
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-book.txt
+    - name: Disable building jupyter-books
+      run: |
+        sed -i "s/execute_notebooks.*/execute_notebooks: 'off'/" source/_config.yml
+    - name: Run jupyter-book
+      run: |
+        jupyter-book clean ./source
+        jupyter-book build ./source
+    - name: Import to GitHub pages
+      run: |
+        # ghp-import -c "docs.opensourcebrain.org" -n -p -f ./source/_build/html
+        ghp-import -n -p -f ./source/_build/html
