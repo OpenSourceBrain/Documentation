@@ -28,5 +28,4 @@ jobs:
         jupyter-book build ./source
     - name: Import to GitHub pages
       run: |
-        # ghp-import -c "docs.opensourcebrain.org" -n -p -f ./source/_build/html
-        ghp-import -n -p -f ./source/_build/html
+        ghp-import -c "docs.opensourcebrain.org" -n -p -f ./source/_build/html
