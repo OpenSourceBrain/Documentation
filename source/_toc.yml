@@ -1,8 +1,16 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-#
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+format: jb-book
+root: Landing
+title: ''
+parts:
+  - caption: User documentation
+    chapters:
+    - file: General/GettingStarted
+  - caption: OSB version 1
+    chapters:
+      - file: OSBv1/Overview
+  - caption: OSB version 2
+    chapters:
+        - file: OSBv2/Overview
+  - caption: Useful Information
+    chapters:
+    - file: General/Contacts
