@@ -8,9 +8,27 @@ parts:
   - caption: OSB version 1
     chapters:
       - file: OSBv1/Overview
+      - file: OSBv1/Getting_Started
+      - file: OSBv1/Five_Minute_Introduction
+      - file: OSBv1/Creating_Your_Own_Project
+      - file: OSBv1/Write_Your_Project_Documentation
+      - file: OBSv1/Using_neuroConstruct_Based_Projects
+      - file: OSBv1/FAQ
+      - file: OSBv1/Meetings
+      - file: OSBv1/Interaction_With_Other_Neuroinformatics_Resources
+      - file: OSBv1/Simulators
+      - file: OSBv1/OSB_API
+      - file: OSBv1/Converting_To_NeuroML2
+      - file: OSBv1/Contribute_To_OSB
+      - file: OSBv1/Running_Simulations_on_OSB
+      - file: OSBv1/Creating_Tutorials
+      - file: OSBv1/How_To_Contact_Us
+
   - caption: OSB version 2
     chapters:
         - file: OSBv2/Overview
   - caption: Useful Information
     chapters:
     - file: General/Contacts
+    - file: OSBv1/Background_Information/01_Introduction_to_Source_Control
+    - file: OSBv1/Background_Information/02_Introduction_to_Computational_Neuroscience
