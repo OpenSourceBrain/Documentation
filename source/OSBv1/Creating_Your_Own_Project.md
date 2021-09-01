@@ -1,5 +1,7 @@
 (v1:create_project)=
-# Is your model on ModelDB?
+# Creating your own project
+
+## Is your model on ModelDB?
 
 First of all, if the model is published, **please submit the original scripts to [ModelDB](http://senselab.med.yale.edu/ModelDB/default.asp)**. This is the correct place for depositing models at the time of publication and should be the first port of call for anyone looking for scripts related to a publication in computational neuroscience.
 
@@ -7,13 +9,17 @@ Placing a model on OSB after submission to ModelDB is an indication that you wis
 
 ## Sign up to OSB
 
-Register as a user of OSB [here](/account/register). Add your [GitHub](https://github.com/) username and [ORCID ID](https://orcid.org/) if you have one.
+Register as a user of OSB [here](http://www.opensourcebrain.org/account/register).
+Add your [GitHub](https://github.com/) username and [ORCID ID](https://orcid.org/) if you have one.
 
-You should also add the URL of your project, software or lab. In the latter case, if the PI is in agreement, we can add the group to the list of [labs taking part in the OSB initiative](/about#who_about). Please send a mail to info@opensourcebrain.org if you are interested in that.
+You should also add the URL of your project, software or lab.
+In the latter case, if the PI is in agreement, we can add the group to the list of [labs taking part in the OSB initiative](http://www.opensourcebrain.org/about#who_about).
+Please send a mail to info@opensourcebrain.org if you are interested in that.
 
 ## Share your code
 
-Create a new repository for your code on GitHub (see [here](http://www.opensourcebrain.org/docs/Help/Background_Information#Introduction_to_Source_Control) if want to know more about Source Code technologies and Git/GitHub). See the introduction to creating a new repository on [GitHub help](https://help.github.com/articles/create-a-repo). 
+Create a new repository for your code on GitHub (see {ref}`here <bg:scm>` if you want to know more about Source Code technologies and Git/GitHub).
+See the introduction to creating a new repository on [GitHub help](https://help.github.com/articles/create-a-repo).
 
 The repository can be hosted on the [OpenSourceBrain GitHub organisation](https://github.com/OpenSourceBrain), but there is no problem having it under your personal account. If you would like us to host the repository, <a href="mailto:info@opensourcebrain.org">let us know</a> and we’ll add the repository and give your GitHub user full access to it.
 
@@ -27,7 +33,7 @@ Enter the long name of the project (this can be edited later), the short ID (thi
 
 ## Add some documentation
 
-There is information [here](http://www.opensourcebrain.org/docs#Write_Your_Project_Documentation) on adding documentation to your OSB project.
+There is information {ref}`here <v1:document_project>` on adding documentation to your OSB project.
 
 ## Say hello…
 

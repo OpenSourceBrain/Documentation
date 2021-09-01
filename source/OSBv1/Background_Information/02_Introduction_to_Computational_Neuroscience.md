@@ -1,11 +1,11 @@
-
-## Computational Neuroscience
+(bg:compneuro)=
+# Computational Neuroscience
 
 This document is intended to help newcomers to get into computational neuroscience.
 Note that this is a living document and it will regularly be updated.
 [Offers of help](https://github.com/OpenSourceBrain/Contribute/issues/3) to complete this are very welcome!
 
-### Books
+## Books
 
 1. Neuroscience  
    - [Cognitive Neuroscience][b_1.1], Michael S. Gazzaniga, Richard B. Ivry and George R. Mangun
@@ -50,7 +50,7 @@ Note that this is a living document and it will regularly be updated.
 [b_4.1]: http://www.amazon.com/Pattern-Recognition-Machine-Learning-Christopher/dp/8132209060/ref=pd_sim_14_4?ie=UTF8&dpID=51qDRMnf9LL&dpSrc=sims&preST=_AC_UL160_SR118%2C160_&refRID=1N99QG8VBWEBCHJ893BR
 [b_4.2]: https://mitpress.mit.edu/books/machine-learning-0
 
-### Publications
+## Publications
 
 1. Review articles 
    - Atick, J.J., 1992. [Could information theory provide an ecological theory of sensory processing?.][p_1.1] Network: Computation in neural systems, 3(2), pp.213-251.
@@ -84,11 +84,11 @@ Note that this is a living document and it will regularly be updated.
 [p_2.8]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.228.3623&rep=rep1&type=pdf
 [p_2.9]: http://onlinelibrary.wiley.com/doi/10.1207/s15516709cog0901_7/pdf
    
-### Open Source Brain projects
+## Open Source Brain projects
 
 See [here](http://www.opensourcebrain.org/search_custom_field?f[]=43&op[43]=~&v[43][]=Tutorial) for a list of OSB projects which contain tutorials, exercises, etc. in computational neuroscience.
 
-### Software
+## Software
 
 1. Modelling   
 
@@ -134,7 +134,7 @@ An overview of the main target simulators for models in Open Source Brain can be
 [s_4.4]: http://deeplearning.net/software/theano/
 [s_4.5]: http://nilearn.github.io/
 
-### Databases 
+## Databases 
 
 - ModelDB: model database for computational neuroscience [(ModelDB)][d_1]  
 - Open Source Brain [(OSB)][d_2]  
@@ -150,7 +150,7 @@ An overview of the main target simulators for models in Open Source Brain can be
 [d_5]: http://bodb.usc.edu/bodb/
 [d_6]: http://www.ebi.ac.uk/biomodels-main/  
 
-### Organisations 
+## Organisations 
 
 - Organization for Computational Neurosciences [(OCNS)][o_1]  
 - International Neuroinformatics Coordinating Facility [(INCF)][o_2]  
@@ -158,7 +158,7 @@ An overview of the main target simulators for models in Open Source Brain can be
 [o_1]: http://www.cnsorg.org/
 [o_2]: http://www.incf.org/
 
-### Institutions, Laboratories and Research Groups
+## Institutions, Laboratories and Research Groups
 
 1. Asia  
    - [Computational Neuroscience Laboratories, ATR][larg_1.1]  
@@ -203,7 +203,7 @@ A more comprehensive list of labs, centers and researchers can be found [here](h
 [larg_3.6]: http://www.neurotheory.columbia.edu/index.html
 [larg_3.7]: http://cnl.salk.edu/
 
-### Mailing Lists, Blogs and News  
+## Mailing Lists, Blogs and News  
 
 1. Mailing lists  
    - Computational Neuroscience [(Comp-neuro)][mlbn_1.1]  
@@ -234,7 +234,7 @@ A more comprehensive list of labs, centers and researchers can be found [here](h
 [mlbn_3.1]: http://www.sciencedaily.com/articles/c/computational_neuroscience.htm
 [mlbn_3.2]: http://neurosciencenews.com/neuroscience-terms/computational-neuroscience/
 
-### Online courses 
+## Online courses 
 
 1. Coursera   
    - [Computational Neuroscience][oc_1.1]   
@@ -264,7 +264,7 @@ A more comprehensive list of labs, centers and researchers can be found [here](h
 [oc_4.1]: http://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-29j-introduction-to-computational-neuroscience-spring-2004
 [oc_4.2]: http://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-66j-computational-cognitive-science-fall-2004/
 
-### Other resources
+## Other resources
 
 - [Computational Neuroscience on the web][or_1]
 - [Interesting (Computational) Neuroscience papers ][or_2]

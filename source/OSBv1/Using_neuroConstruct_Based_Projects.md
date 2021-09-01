@@ -1,23 +1,32 @@
 (v1:using_neuroconstruct)=
 # Using neuroConstruct based projects
 
-A number of the projects on the OSB are based on [neuroConstruct](http://www.neuroconstruct.org/) projects (see [here](http://opensourcebrain.org/search_custom_field?f[]=43&op[43]=~&v[43][]=neuroConstruct)). neuroConstruct is used to import model elements in NeuroML (e.g. exported from a simulator or other application), can generate code for multiple simulators, and can export NeuroML in various formats.
+A number of the projects on the OSB are based on
+[neuroConstruct](http://www.neuroconstruct.org/) projects (see
+[here](http://opensourcebrain.org/search_custom_field?f[]=43&op[43]=~&v[43][]=neuroConstruct)).
+neuroConstruct is used to import model elements in NeuroML (e.g. exported from
+a simulator or other application), can generate code for multiple simulators,
+and can export NeuroML in various formats.
 
 ## Install the latest version of neuroConstruct
 
-First, get the latest version of neuroConstruct. While there are binary installers available on the neuroConstruct download page, it's best to **use the latest version of this application from GitHub**, as this will most likely be the version in which the projects on OSB were last saved.
+First, get the latest version of neuroConstruct.
+While there are binary installers available on the neuroConstruct download page, it's best to **use the latest version of this application from GitHub**, as this will most likely be the version in which the projects on OSB were last saved.
 
-Get the latest version of Git (see [here](http://www.opensourcebrain.org/projects/gitintro/wiki/Wiki) for more about Git). Detailed instructions for installing neuroConstruct from source can be found [here](https://github.com/NeuralEnsemble/neuroConstruct/blob/master/INSTALL.md).
+Get the latest version of Git (see [here](http://www.opensourcebrain.org/projects/gitintro/wiki/Wiki) for more about Git).
+Detailed instructions for installing neuroConstruct from source can be found [here](https://github.com/NeuralEnsemble/neuroConstruct/blob/master/INSTALL.md).
 
 ## Install your simulator(s) of choice
 
-More details on the simulators supported by OSB can be found <a href="/docs#Simulators">here</a>.
+More details on the simulators supported by OSB can be found {ref}`here <v1:simulators>`.
 
 ## Get a local copy of one of the neuroConstruct based projects
 
 Check out a local copy of one of the projects, e.g. project:granulecell
 
-    git clone https://github.com/OpenSourceBrain/GranuleCell.git
+```{code-block} bash
+git clone https://github.com/OpenSourceBrain/GranuleCell.git
+```
 
 Run neuroConstruct as outlined in the installation instructions.
 
@@ -30,10 +39,14 @@ For more details on the interaction of neuroConstruct with these simulators see 
 
 To clone all of the projects on OSB which contain neuroConstruct projects (and many others) use the **checkOSB** script in the **osb** subfolder of the neuroConstruct home directory:
 
-    cd osb
-    ./checkOsb.sh -u (Linux/Mac)
-    checkOsb.bat -u  (Windows)
-    
+```{code-block} bash
+cd osb
+./checkOsb.sh -u (Linux/Mac)
+checkOsb.bat -u  (Windows)
+```
+
 This will clone \~70 projects with \~20 containing neuroConstruct projects, which will be accessible under the File - Open Source Brain Project:
+
+<!-- TODO: missing image -->
 
 ![](/attachments/download/51/nCmenu.png)

@@ -5,13 +5,13 @@ An API for getting access to information contained in OSB projects has been deve
 
 See https://github.com/OpenSourceBrain/OSB_API.
 
-### REST API
+## REST API
 
 This is based on the [REST API](http://www.redmine.org/projects/redmine/wiki/Rest_api) which was developed for [Redmine](http://www.redmine.org), the framework on which OSB is based. 
 
 An example of the data returned by this REST API for each project on OSB can be see here: http://www.opensourcebrain.org/projects/thalamocortical.xml.
 
-### Python API
+## Python API
 
 A Python module (osb) has been developed which uses this REST API and allows scripts to be developed which use the information retrieved about OSB projects.
 
