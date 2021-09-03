@@ -5,6 +5,7 @@ Hello! Let's go through the basics of Open Source Brain (OSB), **this will take 
 
 This is the help section of your home screen, feel free to come back here every time you are lost, most of the anwsers you'll ever need are here! From your home screen you can work with any project and model available in OSB or even create your own ones. To search for available projects you can click on the Explore OSB link in the top bar or use the search box.
 
+(v1:five_min_intro:what)=
 ## What is an OSB project?
 
 But first things first, **what is an OSB project**?
@@ -18,6 +19,7 @@ An OSB project is a container of computational neuronal models, usually these mo
 
 The model will load inside OSB, this might take between few seconds or up to a minute depending on the size of the model, you know how complex the brain can be right? You are looking at the model now and you are in read mode which means you can poke around and look at the content of the model but you can't run simulations...yet (keep reading!). So what can you do?
 
+(v1:five_min_intro:pan)=
 ## Pan and Zoom
 
 One of the most straightforward features is simple three-dimensional pan, zoom, and rotation functionality. This works both with the mouse as well as more precise control with the navigation buttons on the left hand panel.
@@ -27,6 +29,7 @@ One of the most straightforward features is simple three-dimensional pan, zoom, 
 :align: center
 ```
 
+(v1:five_min_intro:explorer)=
 ## Explore the models
 Models in OpenSourceBrain have descriptions associated with them. You can access these descriptions by clicking on the "Model Description" button on the OSB toolbar.
 
@@ -49,6 +52,7 @@ While you click through the cell descriptions, you can always go back to an earl
 :align: center
 ```
 
+(v1:five_min_intro:explorer_connections)=
 ## Explore the network connections
 OSB has a variety of widgets built in to help you explore your models. Models like this one have a significant number of connections. By clicking on the "Connectivity" button, you can explore the connection patterns of your model using a variety of graphical tools. 
 
@@ -78,6 +82,7 @@ Once you are logged in and the project is persisted, you can begin working with 
 :align: center
 ```
 
+(v1:five_min_intro:recording)=
 ## Recording variables
 Any state variable that exists in the model can be recorded prior to running a simulation, meaning it will be possible to subsequently plot its values once the simulation is complete. You can record a variable by searching for it in the search bar (open it using the little <i class="fas fa-search"></i> icon on the left hand side of the screen or pressing Ctrl+Space) and clicking on the Record icon <i class="fas fa-circle-blank"></i>. The icon signifying state variables that can be recorded is <i class="fas fa-superscript"></i> 
 
@@ -86,7 +91,8 @@ Any state variable that exists in the model can be recorded prior to running a s
 :align: center
 ```
 
-## Setting a parameter
+(v1:five_min_intro:params)=
+## Setting parameters
 
 Any parameter in the model can be dynamically changed to see what the impact of different values will be. Prior to running an experiment you can modify the values by searching for the parameter name in the search bar and changing the value in the input box. The icon signifying a parameter name is <i class="fas fa-signin"></i>
 
@@ -95,6 +101,7 @@ Any parameter in the model can be dynamically changed to see what the impact of 
 :align: center
 ```
 
+(v1:five_min_intro:run_exp)=
 ## Run an experiment
 
 Once you are happy with what variables you will record and your experiment parameters, you can run the experiment. The Run button in the upper bar should be available to you. When you click it, the status of the experiment will change to show you both that it is queued for running and that it is completed. Playback results from a completed experiment 
