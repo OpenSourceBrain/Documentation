@@ -20,6 +20,7 @@ parts:
       - file: OSBv1/Contribute_To_OSB
       - file: OSBv1/Running_Simulations_on_OSB
       - file: OSBv1/Creating_Tutorials
+      - file: OSBv1/Troubleshooting_3d_explorer
 
   - caption: OSB version 2
     chapters:
