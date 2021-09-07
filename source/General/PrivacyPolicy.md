@@ -53,3 +53,38 @@ Any other information, such as your data and source code files are also kept as 
 
 Please note that Open Source Brain infrastructure and platforms are dependent on research funding (see {ref}`this FAQ <v1:faq:funding>`).
 If funding to keep the platforms running runs out, we will notify all users well in advance to give them sufficient time to download/backup their data.
+
+
+## Your data protection rights
+
+Under data protection law, you have rights including:
+
+- Your right of access: you have the right to ask us for copies of your personal information.
+- Your right to rectification: you have the right to ask us to rectify personal information you think is inaccurate. You also have the right to ask us to complete information you think is incomplete.
+- Your right to erasure: you have the right to ask us to erase your personal information in certain circumstances.
+- Your right to restriction of processing: you have the right to ask us to restrict the processing of your personal information in certain circumstances.
+- Your right to object to processing: you have the right to object to the processing of your personal information in certain circumstances.
+- Your right to data portability: you have the right to ask that we transfer the personal information you gave us to another organisation, or to you, in certain circumstances.
+
+You are not required to pay any charge for exercising your rights.
+If you make a request, we have one month to respond to you.
+Please contact us if you wish to make a request.
+
+
+## How to complain
+If you have any concerns about our use of your personal information, you can make a complaint to us.
+
+You can also complain to the ICO if you are unhappy with how we have used your data.
+The ICO's address:
+
+```
+Information Commissioner's Office
+Wycliffe House
+Water Lane
+Wilmslow
+Cheshire
+SK9 5AF
+```
+
+Helpline number: 0303 123 1113
+ICO website: https://www.ico.org.uk
