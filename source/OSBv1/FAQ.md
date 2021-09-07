@@ -30,7 +30,7 @@ This project was started in the [Silver Lab](http://silverlab.org) at UCL as par
 
 The Principal Investigator for the OSB project is [Angus Silver](https://www.opensourcebrain.org/users/6).
 The core team at UCL currently consists of [Padraig Gleeson](https://www.opensourcebrain.org/users/4) (Project Manager) and [Ankur Sinha](https://www.opensourcebrain.org/users/434).
-Special thanks to [Matteo Cantarelli](https://www.opensourcebrain.org/users/43), [Adrian Quintan](https://www.opensourcebrain.org/users311), [Matt Earnshaw](https://www.opensourcebrain.orgusers/751), [Boris Marin](https://www.opensourcebrain.org/users/67) and [Eugenio Piasini](https://www.opensourcebrain.org/users/3) for their significant contributions to OSB while at UCL.
+Special thanks to [Matteo Cantarelli](https://www.opensourcebrain.org/users/43), [Adrian Quintan](https://www.opensourcebrain.org/users311), [Matt Earnshaw](https://www.opensourcebrain.orgusers/751), [Boris Marin](https://www.opensourcebrain.org/users/67), [Eugenio Piasini](https://www.opensourcebrain.org/users/3) and the team at [MetaCell](https://www.metacell.us/) for their significant contributions to OSB while at UCL.
 
 We are grateful to the scientific community that develops, maintains, and contributes models and data that is available on the Open Source Brain platforms.
 You can see contributors for individual projects on their individual repositories.
