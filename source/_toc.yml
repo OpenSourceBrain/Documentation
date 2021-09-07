@@ -5,6 +5,8 @@ parts:
   - caption: User documentation
     chapters:
     - file: General/GettingStarted
+    - url: https://status.opensourcebrain.org/
+      title: Infrastructure status
   - caption: OSB version 1
     chapters:
       - file: OSBv1/Getting_Started
