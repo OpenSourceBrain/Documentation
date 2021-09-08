@@ -30,6 +30,7 @@ parts:
   - caption: Community
     chapters:
       - file: General/Contacts
+      - file: General/PrivacyPolicy
       - file: OSBv1/Meetings
         sections:
           - file: OSBv1/Meetings/OSB_2019
