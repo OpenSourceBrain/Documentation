@@ -37,7 +37,16 @@ For data files and source code stored on other data sources (such as GitHub), pl
 
 - [GitHub Privacy Statement - GitHub Docs](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 
-None of your information is shared with any organisations or individuals.
+
+Some user information can be viewed publicly on the platform on your profile page.
+This page includes your:
+
+- Name
+- URL
+- GitHub username
+- ORCID ID
+- NeuroTree ID
+- On Open Source Brain v1, logged in users are also able to view your e-mail address. You can disable this in your profile preferences.
 
 Under the General Data Protection Regulation (GDPR), the lawful bases we rely on for processing this information are:
 
@@ -84,7 +93,7 @@ Water Lane
 Wilmslow
 Cheshire
 SK9 5AF
-```
 
 Helpline number: 0303 123 1113
 ICO website: https://www.ico.org.uk
+```
