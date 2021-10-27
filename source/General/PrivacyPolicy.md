@@ -7,7 +7,7 @@ Thank you for using the Open Source Brain platforms.
 
 ## Our contact details
 
-- Name: Padraig Gleeson (See more on the team {ref}`here <v1:faq:funding>`)
+- Name: Padraig Gleeson (See more on the team {ref}`here <faq:funding>`)
 - Address: Department of Neuroscience, Physiology, and Phramacology, Division of Biosciences, University College London, London.
 - E-mail: `info AT opensourcebrain.org`
 
@@ -60,7 +60,7 @@ Read more about at the [Google Cloud Privacy Notice](https://cloud.google.com/te
 Your profile information (Name, username etc.) are necessary to access the platform and are therefore kept as long as you wish.
 Any other information, such as your data and source code files are also kept as long as you wish.
 
-Please note that Open Source Brain infrastructure and platforms are dependent on research funding (see {ref}`this FAQ <v1:faq:funding>`).
+Please note that Open Source Brain infrastructure and platforms are dependent on research funding (see {ref}`this FAQ <faq:funding>`).
 If funding to keep the platforms running runs out, we will notify all users well in advance to give them sufficient time to download/backup their data.
 
 

@@ -5,6 +5,7 @@ parts:
   - caption: User documentation
     chapters:
     - file: General/GettingStarted
+    - file: General/FAQ
     - url: https://status.opensourcebrain.org/
       title: Infrastructure status
   - caption: OSB version 1
@@ -14,7 +15,6 @@ parts:
       - file: OSBv1/Creating_Your_Own_Project
       - file: OSBv1/Write_Your_Project_Documentation
       - file: OSBv1/Using_neuroConstruct_Based_Projects
-      - file: OSBv1/FAQ
       - file: OSBv1/Interaction_With_Other_Neuroinformatics_Resources
       - file: OSBv1/Simulators
       - file: OSBv1/OSB_API
