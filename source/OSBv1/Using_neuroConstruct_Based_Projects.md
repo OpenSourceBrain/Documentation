@@ -49,4 +49,4 @@ This will clone \~70 projects with \~20 containing neuroConstruct projects, whic
 
 <!-- TODO: missing image -->
 
-![](/attachments/download/51/nCmenu.png)
+![](http://www.opensourcebrain.org/attachments/download/51/nCmenu.png)

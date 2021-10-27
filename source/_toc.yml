@@ -19,7 +19,6 @@ parts:
       - file: OSBv1/Simulators
       - file: OSBv1/OSB_API
       - file: OSBv1/Converting_To_NeuroML2
-      - file: OSBv1/Contribute_To_OSB
       - file: OSBv1/Running_Simulations_on_OSB
       - file: OSBv1/Creating_Tutorials
       - file: OSBv1/Troubleshooting_3d_explorer
@@ -30,20 +29,21 @@ parts:
   - caption: Community
     chapters:
       - file: General/Contacts
-      - file: General/PrivacyPolicy
-      - file: OSBv1/Meetings
+      - file: General/Contribute_To_OSB
+      - file: General/Meetings
         sections:
-          - file: OSBv1/Meetings/OSB_2019
-          - file: OSBv1/Meetings/Neuroinformatics_2018
-          - file: OSBv1/Meetings/CNS_2018
-          - file: OSBv1/Meetings/Janelia_Research_Campus_2016
-          - file: OSBv1/Meetings/CNS_2015
-          - file: OSBv1/Meetings/OSB_2015
-          - file: OSBv1/Meetings/Neuroinformatics_2014
-          - file: OSBv1/Meetings/OSB_2014
-          - file: OSBv1/Meetings/Hackathon_2013
-          - file: OSBv1/Meetings/Sardinia_2013
+          - file: General/Meetings/OSB_2019
+          - file: General/Meetings/Neuroinformatics_2018
+          - file: General/Meetings/CNS_2018
+          - file: General/Meetings/Janelia_Research_Campus_2016
+          - file: General/Meetings/CNS_2015
+          - file: General/Meetings/OSB_2015
+          - file: General/Meetings/Neuroinformatics_2014
+          - file: General/Meetings/OSB_2014
+          - file: General/Meetings/Hackathon_2013
+          - file: General/Meetings/Sardinia_2013
+      - file: General/PrivacyPolicy
   - caption: Useful Information
     chapters:
-      - file: OSBv1/Background_Information/01_Introduction_to_Source_Control
-      - file: OSBv1/Background_Information/02_Introduction_to_Computational_Neuroscience
+      - file: General/Background_Information/01_Introduction_to_Source_Control
+      - file: General/Background_Information/02_Introduction_to_Computational_Neuroscience

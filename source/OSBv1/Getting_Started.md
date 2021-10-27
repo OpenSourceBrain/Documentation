@@ -20,7 +20,7 @@ Some frequently asked questions are answered {ref}`here <faq>`.
 
 ## OSB Meetings
 
-Find out about past and upcoming meetings {ref}`here <v1:meetings>`.
+Find out about past and upcoming meetings {ref}`here <meetings>`.
 
 
 ## Contact us

@@ -1,11 +1,9 @@
 (meetings:hackathon2013)=
 # OSB Hackathon 2013
 
-![](/attachments/download/106/OSBHackathon1.png)
+![](http://www.opensourcebrain.org/attachments/download/106/OSBHackathon1.png)
+
  (Illustration courtesy of [Matteo Farinella](https://www.opensourcebrain.org/users/34)))
-
-
-(Looking for details on the [Open Source Brain kick off meeting](http://www.opensourcebrain.org/projects/osb/wiki/Sardinia2013) in Sardinia?)
 
 Dates: **9am Wednesday 6th - 5pm Thursday 7th November, 2013**
 

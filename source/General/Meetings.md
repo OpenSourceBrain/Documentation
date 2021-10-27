@@ -1,4 +1,4 @@
-(v1:meetings)=
+(meetings)=
 # Events
 
 <p align="centre"><a href="http://www.opensourcebrain.org/docs/Help/Meetings#Sardinia_2013"><img src="http://opensourcebrain.org/attachments/download/42/osbbanner.png" height="80"/></a>  &nbsp;&nbsp;
