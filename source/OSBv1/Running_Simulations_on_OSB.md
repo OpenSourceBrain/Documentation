@@ -1,13 +1,13 @@
 (v1:runsims)=
 # Running simulations on OSB
 
-It is possible to run simulations on OSB directly from your browser, without installing any additional software.
+It is possible to run simulations on OSBv1 directly from your browser, without installing any additional software.
 
 ## Introduction
 
 To run simulations with a model, you must be logged in, and you must first save a local copy to your OSB workspace ("persist the model"). To do this click the Star icon:
 
-<img src="images/help/persist.png" class="img-help">
+<img src="http://www.opensourcebrain.org/images/help/persist.png" class="img-help">
 
 Then open the Experiments tab at the bottom of the screen. A template experiment exists by default, and additional experiments may be added with the + button. Clicking on an experiment expands it to show more details.
 

@@ -1,7 +1,7 @@
-(v1:faq)=
+(faq)=
 # Frequently asked questions (FAQ)
 
-(v1:faq:motivation)=
+(faq:motivation)=
 ## What is the motivation behind the Open Source Brain repository?
 
 There are an increasing number of detailed single neuron and network models from various brain regions becoming available which encapsulate the latest data on anatomical and electrophysiological properties of the systems being investigated (e.g. on [ModelDB](http://senselab.med.yale.edu/ModelDB/default.asp*)). These complex models take a long time to develop and are normally only available in one of many incompatible, simulator specific formats.
@@ -17,7 +17,7 @@ While the models can be collaboratively developed in any simulator format, the u
 ```
 
 
-(v1:faq:funding)=
+(faq:funding)=
 ## Who's behind OSB?
 
 This project was started in the [Silver Lab](http://silverlab.org) at UCL as part of a [Wellcome Trust](http://www.wellcome.ac.uk) funded project to encourage collaborative development of models in computational neuroscience.
@@ -39,7 +39,7 @@ A number of international research groups and organizations are actively involve
 See [here](https://www.opensourcebrain.org/about) for more details.
 
 
-(v1:faq:neuroinformatics)=
+(faq:neuroinformatics)=
 ## How is this related to other neuroinformatics initiatives?
 
 We are very keen to have close links with other databases and repositories for neuroinformatics and computational neuroscience.
@@ -58,7 +58,7 @@ A number of the contributors to this initiative are involved with the various na
 :align: center
 ```
 
-(v1:faq:modeltypes)=
+(faq:modeltypes)=
 ## What types of models can be developed?
 
 Models of information processing in the nervous system are created at many levels, from high level models of cognitive processes and consciousness to low level models of signal transduction at synapses.
@@ -73,7 +73,7 @@ Python is a scripting language commonly used in computational neuroscience and h
 The Simulation Experiment Description Markup Language ([SED-ML](http://sed-ml.org/)) will be used for specifying settings for running simulations of the models.
 Mappings of the model components in OSB to other structured languages in computational biology will be supported too where appropriate, such as [SBML](http://www.sbml.org), [CellML](http://www.cellml.org/) and [NineML](http://software.incf.org/software/nineml).
 
-(v1:faq:simulatorX)=
+(faq:simulatorX)=
 ## My model's only available in simulator X, not NeuroML/PyNN. Can I still share it on OSB?
 
 Yes!
@@ -84,7 +84,7 @@ However, some of the advanced features of OSB will only be available if (parts o
 If your model is not yet published but it is still public (we salute you; you are [the future](http://www.openworm.org)) we're very happy to have it, but would ask that you make sure the versions used in publications are archived in ModelDB.
 
 
-(v1:faq:registration)=
+(faq:registration)=
 ## Do I have to be registered for accessing OSB projects and tools?
 
 No.
@@ -92,7 +92,7 @@ You can browse the OSB projects and use most of the OSB tools.
 However, if you would like to create your own project you should sign up.
 Also, the new functionality for executing and replaying your own simulations through the OSB interface is only available for logged in users.
 
-(v1:faq:license)=
+(faq:license)=
 ## What is the licence/terms of use for models on OSB?
 
 Since all the scripts for models on OSB reside in autonomous repositories (e.g. on GitHub), each repository can (and should...) contain its own licence information.
@@ -103,13 +103,12 @@ If in doubt though and you want to be sure, open an issue on the repository in q
 Don't forget the golden rule however (more important to scientists than software licences...): **if you use a model, reference the original publication which describes the model**.
 If there are significant changes in the OSB repo from the original model which you want to cite, we can generate a DOI/reference for a specific version of the model (e.g. [here](https://zenodo.org/communities/opensourcebrain/?page=1&size=20)).
 
-(v1:faq:contribute)=
+(faq:contribute)=
 ## How can I contribute?
 
 We are happy to hear from anyone interested in helping out with this initiative.
 We are particularly keen to get modellers or software developers in computational neuroscience involved.
 
-**There is a central list for projects in OSB (and related NeuroML tools) which require help from volunteers. See {ref}`this page for details <v1:contribute>`.**
+**There is a central list for projects in OSB (and related NeuroML tools) which require help from volunteers. See {ref}`this page for details <contribute>`.**
 
 Find out about all the ways to follow the project or {ref}`get in touch <contact>`.
-

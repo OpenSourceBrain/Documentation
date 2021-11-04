@@ -11,7 +11,7 @@ Greater links are planned between these resources in the future to facilitate fi
 
 ## NeuralEnsemble
 
-![](/images/neuralensemble.png):http://neuralensemble.org
+![](http://www.opensourcebrain.org/images/neuralensemble.png)
 
 [NeuralEnsemble](http://neuralensemble.org/) is an effort to coordinate a number of projects developing software for computational neuroscience to create an interoperable set of tools for addressing complex questions about neuronal function.
 
@@ -35,7 +35,7 @@ This work is chiefly taking place in the framework of the [COMBINE Network](http
 
 ## NeuroElectro
 
-![](/images/neuroelectro_logo.png):http://neuroelectro.org
+![](http://www.opensourcebrain.org/images/neuroelectro_logo.png)
 
 [NeuroElectro](http://neuroelectro.org/) is a structured database of information on the electrophysiological properties of neurons. This type of information will be very useful for comparing the electrical properties of model neurons with real experimental data.
 

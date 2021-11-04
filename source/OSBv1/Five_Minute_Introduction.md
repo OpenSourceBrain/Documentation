@@ -3,6 +3,8 @@
 
 Hello! Let's go through the basics of Open Source Brain (OSB), **this will take only 5 minutes to read!** (yes, it's that easy).
 
+**Note: this information is specific to OSBv1!**
+
 This is the help section of your home screen, feel free to come back here every time you are lost, most of the anwsers you'll ever need are here! From your home screen you can work with any project and model available in OSB or even create your own ones. To search for available projects you can click on the Explore OSB link in the top bar or use the search box.
 
 (v1:five_min_intro:what)=
@@ -54,7 +56,7 @@ While you click through the cell descriptions, you can always go back to an earl
 
 (v1:five_min_intro:explorer_connections)=
 ## Explore the network connections
-OSB has a variety of widgets built in to help you explore your models. Models like this one have a significant number of connections. By clicking on the "Connectivity" button, you can explore the connection patterns of your model using a variety of graphical tools. 
+OSB has a variety of widgets built in to help you explore your models. Models like this one have a significant number of connections. By clicking on the "Connectivity" button, you can explore the connection patterns of your model using a variety of graphical tools.
 
 ```{image} ../images/Fig-2-Connectivity.gif
 :alt: Fig-2-Connectivity.gif
@@ -68,14 +70,14 @@ What if you want to **run a simulation**? First of all you need to persist your 
 :align: center
 ```
 
-The model is now persisted so you can work with it, **let's have a look at the experiments**! Experiments represent a particular configuration of your model, for each experiment you'll be able to decide which state variables you want to record, which values you want to give to the parameters of the model and even what simulator you'd like to use (do you know we are also connected to the San Diego Super Computer Center?), handy no? 
+The model is now persisted so you can work with it, **let's have a look at the experiments**! Experiments represent a particular configuration of your model, for each experiment you'll be able to decide which state variables you want to record, which values you want to give to the parameters of the model and even what simulator you'd like to use (do you know we are also connected to the San Diego Super Computer Center?), handy no?
 
 ```{image} ../images/Fig-3-Intro.gif
 :alt: Fig-3-Intro.gif
 :align: center
 ```
 
-Once you are logged in and the project is persisted, you can begin working with your model. You can create new experiments for your model by clicking the "clone" button. This will create a new experiment that is just like the one you cloned from. You can modify parameters on any experiment you like. 
+Once you are logged in and the project is persisted, you can begin working with your model. You can create new experiments for your model by clicking the "clone" button. This will create a new experiment that is just like the one you cloned from. You can modify parameters on any experiment you like.
 
 ```{image} ../images/Fig-4-Clone.gif
 :alt: Fig-4-Clone.gif
@@ -84,7 +86,7 @@ Once you are logged in and the project is persisted, you can begin working with 
 
 (v1:five_min_intro:recording)=
 ## Recording variables
-Any state variable that exists in the model can be recorded prior to running a simulation, meaning it will be possible to subsequently plot its values once the simulation is complete. You can record a variable by searching for it in the search bar (open it using the little <i class="fas fa-search"></i> icon on the left hand side of the screen or pressing Ctrl+Space) and clicking on the Record icon <i class="fas fa-circle-blank"></i>. The icon signifying state variables that can be recorded is <i class="fas fa-superscript"></i> 
+Any state variable that exists in the model can be recorded prior to running a simulation, meaning it will be possible to subsequently plot its values once the simulation is complete. You can record a variable by searching for it in the search bar (open it using the little <i class="fas fa-search"></i> icon on the left hand side of the screen or pressing Ctrl+Space) and clicking on the Record icon <i class="fas fa-circle-blank"></i>. The icon signifying state variables that can be recorded is <i class="fas fa-superscript"></i>
 
 ```{image} ../images/RecordVariable.gif
 :alt: RecordVariable.gif
@@ -104,21 +106,21 @@ Any parameter in the model can be dynamically changed to see what the impact of 
 (v1:five_min_intro:run_exp)=
 ## Run an experiment
 
-Once you are happy with what variables you will record and your experiment parameters, you can run the experiment. The Run button in the upper bar should be available to you. When you click it, the status of the experiment will change to show you both that it is queued for running and that it is completed. Playback results from a completed experiment 
+Once you are happy with what variables you will record and your experiment parameters, you can run the experiment. The Run button in the upper bar should be available to you. When you click it, the status of the experiment will change to show you both that it is queued for running and that it is completed. Playback results from a completed experiment
 
 ```{image} ../images/Fig-5-Run.gif
 :alt: Fig-5-Run.gif
 :align: center
 ```
 
-Once your experiment is finished, you can use the Play button to plot all the recorded variables that have been simulated. 
+Once your experiment is finished, you can use the Play button to plot all the recorded variables that have been simulated.
 
 ```{image} ../images/Fig-6-Playback.gif
 :alt: Fig-6-Playback.gif
 :align: center
 ```
 
-If you want to plot a specific variable that you recorded you will be able to do so using the search bar to look for that variable and using the "Plot" icon. The list of all the variables recorded in a given experiment is available clicking on the "Recorded variables" link in the Experiment table. 
+If you want to plot a specific variable that you recorded you will be able to do so using the search bar to look for that variable and using the "Plot" icon. The list of all the variables recorded in a given experiment is available clicking on the "Recorded variables" link in the Experiment table.
 
 ```{image} ../images/Recorded.png
 :alt: Recorded.png

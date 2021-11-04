@@ -25,15 +25,15 @@ One specific outcome of the meeting was the setting up of a project to try to cr
 | |**Morning Session** | |
 |:---|:---|:---|
 |9:00 &nbsp; &nbsp;&nbsp; &nbsp; | **[Angus Silver](http://www.opensourcebrain.org/users/6)** |Introduction to the aims of the initiative|
-|9:15 |**[Matteo Cantarelli](https://www.opensourcebrain.org/users/43))** &nbsp; &nbsp;&nbsp; &nbsp; | Overview of current OSB features & models, current website ([Slides](/attachments/download/66/OSBIntroduction_Cantarelli.pdf)) |
+|9:15 |**[Matteo Cantarelli](https://www.opensourcebrain.org/users/43))** &nbsp; &nbsp;&nbsp; &nbsp; | Overview of current OSB features & models, current website ([Slides](https://www.opensourcebrain.org/attachments/download/66/OSBIntroduction_Cantarelli.pdf)) |
 |10:00 | *Latest on NeuroML & LEMS developments* | |
 | | **[Padraig Gleeson](https://www.opensourcebrain.org/users/4))** | NeuroML 2 developments ([Slides] (http://opensourcebrain.org/attachments/download/62/NeuroMLLatest_PG.odp)) |
 | |**[Robert Cannon](https://www.opensourcebrain.org/users/21))** | LEMS background & latest developments |
 | | **[Sharon Crook](https://www.opensourcebrain.org/users/8))** | Archival and Search of NeuroML Models and Model Components|
 |11:00 |Coffee break | |
 |11:15 | *Tools and resources for large scale modelling* | |
-| |**[Mike Vella](https://www.opensourcebrain.org/users/50))** |libNeuroML: A Python API for NeuroML ([Slides](/attachments/download/75/libNeuroML_OSB_Presentation.pdf)) | |
-| | **[Richard Gerkin](https://www.opensourcebrain.org/users/65))** | NeuroUnit: Unit tests for neuroscience models ([Slides](/attachments/download/72/Neurounit_Sardinia.pdf))| |
+| |**[Mike Vella](https://www.opensourcebrain.org/users/50))** |libNeuroML: A Python API for NeuroML ([Slides](https://www.opensourcebrain.org/attachments/download/75/libNeuroML_OSB_Presentation.pdf)) | |
+| | **[Richard Gerkin](https://www.opensourcebrain.org/users/65))** | NeuroUnit: Unit tests for neuroscience models ([Slides](https://www.opensourcebrain.org/attachments/download/72/Neurounit_Sardinia.pdf))| |
 | |**[Hugo Cornelis](https://www.opensourcebrain.org/users/33))** | Interoperability in the GENESIS 3.0 Software Federation: the NEURON Simulator as an Example | |
 |12:30 | *Lunch* | |
 
@@ -41,8 +41,8 @@ One specific outcome of the meeting was the setting up of a project to try to cr
 |:---|:---|:---|
 |13:30| *Tools and resources for large scale modelling* | |
 | |**Thomas Close**| Challenges of simulator-independent network modeling ([Slides](http://opensourcebrain.org/attachments/download/61/Tom_Close_OSB.pdf))| |
-| | **[Steve Marsh](https://www.opensourcebrain.org/users/94))** |HiveMind: Generating efficient simulators from NeuroML ([Slides](/attachments/download/70/SteveMarsh_HiveMind_Overview_13_5_13.pdf))| |
-| |**[Paul Fox](https://www.opensourcebrain.org/users/131))**|From tens to millions of neurons: how computer architecture can help ([Slides](/attachments/download/74/Thousands-to-millions_PaulFox.ppt))| |
+| | **[Steve Marsh](https://www.opensourcebrain.org/users/94))** |HiveMind: Generating efficient simulators from NeuroML ([Slides](https://www.opensourcebrain.org/attachments/download/70/SteveMarsh_HiveMind_Overview_13_5_13.pdf))| |
+| |**[Paul Fox](https://www.opensourcebrain.org/users/131))**|From tens to millions of neurons: how computer architecture can help ([Slides](https://www.opensourcebrain.org/attachments/download/74/Thousands-to-millions_PaulFox.ppt))| |
 |14:30|*NeuroML: what’s missing/required?* | |
 | | Open session. Chair: **[Sharon Crook](https://www.opensourcebrain.org/users/8))** | |
 | 15:00 | *Poster session & coffee* | |
@@ -59,7 +59,7 @@ One specific outcome of the meeting was the setting up of a project to try to cr
 | 10:30 |**[Tadashi Yamazaki](https://www.opensourcebrain.org/users/88))** | Realtime simulation of a cerebellar spiking network model using a GPU ([Slides](http://www.opensourcebrain.org/attachments/download/69/yamazaki-osb.pdf)) |
 | 10:45 | *Coffee break & poster session* | |
 | 11:30 | *Cerebellar modelling presentations (continued)* | |
-| | **Paul Dean** | Adaptive Filter Models ([Slides](/attachments/download/63/Sardinia13-Dean-Slides.ppt))|
+| | **Paul Dean** | Adaptive Filter Models ([Slides](https://www.opensourcebrain.org/attachments/download/63/Sardinia13-Dean-Slides.ppt))|
 | | **Christian Roessert** | Compatibility of a detailed model of cerebellar granular layer processing with adaptive filter computations |
 | | **[Jesus Garrido](https://www.opensourcebrain.org/users/128))** | Distributed synaptic plasticity controls spike-timing at the cerebellar granular layer: predictions from a computational model ([Slides](http://www.opensourcebrain.org/attachments/download/68/SpikeTime_OSB_Garrido_et_al.pdf))|
 |12:30 | *Lunch* | |
@@ -82,8 +82,8 @@ One specific outcome of the meeting was the setting up of a project to try to cr
 |:---|:---|:---|
 | &nbsp; |*Cerebellar modelling presentations* | |
 | 9:00 | **Chris De Zeeuw** | Creating Cerebellar Coordination by Distributed Synergistic Plasticity |
-| 9:45 | **[Volker Steuber](http://www.opensourcebrain.org/users/10)** | Multi-scale models of synaptic plasticity in the cerebellum ([Slides](/attachments/download/64/Steuber_OSB_Sardinia_2013.pdf))|
-| 10:30 |**[Sergio Solinas](https://www.opensourcebrain.org/users/23))** | Realistic modeling of the cerebellar cortex ([Slides](/attachments/download/79/Solinas_OSB2013Alghero.pptx)) |
+| 9:45 | **[Volker Steuber](http://www.opensourcebrain.org/users/10)** | Multi-scale models of synaptic plasticity in the cerebellum ([Slides](https://www.opensourcebrain.org/attachments/download/64/Steuber_OSB_Sardinia_2013.pdf))|
+| 10:30 |**[Sergio Solinas](https://www.opensourcebrain.org/users/23))** | Realistic modeling of the cerebellar cortex ([Slides](https://www.opensourcebrain.org/attachments/download/79/Solinas_OSB2013Alghero.pptx)) |
 | 10:45 | *Coffee break* | |
 |11:00 | **[Arnd Roth](http://www.opensourcebrain.org/users/108)** | Untangling cerebellar circuits with scanning electron microscopy and focused ion beam milling|
 | 11:45 | *Continued hands on collaboration session* | |
