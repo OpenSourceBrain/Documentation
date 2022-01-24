@@ -5,8 +5,7 @@
 The beta release of OSBv2 is available at https://www.v2.opensourcebrain.org. It is not currently ready for daily usage because the interface and data stored on the platform may change and be erased from time to time. Please do {ref}`get in touch <contact>` if you have any queries or would like to help with user testing.
 ```
 
-Open Source Brain v2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
-
+Open Source Brain (OSB) v2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
 
 ```{figure} ../images/OSBv2Overview.png
 :alt: OSBv2 Overview
