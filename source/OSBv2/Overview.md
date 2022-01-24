@@ -5,12 +5,15 @@
 The beta release of OSBv2 is available at https://www.v2.opensourcebrain.org. It is not currently ready for daily usage because the interface and data stored on the platform may change and be erased from time to time. Please do {ref}`get in touch <contact>` if you have any queries or would like to help with user testing.
 ```
 
-Open Source Brain (OSB) v2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
+Open Source Brain (OSB) v2 is a new integrated research platform that builds on the features of {ref}`OSBv1 <v1:getting_started>`.
+It is currently under heavy development, and initial releases for use by the research community are planned for mid 2022.
+
+OSB v2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
 
 ```{figure} ../images/OSBv2Overview.png
 :alt: OSBv2 Overview
 :align: center
-:width: 600px
+:width: 500px
 
 Relationship between Repositories, Workspaces and Applications on OSBv2.
 
@@ -28,20 +31,20 @@ Repositories are links to files and data in public resources like [GitHub](https
 (workspaces)=
 ## Workspaces
 
-Workspaces can be created by users from a subset (or all) of the contents of repositories
+Workspaces are spaces for users to work in.
 
-- These are a **snapshot** of the repository contents, each saved on a **persistent cloud volume**
-- Additional files (analysis outputs, simulation results) can be added to the volume
-- Users can keep them private or make them public
-- New empty workspaces can also be created
-
+- Empty repositories can be created, or they can be seeded from OSBv2 repositories including some or all of the files in the repository at the time
+- Each workspace is saved on a persistent cloud volume, allowing users to save their work and resume it at a later time
+- Additional files (analysis outputs, simulation results) can also be stored in the workspace
+- Users can keep their workspaces private or make them public to share them with the community
 
 (applications)=
 ## Applications
 
-Workspaces can be opened in any of the OSBv2 Applications
+Workspaces can be opened in any of the supported OSBv2 applications:
 
-- **NWB Explorer** allows interactive exploration of the contents of Neurodata Without Borders files
-- The **NetPyNE** graphical user interface allows construction and simulation of neural networks
-- Both above have inbuilt Python consoles
-- **JupyterLab** is a complete environment for running Python notebooks and managing/viewing multiple file types. Many neuroscience libraries are preloaded.
+- [NWB Explorer](https://nwbexplorer.opensourcebrain.org): for the interactive exploration/visualisation of the contents of [Neurodata Without Borders](https://nwb.org) files
+- [NetPyNE](https://netpyne.org): a graphical user interface for the construction and simulation of neuroscience models
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/): a complete development environment for the Python programming language
+
+Both NWB Explorer and NetPyNE also include inbuilt Python consoles for ad-hoc scripting and analysis, and a number of Python libraries are pre-loaded into the JupyterLab application for convenience.
