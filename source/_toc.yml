@@ -43,6 +43,7 @@ parts:
           - file: General/Meetings/Hackathon_2013
           - file: General/Meetings/Sardinia_2013
       - file: General/PrivacyPolicy
+      - file: Reference/zBibliography
   - caption: Useful Information
     chapters:
       - file: General/Background_Information/01_Introduction_to_Source_Control

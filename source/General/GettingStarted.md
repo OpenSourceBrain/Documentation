@@ -1,26 +1,35 @@
 (getting_started_osb)=
 # Getting started with OSB
 
-Welcome to Open Source Brain!
+There are currently two versions of OSB: OSBv1, and the new version that is under development, OSBv2.
 
-The first step is to choose between using {ref}`OSBv1 <v1:getting_started>` (as described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1)) and {ref}`OSBv2 <osbv2>` (our new platform for **data** as well as model sharing, with support for NWB, NetPyNE and JupyterLab).
+- {ref}`OSBv1 <v1:getting_started>` is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species {cite}`Gleeson2019`.
+- {ref}`OSBv2 <osbv2>` is a new integrated research platform that builds on the features of OSBv1.
+  It aims to help neuroscientists close the loop between experimental data and data-driven computational/theoretical modelling.
+  It integrates:
 
-(osb1or2)=
-## Which to choose, OSBv1 or OSBv2?
+  - [NWB Explorer](https://nwbexplorer.opensourcebrain.org) for the visualisation and analysis of data in the [Neurodata Without Borders](https://www.nwb.org) (NWB) format
+  - [NetPyNE](https://netpyne.org) for computational modelling and simulation
+  - [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) for general Python workflows
 
-### Use OSBv1...
+  in a powerful cloud based web application.
+  Researchers can save their work on workspaces on OSBv2, and use it for their daily research.
 
-- If you want to explore the models described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1)
-- If you want to visualise, analyse and simulate NeuroML 2 models in your browser
+(getting_started_osb:which)=
+## Which version of OSB should I use?
 
-See {ref}`here <v1:getting_started>` for more details.
+Please use {ref}`OSBv1 <v1:getting_started>`:
 
-### Use OSBv2...
+- if you want to explore the models described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1) {cite}`Gleeson2019`
+- if you want to visualise, analyse and simulate [NeuroML 2](https://docs.neuroml.org) models in your web browser
 
-- If you want to share neuroscience data in standardised formats
-- If you want to use NetPyNE
-- If you want to create and share Python based workflows
+Please use {ref}`OSBv2 <osbv2>`:
 
-Note: we are planning to recreate as much as possible of the functionality of OSBv1 on v2 over time.
+- if you want to share, visualise, and analyse neuroscience data in standardised formats
+- if you want to create, simulate, and share computational models using the [NetPyNE](https://netpyne.org) platform
+- if you want to create and share general Python based workflows using packages from the Python ecosystem (including [NeuroML 2](https://docs.neuroml.org))
 
-See {ref}`here <osbv2>` for more details.
+Since OSBv2 uses cloud based infrastructure, you can save your work and data on the provided cloud storage itself, and continue where you left off at a later time.
+
+
+OSBv2 is under heavy development, and all features of OSBv1 will be migrated over to OSBv2 over time.
