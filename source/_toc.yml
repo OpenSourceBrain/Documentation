@@ -28,6 +28,13 @@ parts:
         - file: OSBv2/Overview
         - file: OSBv2/Repositories
         - file: OSBv2/Workspaces
+        - file: OSBv2/Applications
+          sections:
+            - file: OSBv2/NWBE
+            - url: https://github.com/Neurosim-lab/NetPyNE-UI/wiki#documentation
+              title: NetPyNE UI
+            - url: https://jupyterlab.readthedocs.io/en/latest/user/index.html
+              title: JupyterLab
   - caption: Community
     chapters:
       - file: General/Contacts
