@@ -31,7 +31,7 @@ parts:
         - file: OSBv2/Applications
           sections:
             - file: OSBv2/NWBE
-            - url: https://github.com/Neurosim-lab/NetPyNE-UI/wiki#documentation
+            - url: https://github.com/Neurosim-lab/NetPyNE-UI/wiki
               title: NetPyNE UI
             - url: https://jupyterlab.readthedocs.io/en/latest/user/index.html
               title: JupyterLab
