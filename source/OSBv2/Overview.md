@@ -33,7 +33,7 @@ Repositories are links to files and data in public resources like [GitHub](https
 
 Workspaces are spaces for users to work in.
 
-- Empty repositories can be created, or they can be seeded from OSBv2 repositories including some or all of the files in the repository at the time
+- Empty workspaces can be created, or they can be seeded from OSBv2 repositories using some or all of the files in the repository at the time
 - Each workspace is saved on a persistent cloud volume, allowing users to save their work and resume it at a later time
 - Additional files (analysis outputs, simulation results) can also be stored in the workspace
 - Users can keep their workspaces private or make them public to share them with the community
@@ -41,7 +41,7 @@ Workspaces are spaces for users to work in.
 (applications)=
 ## Applications
 
-Workspaces can be opened in any of the supported OSBv2 applications:
+OSBv2 integrates a number of applications for use by researchers, and workspaces can be opened in any of the supported OSBv2 applications:
 
 - [NWB Explorer](https://nwbexplorer.opensourcebrain.org): for the interactive exploration/visualisation of the contents of [Neurodata Without Borders](https://nwb.org) files
 - [NetPyNE](https://netpyne.org): a graphical user interface for the construction and simulation of neuroscience models
