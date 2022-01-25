@@ -26,10 +26,12 @@ parts:
   - caption: OSB version 2
     chapters:
         - file: OSBv2/Overview
+        - file: OSBv2/Repositories
   - caption: Community
     chapters:
       - file: General/Contacts
       - file: General/Contribute_To_OSB
+      - file: General/Contribute_To_OSB_docs
       - file: General/Meetings
         sections:
           - file: General/Meetings/OSB_2019
