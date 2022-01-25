@@ -27,6 +27,7 @@ parts:
     chapters:
         - file: OSBv2/Overview
         - file: OSBv2/Repositories
+        - file: OSBv2/Workspaces
   - caption: Community
     chapters:
       - file: General/Contacts
