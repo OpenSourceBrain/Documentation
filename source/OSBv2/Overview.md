@@ -22,7 +22,7 @@ Relationship between Repositories, Workspaces and Applications on OSBv2.
 (repositories)=
 ## Repositories
 
-Repositories are links to files and data in public resources like [GitHub](https://github.com) and [DANDI](https://gui.dandiarchive.org).
+Repositories are views of files and data in public resources like [GitHub](https://github.com) and [DANDI](https://gui.dandiarchive.org).
 
 - A repository on OSBv2 lists the **current contents** of the remote resource
 - Repositories are public: all users can browse repositories that have been added to OSBv2
