@@ -37,6 +37,7 @@ parts:
               title: JupyterLab
   - caption: Community
     chapters:
+      - file: General/CoC
       - file: General/Contacts
       - file: General/Contribute_To_OSB
       - file: General/Contribute_To_OSB_docs
