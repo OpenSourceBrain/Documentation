@@ -1,8 +1,9 @@
 (contact)=
 # Get in touch
 
-We would love to hear from you.
-For any feedback, comments, and troubleshooting, please use the channels below.
+We would love to hear from you with any feedback, comments, and for troubleshooting.
+
+You can get in contact with the developers of OSB directly at [info@opensourcebrain.org](mailto:info@opensourcebrain.org), but for any query/issue which may be of interest to other users of the platform, please use the public channels below.
 
 ## Mailing lists
 
@@ -23,11 +24,15 @@ The channel is bridged between the two, so either service may be used.
 We suggest you use Matrix as it is the newer platform that will [replace Gitter in the future](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix#whats-next).
 Matrix's Element application can be used in browsers, or it can be downloaded to most platforms, including mobile phones.
 
-## Report a bug / Request a feature
+## Report a bug / request a feature
 
 All Open Source Brain development happens openly on [GitHub](https://github.com/OpenSourceBrain/) under the Open Source Brain organisation.
 Please follow the repositories there to keep up with OSB development.
-You can also report any issues you run into on the [issue tracker](https://github.com/OpenSourceBrain/geppetto-osb/issues/new) there.
+
+You can also report any issues you run into on the **issue trackers** for
+- [OSBv1](https://github.com/OpenSourceBrain/geppetto-osb/issues)
+- [OSBv2](https://github.com/OpenSourceBrain/OSBv2/issues)
+- [the OSB documentation](https://github.com/OpenSourceBrain/Documentation/issues)
 
 ## Follow us on Twitter at @OSBTeam
 

@@ -3,14 +3,14 @@
 
 There are currently two versions of OSB: OSBv1, and the new version that is under development, OSBv2.
 
-- {ref}`OSBv1 <v1:getting_started>` is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species {cite}`Gleeson2019`.
+- {ref}`OSBv1 <v1:getting_started>` is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species. This is the version described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
 - {ref}`OSBv2 <osbv2>` is a new integrated research platform that builds on the features of OSBv1.
   It aims to help neuroscientists close the loop between experimental data and data-driven computational/theoretical modelling.
   It integrates:
 
-  - [NWB Explorer](https://nwbexplorer.opensourcebrain.org) for the visualisation and analysis of data in the [Neurodata Without Borders](https://www.nwb.org) (NWB) format
-  - [NetPyNE](https://netpyne.org) for computational modelling and simulation
-  - [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) for general Python workflows
+  - {ref}`NWB Explorer <osbv2:applications:nwbe>` for the visualisation and analysis of data in the [Neurodata Without Borders](https://www.nwb.org) (NWB) format
+  - {ref}`NetPyNE <osbv2:applications:netpyne>` for computational modelling and simulation
+  - {ref}`JupyterLab <osbv2:applications:jupyterlab>` for general Python workflows
 
   in a powerful cloud based web application.
   Researchers can save their work on workspaces on OSBv2, and use it for their daily research.
