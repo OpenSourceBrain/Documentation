@@ -1,4 +1,4 @@
-(v2:repositories)=
+(osbv2:repositories)=
 # Repositories
 
 Repositories are views of files and data in public resources like [GitHub](https://github.com) and [DANDI](https://gui.dandiarchive.org).
@@ -6,7 +6,7 @@ They show the **current contents** of the source.
 Currently, GitHub and DANDI resources are supported, with support for more sources such as Figshare also planned.
 Repositories are currently public, so all users can browse repositories that have been added to OSBv2.
 
-(v2:repositories:viewing)=
+(osbv2:repositories:viewing)=
 ## Viewing available repositories
 
 Users can view all the currently created repositories on OSBv2 in the repository list page.
@@ -47,7 +47,7 @@ You can view information on repositories here, and select files to add to your w
 
 You can also use the file selector on the right to select files to add to your existing workspaces, or use them to create a completely new workspace.
 
-(v2:repositories:adding)=
+(osbv2:repositories:adding)=
 ## Adding new and editing repositories
 
 Any user can add a repository to OSBv2 following these steps:

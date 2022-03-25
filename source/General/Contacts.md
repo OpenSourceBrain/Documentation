@@ -17,12 +17,15 @@ If you have trouble with your account, the administrators are reachable at [info
 
 You can speak to the Open Source Brain community over [Gitter](https://gitter.im/OpenSourceBrain/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
-## Report a bug / Request a feature
+## Report a bug / request a feature
 
 All Open Source Brain development happens openly on [GitHub](https://github.com/OpenSourceBrain/) under the Open Source Brain organisation.
 Please follow the repositories there to keep up with OSB development.
 
-You can also report any issues you run into on the [issue tracker for OSBv1](https://github.com/OpenSourceBrain/geppetto-osb/issues) or the [issue tracker for OSBv2](https://github.com/OpenSourceBrain/OSBv2/issues).
+You can also report any issues you run into on the **issue trackers** for
+- [OSBv1](https://github.com/OpenSourceBrain/geppetto-osb/issues)
+- [OSBv2](https://github.com/OpenSourceBrain/OSBv2/issues)
+- [the OSB documentation](https://github.com/OpenSourceBrain/Documentation/issues)
 
 ## Follow us on Twitter at @OSBTeam
 

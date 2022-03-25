@@ -1,16 +1,16 @@
-(v2:workspaces)=
+(osbv2:workspaces)=
 # Workspaces
 
 Workspaces are spaces for users to work in.
 Each workspace is saved on a persistent cloud volume, allowing users to save their work and resume it at a later time.
-Users can add files to workspaces from {ref}`repositories <v2:repositories>`, or uploaded them from their computers.
+Users can add files to workspaces from {ref}`repositories <osbv2:repositories>`, or uploaded them from their computers.
 Workspaces can be public, private, or featured.
 
 - **private workspaces** are only visible and accessible to the user that created them
 - **public workspaces** are visible to everyone but can only be modified by their creators
 - **featured workspaces** are public workspaces that have been curated by the OSBv2 administrators
 
-(v2:workspaces:existing)=
+(osbv2:workspaces:existing)=
 ## Working with existing workspaces
 
 All of these workspaces can be seen on the OSBv2 homepage in the right hand panel.
@@ -46,7 +46,7 @@ Clicking on a resource will open it in the associated application:
 - NetPyNE files will open in NetPyNE
 - Jupyter Notebooks will open in JupyterLab
 
-(v2:workspaces:creating)=
+(osbv2:workspaces:creating)=
 ## Creating a new workspace
 
 There are two ways to create workspaces on OSBv2, both available on the OSBv2 homepage.
@@ -63,7 +63,7 @@ Workspaces can be created using the options on the OSBv2 homepage.
 A new workspace can be created from a repository from two views:
 
 - from the OSBv2 homepage by selecting the "Workspace from repository" button
-- from the repository information page, as explained {ref}`here <v2:repositories:viewing>`.
+- from the repository information page, as explained {ref}`here <osbv2:repositories:viewing>`.
 
 Clicking on the "Workspace from repository" button on the main page opens the "Create a new workspace" dialogue box.
 Here, you can select what repository you would want to use to include files from in your new workspace.
@@ -104,11 +104,11 @@ By default, new workspaces are private.
 You can select "Make public" from the menu for each workspace to make them public.
 
 
-(v2:workspaces:addingmore)=
+(osbv2:workspaces:addingmore)=
 ## Adding files to existing workspaces
 
 More files can be added to existing workspaces also.
-You can either do this by going to a repository, and selecting files to add from the repository page as documented {ref}`here <v2:repositories:viewing>`, or you can go to the workspace information page and add files from there.
+You can either do this by going to a repository, and selecting files to add from the repository page as documented {ref}`here <osbv2:repositories:viewing>`, or you can go to the workspace information page and add files from there.
 
 ```{figure} ../images/osbv2-workspaces-add-new-resources-with-text.png
 :alt: Figure showing the "Add new resources" button on the workspace information page.
