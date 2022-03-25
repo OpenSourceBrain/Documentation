@@ -9,13 +9,13 @@ See the {ref}`five minute introduction <v1:five_min_intro>` for an overview of t
 
 You can explore the models on OSBv1 in multiple ways:
 
-- [List of core projects](http://www.opensourcebrain.org/projects)
+- [List of some of the core projects](http://www.opensourcebrain.org/projects)
 - [Tree of all projects](http://www.opensourcebrain.org/projects#cells)
 - [Technologies supported (e.g. simulators)](http://www.opensourcebrain.org/projects#technology)
 
 ## Frequently Asked Questions
 
-Some frequently asked questions are answered {ref}`here <faq>`.
+Some frequently asked questions about the initiative are answered {ref}`here <faq>`.
 
 
 ## OSB Meetings
