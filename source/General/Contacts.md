@@ -12,9 +12,16 @@ Please subscribe to the following mailing lists:
 - The [OSB discuss](https://groups.google.com/forum/?fromgroups#!forum/osb-discuss) mailing list at  [osb-discuss@googlegroups.com](mailto:osb-discuss@googlegroups.com) is used for any queries, suggestions, or feedback.
 
 If you have trouble with your account, the administrators are reachable at [info@opensourcebrain.org](mailto:info@opensourcebrain.org).
-## Chat on Gitter.im
+## Chat
 
-You can speak to the Open Source Brain community over [Gitter](https://gitter.im/OpenSourceBrain/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
+You can speak to the Open Source Brain community over its chat channels:
+
+- [Matrix/Element](https://matrix.to/#/%23OpenSourceBrain_community:gitter.im?utm_source=gitter)
+- [Gitter](https://gitter.im/OpenSourceBrain/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+The channel is bridged between the two, so either service may be used.
+We suggest you use Matrix as it is the newer platform that will [replace Gitter in the future](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix#whats-next).
+Matrix's Element application can be used in browsers, or it can be downloaded to most platforms, including mobile phones.
 
 ## Report a bug / Request a feature
 
