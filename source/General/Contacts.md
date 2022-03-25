@@ -1,8 +1,9 @@
 (contact)=
 # Get in touch
 
-We would love to hear from you.
-For any feedback, comments, and troubleshooting, please use the channels below.
+We would love to hear from you with any feedback, comments, and for troubleshooting.
+
+You can get in contact with the developers of OSB directly at [info@opensourcebrain.org](mailto:info@opensourcebrain.org), but for any query/issue which may be of interest to other users of the platform, please use the public channels below.
 
 ## Mailing lists
 
@@ -20,7 +21,8 @@ You can speak to the Open Source Brain community over [Gitter](https://gitter.im
 
 All Open Source Brain development happens openly on [GitHub](https://github.com/OpenSourceBrain/) under the Open Source Brain organisation.
 Please follow the repositories there to keep up with OSB development.
-You can also report any issues you run into on the [issue tracker](https://github.com/OpenSourceBrain/geppetto-osb/issues/new) there.
+
+You can also report any issues you run into on the [issue tracker for OSBv1](https://github.com/OpenSourceBrain/geppetto-osb/issues) or the [issue tracker for OSBv2](https://github.com/OpenSourceBrain/OSBv2/issues).
 
 ## Follow us on Twitter at @OSBTeam
 
