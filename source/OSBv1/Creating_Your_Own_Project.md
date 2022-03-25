@@ -30,7 +30,7 @@ Go to http://www.opensourcebrain.org when you’re logged in. There should be a 
 
 Enter the long name of the project (this can be edited later), the short ID (this can't be changed), a description of the project and the path to the GitHub repository.
 
-You should remember to add a link to the [ModelDB](http://senselab.med.yale.edu/ModelDB/default.asp) entry for the original model code if it is present on there too. See the {ref}`next page <v1:document_project>` for details.
+You should remember to add a **link to the [ModelDB](http://senselab.med.yale.edu/ModelDB/default.asp) entry** for the original model code if it is present on there too. See the {ref}`next page <v1:document_project>` for details.
 
 ## Add some documentation
 
