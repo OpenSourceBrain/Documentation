@@ -3,13 +3,14 @@
 
 Repositories are views of files and data in public resources like [GitHub](https://github.com) and [DANDI](https://gui.dandiarchive.org).
 They show the **current contents** of the source.
-Currently, GitHub and DANDI resources are supported, with support for more sources such as Figshare also planned.
+Currently, [GitHub](https://github.com), [Figshare](https://figshare.com) and [DANDI](https://gui.dandiarchive.org) are supported, with support for more sources also planned.
+
 Repositories are currently public, so all users can browse repositories that have been added to OSBv2.
 
 (osbv2:repositories:viewing)=
 ## Viewing available repositories
 
-Users can view all the currently created repositories on OSBv2 in the repository list page.
+Users can view all the currently created repositories on OSBv2 in the [repository list](https://v2.opensourcebrain.org/repositories) page.
 Click on the "View repositories" button, or the "Repositories" drop down in the top right hand corner to view the repository list page:
 
 ```{figure} ../images/osbv2-main-page-repositories-link-with-text.png
@@ -22,7 +23,7 @@ Click on the "View repositories" button, or the "Repositories" drop down in the 
 ```
 
 Users do not need to be signed to view repositories.
-However, you will need to sign in to use them.
+However, you will need to {ref}`sign in <osbv2:useraccounts:signin>` to use them.
 
 Once on the repository list page, you can search/filter for and view information on repositories of interest, view your own repositories, and also add new or edit your repositories.
 
@@ -52,7 +53,7 @@ You can also use the file selector on the right to select files to add to your e
 
 Any user can add a repository to OSBv2 following these steps:
 
-- Login to OSBv2
+- {ref}`Login to OSBv2 <osbv2:useraccounts:signin>`
 - Go to the repository list page, as shown above
 - Click the "Add new repository" button
 

@@ -36,7 +36,7 @@ More details on repositories can be found {ref}`here <osbv2:repositories>`.
 Workspaces are persistent spaces for users to carry out their work in.
 
 - Empty workspaces can be created, or they can be seeded from OSBv2 {ref}`repositories <osbv2:repositories>` using some or all of the files in the repository at the time
-- Each workspace is saved on a persistent cloud volume, allowing users to save their work and resume it at a later time
+- Each workspace is saved on a {ref}`persistent cloud volume <osbv2:useraccounts:storage>`, allowing users to save their work and resume it at a later time
 - Additional files (analysis outputs, simulation results) can also be stored in the workspace
 - Users can keep their workspaces private or make them public to share them with the community
 
@@ -53,4 +53,4 @@ OSBv2 integrates a number of applications for use by researchers, and workspaces
 
 Both {ref}`NWB Explorer<osbv2:applications:nwbe>` and {ref}`NetPyNE <osbv2:applications:netpyne>` also include inbuilt Python consoles for ad-hoc scripting and analysis, and a number of Python libraries are pre-loaded into the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application for convenience.
 
-More details on applications can be found {ref}`here <osbv2:applications>`.
+More details on OSBv2 applications can be found {ref}`here <osbv2:applications>`.

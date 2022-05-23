@@ -2,12 +2,12 @@
 # Workspaces
 
 Workspaces are spaces for users to work in.
-Each workspace is saved on a persistent cloud volume, allowing users to save their work and resume it at a later time.
+Each workspace is saved on a {ref}`persistent cloud volume <osbv2:useraccounts:storage>`, allowing users to save their work and resume it at a later time.
 Users can add files to workspaces from {ref}`repositories <osbv2:repositories>`, or uploaded them from their computers.
 Workspaces can be public, private, or featured.
 
 - **private workspaces** are only visible and accessible to the user that created them
-- **public workspaces** are visible to everyone but can only be modified by their creators
+- **public workspaces** are visible to everyone but can only be modified by their creators (they can be opened in readonly mode by others)
 - **featured workspaces** are public workspaces that have been curated by the OSBv2 administrators
 
 (osbv2:workspaces:existing)=
@@ -25,7 +25,7 @@ Workspaces can be seen on the OSBv2 homepage.
 
 ```
 
-Workspaces can be opened in any of the OSBv2 applications.
+Workspaces can be opened in any of the {ref}`OSBv2 applications <osbv2:applications>`.
 This can be done either directly from the homepage by using the context menu for each workspace in the list, or from the workspace information page.
 
 ```{figure} ../images/osbv2-workspaces-page-with-text.png
@@ -37,14 +37,14 @@ The workspace information page shows details about the workspace, including what
 
 ```
 Workspaces include files, and they can also include **resources**.
-Resources are special files that OSBv2 knows can be opened in one of the OSBv2 applications.
+Resources are special files that OSBv2 knows can be opened in one of the {ref}`OSBv2 applications <osbv2:applications>`.
 These can be seen in the resources side bar in the left hand pane in workspaces and applications.
 
 Clicking on a resource will open it in the associated application:
 
-- NWB files will open in NWB Explorer
-- NetPyNE files will open in NetPyNE
-- Jupyter Notebooks will open in JupyterLab
+- NWB files will open in {ref}`NWB Explorer <osbv2:applications:nwbe>`
+- Jupyter Notebooks will open in {ref}`JupyterLab <osbv2:applications:jupyterlab>`
+- NetPyNE files will open in {ref}`NetPyNE <osbv2:applications:netpyne>` (coming soon...)
 
 (osbv2:workspaces:creating)=
 ## Creating a new workspace
@@ -107,7 +107,12 @@ You can select "Make public" from the menu for each workspace to make them publi
 (osbv2:workspaces:addingmore)=
 ## Adding files to existing workspaces
 
+```{admonition} User storage inside a workspace
+See information {ref}`here <osbv2:useraccounts:storage>` in the various locations for stored user files inside a workspace
+```
+
 More files can be added to existing workspaces also.
+
 You can either do this by going to a repository, and selecting files to add from the repository page as documented {ref}`here <osbv2:repositories:viewing>`, or you can go to the workspace information page and add files from there.
 
 ```{figure} ../images/osbv2-workspaces-add-new-resources-with-text.png
@@ -129,4 +134,4 @@ The "Add new resources" dialogue box allows you to add files from a location, or
 ```
 
 It is not currently possible to upload files/resources using the resources side bar.
-You can, however, upload files using the JupyterLab application.
+You can, however, upload files using the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application.
