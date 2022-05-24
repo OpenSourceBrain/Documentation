@@ -33,6 +33,7 @@ parts:
             - file: OSBv2/NWBE
             - file: OSBv2/NetPyNE
             - file: OSBv2/JupyterLab
+        - file: OSBv2/User_Accounts
   - caption: Community
     chapters:
       - file: General/CoC
