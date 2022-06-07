@@ -42,6 +42,7 @@ parts:
       - file: General/Contribute_To_OSB_docs
       - file: General/Meetings
         sections:
+          - file: General/Meetings/CNS_2022
           - file: General/Meetings/OSB_2019
           - file: General/Meetings/Neuroinformatics_2018
           - file: General/Meetings/CNS_2018
