@@ -12,6 +12,7 @@
 
 A number of meetings have been organised/are planned to promote OSB, including:
 
+- {ref}`A tutorial <meetings:cns2022>` introducing the Open Source Brain v2 integrated web research platform at the [CNS*2022 satellite tutorials](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html).
 - A workshop at the online [CNS*2020](https://www.cnsorg.org/cns-2020) on [Tools and resources for developing and sharing models in computational neuroscience](https://neuralensemble.github.io/Networks_SIG/CNS2020).
 - {ref}`OSB 2019 <meetings:sardinia2019>` in Sardinia in September 2019
 - A workshop on Open Source Brain at {ref}`Neuroinformatics 2018 <meetings:neuroinformatics2018>`
