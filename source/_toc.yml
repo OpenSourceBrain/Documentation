@@ -34,6 +34,7 @@ parts:
             - file: OSBv2/NetPyNE
             - file: OSBv2/JupyterLab
         - file: OSBv2/User_Accounts
+        - file: OSBv2/Guided_tour
   - caption: Community
     chapters:
       - file: General/CoC
