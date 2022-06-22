@@ -13,3 +13,5 @@ An instance of JupyterLab is hosted on OSBv2.
 ```
 
 You must be signed in to open a {ref}`workspace <osbv2:workspaces>` (which may have been originally created for {ref}`NWB Explorer <osbv2:applications:nwbe>` or {ref}`NetPyNE <osbv2:applications:netpyne>`) in the JupyterLab application on OSBv2.
+
+A significant feature of the JupyterLab application is the file browser, where {ref}`workspace storage <osbv2:useraccounts:storage>` can be viewed, and {ref}`files can be uploaded and existing files downloaded <osbv2:workspaces:addingmore>`.
