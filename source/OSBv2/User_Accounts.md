@@ -40,7 +40,7 @@ There are a number of locations where data can be stored when a {ref}`workspace 
 
 <sup>^</sup> Note: if a workspace is closed, and then opened in the same application shortly afterwards, the same Kubernetes pod may be used, along with the same transient storage, which may result in data on `/opt/home` and `/opt/conda` persisting between these sessions.
 
-The easiest way to view these is by opening the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application, where files in these locations can be downloaded and other files uploaded.
+The easiest way to browse these locations is by opening the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application, where other files {ref}`can be uploaded and existing files downloaded <osbv2:workspaces:addingmore>`.
 
 
 (osbv2:useraccounts:quotas)=

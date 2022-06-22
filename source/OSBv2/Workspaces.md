@@ -1,7 +1,7 @@
 (osbv2:workspaces)=
 # Workspaces
 
-Workspaces are spaces for users to work in.
+Workspaces are persistent spaces for users to work in using the various {ref}`OSBv2 applications <osbv2:applications>`.
 Each workspace is saved on a {ref}`persistent cloud volume <osbv2:useraccounts:storage>`, allowing users to save their work and resume it at a later time.
 Users can add files to workspaces from {ref}`repositories <osbv2:repositories>`, or uploaded them from their computers.
 Workspaces can be public, private, or featured.
@@ -43,14 +43,13 @@ These can be seen in the resources side bar in the left hand pane in workspaces 
 Clicking on a resource will open it in the associated application:
 
 - NWB files will open in {ref}`NWB Explorer <osbv2:applications:nwbe>`
-- Jupyter Notebooks will open in {ref}`JupyterLab <osbv2:applications:jupyterlab>`
-- NetPyNE files will open in {ref}`NetPyNE <osbv2:applications:netpyne>` (coming soon...)
+- Jupyter Notebooks open {ref}`JupyterLab <osbv2:applications:jupyterlab>` (application will open but [not yet the notebook itself](https://github.com/OpenSourceBrain/OSBv2/issues/302))
+- NetPyNE files will open in {ref}`NetPyNE <osbv2:applications:netpyne>` ([coming soon...](https://github.com/OpenSourceBrain/OSBv2/issues/304))
 
 (osbv2:workspaces:creating)=
 ## Creating a new workspace
 
 There are two ways to create workspaces on OSBv2, both available on the OSBv2 homepage.
-You can either create blank/empty workspaces without any files/resources, or you can seed workspaces from files included in a repository that you have access to.
 
 ```{figure} ../images/osbv2-workspaces-homepage-create-with-text.png
 :alt: Figure showing options on homepage to create a new workspace.
@@ -60,7 +59,9 @@ You can either create blank/empty workspaces without any files/resources, or you
 Workspaces can be created using the options on the OSBv2 homepage.
 
 ```
-A new workspace can be created from a repository from two views:
+You can create a **blank/empty workspace** without any files/resources if you want to start from scratch (click on: Interactive development/JupyterLab).
+
+Alternatively, you can seed workspaces from files included in a {ref}`repository <osbv2:repositories>` that you have access to. Such a workspace can be created from a repository in two ways:
 
 - from the OSBv2 homepage by selecting the "Workspace from repository" button
 - from the repository information page, as explained {ref}`here <osbv2:repositories:viewing>`.
@@ -111,9 +112,19 @@ You can select "Make public" from the menu for each workspace to make them publi
 See information {ref}`here <osbv2:useraccounts:storage>` in the various locations for stored user files inside a workspace
 ```
 
-More files can be added to existing workspaces also.
+More files can be added to existing workspaces also. One simple way to do this is to open the workspace using the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application, and click the **Upload Files icon**.
 
-You can either do this by going to a repository, and selecting files to add from the repository page as documented {ref}`here <osbv2:repositories:viewing>`, or you can go to the workspace information page and add files from there.
+```{figure} ../images/osbv2-upload.png
+:alt: Upload files from JupyterLab.
+:align: center
+:width: 500px
+
+Upload files from JupyterLab.
+```
+
+You can also **download** individual files by right clicking on the file in the JupyterLab file browser.
+
+Alternatively, if the file(s) you wish to upload are in a repository, you can select the files to add from the repository page as documented {ref}`here <osbv2:repositories:viewing>`, or you can go to the workspace information page and add files from there.
 
 ```{figure} ../images/osbv2-workspaces-add-new-resources-with-text.png
 :alt: Figure showing the "Add new resources" button on the workspace information page.
@@ -133,5 +144,4 @@ This will bring up the "Add new resources" dialogue box, where you can either ad
 The "Add new resources" dialogue box allows you to add files from a location, or a repository.
 ```
 
-It is not currently possible to upload files/resources using the resources side bar.
-You can, however, upload files using the {ref}`JupyterLab <osbv2:applications:jupyterlab>` application.
+It is not currently possible to download files/resources using the resources side bar.

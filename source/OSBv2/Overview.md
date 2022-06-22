@@ -35,9 +35,9 @@ More details on repositories can be found {ref}`here <osbv2:repositories>`.
 
 Workspaces are persistent spaces for users to carry out their work in.
 
-- Empty workspaces can be created, or they can be seeded from OSBv2 {ref}`repositories <osbv2:repositories>` using some or all of the files in the repository at the time
+- Empty workspaces can be created, or they can be seeded from OSBv2 {ref}`repositories <osbv2:repositories>` using some or all of the files in the repository at that point in time
 - Each workspace is saved on a {ref}`persistent cloud volume <osbv2:useraccounts:storage>`, allowing users to save their work and resume it at a later time
-- Additional files (analysis outputs, simulation results) can also be stored in the workspace
+- Any files which are generated (e.g. analysis outputs, simulation results) are also stored in the workspace, and other files {ref}`can be uploaded <osbv2:workspaces:addingmore>`
 - Users can keep their workspaces private or make them public to share them with the community
 
 More details on workspaces can be found {ref}`here <osbv2:workspaces>`.
