@@ -56,11 +56,25 @@ After it is created, you will get an option to GO TO WORKSPACE. Go here and you 
 Options for opening the workspace can be found in the top right corner
 ```
 
-
 (osbv2:guidedtour:nwbe)=
 ## 3) Explore NWB datasets
 
-...
+Select NWB Explorer in the drop down menu and click the button. The {ref}`NWB Explorer <osbv2:applications:nwbe>` interface will open.
+
+```{figure} ../images/GT20.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+NWB Explorer main interface
+```
+The column on the left lists a number of the files of known types (e.g. NWB files, Python notebooks). Select **LanoreEtAl2019.nwb** in this column, and that NWB file will be loaded in to the NWB Explorer interface.
+
+```{figure} ../images/GT21.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+NWB Explorer view of Lanore et al. 2019 dataset. 
+```
 
 (osbv2:guidedtour:netpyne)=
 ## 4) Create a network simulation using NetPyNE
