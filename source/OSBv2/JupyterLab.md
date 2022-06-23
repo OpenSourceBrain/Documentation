@@ -25,4 +25,4 @@ A significant feature of the JupyterLab application is the file browser, where {
 
 What Python packages are available in the JupyterLab environment? Try `pip list` in the Terminal to see the current set of packages.
 
-These are set in the Dockerfile for the JupyterLab application ([master version](https://github.com/OpenSourceBrain/OSBv2/blob/master/applications/jupyterlab/Dockerfile), [latest development version](https://github.com/OpenSourceBrain/OSBv2/blob/develop/applications/jupyterlab/Dockerfile)).
+These are set in the Dockerfile for the JupyterLab application ([master version](https://github.com/OpenSourceBrain/OSBv2/blob/master/applications/jupyterlab/Dockerfile), [latest development version](https://github.com/OpenSourceBrain/OSBv2/blob/develop/applications/jupyterlab/Dockerfile)). If you would like to add any packages here, please [open an issue](https://github.com/OpenSourceBrain/OSBv2/issues) or a Pull Request on the Dockerfile. 

@@ -19,7 +19,7 @@ Users can select the appropriate tab to switch between different types of worksp
 ```{figure} ../images/osbv2-workspaces-homepage-with-text.png
 :alt: Figure showing workspaces listed on the OSBv2 homepage
 :align: center
-:width: 500px
+:width: 600px
 
 Workspaces can be seen on the OSBv2 homepage.
 
@@ -31,7 +31,7 @@ This can be done either directly from the homepage by using the context menu for
 ```{figure} ../images/osbv2-workspaces-page-with-text.png
 :alt: Figure showing workspace information page
 :align: center
-:width: 500px
+:width: 600px
 
 The workspace information page shows details about the workspace, including what resources it includes.
 
@@ -54,7 +54,7 @@ There are two ways to create workspaces on OSBv2, both available on the OSBv2 ho
 ```{figure} ../images/osbv2-workspaces-homepage-create-with-text.png
 :alt: Figure showing options on homepage to create a new workspace.
 :align: center
-:width: 500px
+:width: 600px
 
 Workspaces can be created using the options on the OSBv2 homepage.
 

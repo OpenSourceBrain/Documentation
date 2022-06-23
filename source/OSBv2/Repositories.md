@@ -16,7 +16,7 @@ Click on the "View repositories" button, or the "Repositories" drop down in the 
 ```{figure} ../images/osbv2-main-page-repositories-link-with-text.png
 :alt: Figure showing how to access the repositories list
 :align: center
-:width: 500px
+:width: 600px
 
 Click on the "View repositories" button, or the "Repositories" drop down in the top right hand corner to view the repository list page:
 
@@ -30,7 +30,7 @@ Once on the repository list page, you can search/filter for and view information
 ```{figure} ../images/osbv2-repositories-page-with-text.png
 :alt: Figure showing the repository list page
 :align: center
-:width: 500px
+:width: 600px
 
 You can view, edit, and add new repositories using the repository list page.
 ```
@@ -41,7 +41,7 @@ Here, you can see a preview of the repository as it is at that time.
 ```{figure} ../images/osbv2-repository-detail-page-with-text.png
 :alt: Figure showing the repository details page
 :align: center
-:width: 500px
+:width: 600px
 
 You can view information on repositories here, and select files to add to your workspaces.
 ```
