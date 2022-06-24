@@ -109,7 +109,7 @@ After the model has loaded, you can explore the settings, e.g. click on **Popula
 :alt: Guided tour...
 :align: center
 :width: 600px
-Viweing the population present.
+Viewing the population present.
 ```
 
 Next, try viewing in 3D (Click **CREATE NETWORK** on the top right) and you will see the view on the left below.
@@ -157,7 +157,7 @@ Notebook for loading NWB data.
 
 Again in directory `OSBv2 Showcase/main/notebooks` open `LoadNetPyNEData.ipynb`, which looks for a file generated when the NetPyNE simulation above was run (in directory `../NetPyNE/HHTut/HHTut_data.json`), and extracts the saved membrane potential trace from this.
 
-```{figure} ../images/GT42.png
+```{figure} ../images/GT44.png
 :alt: Guided tour...
 :align: center
 :width: 600px
