@@ -1,7 +1,7 @@
 (osbv2:guidedtour)=
 # Guided tour of OSBv2
 
-This guide provides a quick tour through the main features of the OSBv2 platform.
+This guide provides a quick tour through the main features of the OSBv2 platform, using the contents of the [OSBv2 showcase repository](https://www.v2.opensourcebrain.org/repositories/38).
 
 (osbv2:guidedtour:register)=
 ## 1) Register & sign in to OSBv2
