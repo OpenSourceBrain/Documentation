@@ -33,7 +33,7 @@ Go to the repository page at https://www.v2.opensourcebrain.org/repositories/38 
 :alt: Guided tour...
 :align: center
 :width: 600px
-Create a new workspace from the [OSBv2 Showcase](https://github.com/OpenSourceBrain/OSBv2_Showcase) repository
+Create a new workspace from the [OSBv2 Showcase](https://www.v2.opensourcebrain.org/repositories/38) repository
 ```
 
 As you can see there is a link to the source of the files on GitHub, https://github.com/OpenSourceBrain/OSBv2_Showcase. Any additions/changes to GitHub will be reflected in the view of it on the OSB repository page.
@@ -114,7 +114,7 @@ Viweing the population present.
 
 Next, try viewing in 3D (Click **CREATE NETWORK** on the top right) and you will see the view on the left below.
 
-The network can be executed also (Click **SIMULATE** on the top right). To view one of the recorded membrane traces, press the icon on the left for **Cell Traces** and the plot on the right will appear. 
+The network can be executed also (Click **SIMULATE** on the top right). To view one of the recorded membrane traces, press the icon on the left for **Cell Traces** and the plot on the right will appear.
 
 
 ```{figure} ../images/GT34.png
@@ -128,7 +128,64 @@ After creating and simulating the model.
 (osbv2:guidedtour:jupyter)=
 ## 5) Open notebooks in JupyterLab
 
-...
+### 5a) NWB data loading
+
+Next, open the same workspace in {ref}`JupyterLab <osbv2:applications:jupyterlab>` (again click the 3 dots (**...**), or go to the homepage).
+
+On the left as shown below is the **File browser**, which contains all the copied in from the [OSBv2 Showcase GitHub repository](https://github.com/OpenSourceBrain/OSBv2_Showcase). On the right is the **Launcher**, where you can create new files of various types, or open a **Terminal** to enter shell commands. A new Launcher can always be created by pressing the big blue button with the **+**.
+
+
+```{figure} ../images/GT41.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Main interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
+```
+
+Navigate to `OSBv2 Showcase/main/notebooks` and double click on `LoadNWBData.ipynb`. This opens a notebook which an be used to programatically read the contents of the NWB file previously visualised in NWB Explorer, **LanoreEtAl2019.nwb**. It uses [pyNWB](https://pynwb.readthedocs.io/en/stable/) to load in the file, and selects the entries in `nwbfile.acquisition` which match "Control", i.e. the recordings prior to applying the drug, and plots these.
+
+To rerun the notebook, press the double arrow (&#x25B6;&#x25B6;) (to the left of **Code**) in the icon bar on the notebook panel.
+
+```{figure} ../images/GT42.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Notebook for loading NWB data.
+```
+
+### 5b) NetPyNE simulation results loading
+
+Again in directory `OSBv2 Showcase/main/notebooks` open `LoadNetPyNEData.ipynb`, which looks for a file generated when the NetPyNE simulation above was run (in directory `../NetPyNE/HHTut/HHTut_data.json`), and extracts the saved membrane potential trace from this.
+
+```{figure} ../images/GT42.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Notebook for loading NetPyNE data.
+```
 
 (osbv2:guidedtour:simulators)=
 ## 6) Run simulator scripts in JupyterLab
+
+### 6a) Run NetPyNE scripts
+
+Next try running some simulator scripts in the terminal. Open a Terminal from the Launcher (big blue button with **+**), and `cd` to `/opt/workspace/OSBv2 Showcase/main/NetPyNE/HHTut`. Type `python HHTut_run.py` to run *the same simulation you ran through the graphical interface*.
+
+```{figure} ../images/GT61.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Running NetPyNE simulation in the Terminal
+```
+
+
+### 6a) Run Brian, EDEN, ... scripts
+
+A number of scripts for other simulators which are pre installed on OSBv2 can be found in `/opt/workspace/OSBv2 Showcase/main/simulators`. Go to this location in the terminal and try running these, e.g. `brian2_example.py`.
+
+```{figure} ../images/GT63.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Running Brian simulation in the Terminal
+```
