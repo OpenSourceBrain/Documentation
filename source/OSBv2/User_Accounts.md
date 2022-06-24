@@ -1,7 +1,7 @@
 (osbv2:useraccounts)=
 # User Accounts on OSBv2
 
-Users need to register and log in to OSBv2 to open a {ref}`workspace <osbv2:workspaces>` in any of the {ref}`applications <osbv2:applications>`, {ref}`NWB Explorer <osbv2:applications:nwbe>`, {ref}`NetPyNE <osbv2:applications:netpyne>` or {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
+Users need to register and log in to OSBv2 to open a {ref}`workspace <osbv2:workspaces>` in any of the {ref}`applications <osbv2:applications>`: {ref}`NWB Explorer <osbv2:applications:nwbe>`, {ref}`NetPyNE <osbv2:applications:netpyne>` or {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
 
 (osbv2:useraccounts:register)=
 ## Registration

@@ -35,6 +35,7 @@ parts:
             - file: OSBv2/JupyterLab
         - file: OSBv2/User_Accounts
         - file: OSBv2/Guided_tour
+        - file: OSBv2/Developer
   - caption: Community
     chapters:
       - file: General/CoC

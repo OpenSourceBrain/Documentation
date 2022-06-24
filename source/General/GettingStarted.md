@@ -3,8 +3,8 @@
 
 There are currently two versions of OSB: OSBv1, and the new version that is under development, OSBv2.
 
-- {ref}`OSBv1 <v1:getting_started>` is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species. This is the version described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
-- {ref}`OSBv2 <osbv2>` is a new integrated research platform that builds on the features of OSBv1.
+- **{ref}`OSBv1 <v1:getting_started>`** is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species. This is the version described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
+- **{ref}`OSBv2 <osbv2>`** is a new integrated research platform that builds on the features of OSBv1.
   It aims to help neuroscientists close the loop between experimental data and data-driven computational/theoretical modelling.
   It integrates:
 
@@ -25,7 +25,7 @@ Please use {ref}`OSBv1 <v1:getting_started>`:
 
 Please use {ref}`OSBv2 <osbv2>`:
 
-- if you want to share, visualise, and analyse neuroscience data in standardised formats 
+- if you want to share, visualise, and analyse neuroscience data in standardised formats
 - if you want to create, simulate, and share computational models using the {ref}`NetPyNE <osbv2:applications:netpyne>` platform
 - if you want to create and share general Python based workflows using packages from the Python ecosystem (including [NeuroML 2](https://docs.neuroml.org))
 
