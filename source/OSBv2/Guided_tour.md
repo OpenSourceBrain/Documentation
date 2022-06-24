@@ -38,7 +38,7 @@ Create a new workspace from the [OSBv2 Showcase](https://github.com/OpenSourceBr
 
 As you can see there is a link to the source of the files on GitHub, https://github.com/OpenSourceBrain/OSBv2_Showcase. Any additions/changes to GitHub will be reflected in the view of it on the OSB repository page.
 
-To create the new workspace, click on the blue button CREATE NEW WORKSPACE. The dialogue that opens allows you to set the title and tags, etc. to associate with the workspace, to make it easier to find.
+To create the new workspace, click on the blue button **CREATE NEW WORKSPACE**. The dialogue that opens allows you to set the title and tags, etc. to associate with the workspace, to make it easier to find.
 
 ```{figure} ../images/GT2.png
 :alt: Guided tour...
@@ -47,7 +47,7 @@ To create the new workspace, click on the blue button CREATE NEW WORKSPACE. The 
 Workspace creation dialogue
 ```
 
-After it is created, you will get an option to GO TO WORKSPACE. Go here and you get a view of the workspace with a number of options in the top right corner on how to proceed.
+After it is created, you will get an option to **GO TO WORKSPACE**. Go here and you get a view of the workspace with a number of options in the top right corner on how to proceed.
 
 ```{figure} ../images/GT3.png
 :alt: Guided tour...
@@ -59,13 +59,13 @@ Options for opening the workspace can be found in the top right corner
 (osbv2:guidedtour:nwbe)=
 ## 3) Explore NWB datasets
 
-Select NWB Explorer in the drop down menu and click the button. The {ref}`NWB Explorer <osbv2:applications:nwbe>` interface will open.
+Select **Open with NWB Explorer** in the drop down menu and click the blue button. The {ref}`NWB Explorer <osbv2:applications:nwbe>` interface will open.
 
 ```{figure} ../images/GT20.png
 :alt: Guided tour...
 :align: center
 :width: 600px
-NWB Explorer main interface
+NWB Explorer main interface. Note the **Resources panel** on the left (with the list of NWB files etc.) can be opened/closed with the arrows (**>**, **<**) at the bottom of the panel.
 ```
 The column on the left lists a number of the files of known types (e.g. NWB files, Python notebooks). Select **LanoreEtAl2019.nwb** in this column, and that NWB file will be loaded in to the NWB Explorer interface.
 
@@ -81,7 +81,49 @@ NWB Explorer view of Lanore et al. 2019 dataset.
 (osbv2:guidedtour:netpyne)=
 ## 4) Create a network simulation using NetPyNE
 
-...
+Now open the same workspace in NetPyNE. To do this you can either go back to the homepage (e.g. click on the OSB logo in the top left corner) and find the link to the workspace page, or from a workspace open in another application, click the 3 dots (**...**) at the top of the Resources panel on the left, and select: Open with NetPyNE.
+
+The interface below should be displayed after NetPyNE opens.
+
+```{figure} ../images/GT31.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+NetPyNE interface before a model is loaded/created.
+```
+
+There is a simple example network included in the OSBv2 repo. To open this, select menu item File -> Open... and locate the JSON file at `/home/jovyan/netpyne/workspace/OSBv2 Showcase/main/NetPyNE/HHTut/HHTut_data.json` (or paste this path into the top text field in the dialog)
+
+
+```{figure} ../images/GT32.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Loading a JSON file.
+```
+
+After the model has loaded, you can explore the settings, e.g. click on **Populations** tab and then **PYR**, and you will see that this is a population of 20 cells:
+
+
+```{figure} ../images/GT33.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Viweing the population present.
+```
+
+Next, try viewing in 3D (Click **CREATE NETWORK** on the top right) and you will see the view on the left below.
+
+The network can be executed also (Click **SIMULATE** on the top right). To view one of the recorded membrane traces, press the icon on the left for **Cell Traces** and the plot on the right will appear. 
+
+
+```{figure} ../images/GT34.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+After creating and simulating the model.
+```
+
 
 (osbv2:guidedtour:jupyter)=
 ## 5) Open notebooks in JupyterLab
