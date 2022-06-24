@@ -33,12 +33,12 @@ Go to the repository page at https://www.v2.opensourcebrain.org/repositories/38 
 :alt: Guided tour...
 :align: center
 :width: 600px
-Create a new workspace from the [OSBv2 Showcase](https://github.com/OpenSourceBrain/OSBv2_Showcase) repository
+Create a new workspace from the [OSBv2 Showcase](https://www.v2.opensourcebrain.org/repositories/38) repository
 ```
 
 As you can see there is a link to the source of the files on GitHub, https://github.com/OpenSourceBrain/OSBv2_Showcase. Any additions/changes to GitHub will be reflected in the view of it on the OSB repository page.
 
-To create the new workspace, click on the blue button CREATE NEW WORKSPACE. The dialogue that opens allows you to set the title and tags, etc. to associate with the workspace, to make it easier to find.
+To create the new workspace, click on the blue button **CREATE NEW WORKSPACE**. The dialogue that opens allows you to set the title and tags, etc. to associate with the workspace, to make it easier to find.
 
 ```{figure} ../images/GT2.png
 :alt: Guided tour...
@@ -47,7 +47,7 @@ To create the new workspace, click on the blue button CREATE NEW WORKSPACE. The 
 Workspace creation dialogue
 ```
 
-After it is created, you will get an option to GO TO WORKSPACE. Go here and you get a view of the workspace with a number of options in the top right corner on how to proceed.
+After it is created, you will get an option to **GO TO WORKSPACE**. Go here and you get a view of the workspace with a number of options in the top right corner on how to proceed.
 
 ```{figure} ../images/GT3.png
 :alt: Guided tour...
@@ -59,13 +59,13 @@ Options for opening the workspace can be found in the top right corner
 (osbv2:guidedtour:nwbe)=
 ## 3) Explore NWB datasets
 
-Select NWB Explorer in the drop down menu and click the button. The {ref}`NWB Explorer <osbv2:applications:nwbe>` interface will open.
+Select **Open with NWB Explorer** in the drop down menu and click the blue button. The {ref}`NWB Explorer <osbv2:applications:nwbe>` interface will open.
 
 ```{figure} ../images/GT20.png
 :alt: Guided tour...
 :align: center
 :width: 600px
-NWB Explorer main interface
+NWB Explorer main interface. Note the **Resources panel** on the left (with the list of NWB files etc.) can be opened/closed with the arrows (**>**, **<**) at the bottom of the panel.
 ```
 The column on the left lists a number of the files of known types (e.g. NWB files, Python notebooks). Select **LanoreEtAl2019.nwb** in this column, and that NWB file will be loaded in to the NWB Explorer interface.
 
@@ -81,12 +81,111 @@ NWB Explorer view of Lanore et al. 2019 dataset.
 (osbv2:guidedtour:netpyne)=
 ## 4) Create a network simulation using NetPyNE
 
-...
+Now open the same workspace in NetPyNE. To do this you can either go back to the homepage (e.g. click on the OSB logo in the top left corner) and find the link to the workspace page, or from a workspace open in another application, click the 3 dots (**...**) at the top of the Resources panel on the left, and select: Open with NetPyNE.
+
+The interface below should be displayed after NetPyNE opens.
+
+```{figure} ../images/GT31.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+NetPyNE interface before a model is loaded/created.
+```
+
+There is a simple example network included in the OSBv2 repo. To open this, select menu item File -> Open... and locate the JSON file at `/home/jovyan/netpyne/workspace/OSBv2 Showcase/main/NetPyNE/HHTut/HHTut_data.json` (or paste this path into the top text field in the dialog)
+
+
+```{figure} ../images/GT32.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Loading a JSON file.
+```
+
+After the model has loaded, you can explore the settings, e.g. click on **Populations** tab and then **PYR**, and you will see that this is a population of 20 cells:
+
+
+```{figure} ../images/GT33.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Viweing the population present.
+```
+
+Next, try viewing in 3D (Click **CREATE NETWORK** on the top right) and you will see the view on the left below.
+
+The network can be executed also (Click **SIMULATE** on the top right). To view one of the recorded membrane traces, press the icon on the left for **Cell Traces** and the plot on the right will appear.
+
+
+```{figure} ../images/GT34.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+After creating and simulating the model.
+```
+
 
 (osbv2:guidedtour:jupyter)=
 ## 5) Open notebooks in JupyterLab
 
-...
+### 5a) NWB data loading
+
+Next, open the same workspace in {ref}`JupyterLab <osbv2:applications:jupyterlab>` (again click the 3 dots (**...**), or go to the homepage).
+
+On the left as shown below is the **File browser**, which contains all the copied in from the [OSBv2 Showcase GitHub repository](https://github.com/OpenSourceBrain/OSBv2_Showcase). On the right is the **Launcher**, where you can create new files of various types, or open a **Terminal** to enter shell commands. A new Launcher can always be created by pressing the big blue button with the **+**.
+
+
+```{figure} ../images/GT41.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Main interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
+```
+
+Navigate to `OSBv2 Showcase/main/notebooks` and double click on `LoadNWBData.ipynb`. This opens a notebook which an be used to programatically read the contents of the NWB file previously visualised in NWB Explorer, **LanoreEtAl2019.nwb**. It uses [pyNWB](https://pynwb.readthedocs.io/en/stable/) to load in the file, and selects the entries in `nwbfile.acquisition` which match "Control", i.e. the recordings prior to applying the drug, and plots these.
+
+To rerun the notebook, press the double arrow (&#x25B6;&#x25B6;) (to the left of **Code**) in the icon bar on the notebook panel.
+
+```{figure} ../images/GT42.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Notebook for loading NWB data.
+```
+
+### 5b) NetPyNE simulation results loading
+
+Again in directory `OSBv2 Showcase/main/notebooks` open `LoadNetPyNEData.ipynb`, which looks for a file generated when the NetPyNE simulation above was run (in directory `../NetPyNE/HHTut/HHTut_data.json`), and extracts the saved membrane potential trace from this.
+
+```{figure} ../images/GT42.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Notebook for loading NetPyNE data.
+```
 
 (osbv2:guidedtour:simulators)=
 ## 6) Run simulator scripts in JupyterLab
+
+### 6a) Run NetPyNE scripts
+
+Next try running some simulator scripts in the terminal. Open a Terminal from the Launcher (big blue button with **+**), and `cd` to `/opt/workspace/OSBv2 Showcase/main/NetPyNE/HHTut`. Type `python HHTut_run.py` to run *the same simulation you ran through the graphical interface*.
+
+```{figure} ../images/GT61.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Running NetPyNE simulation in the Terminal
+```
+
+
+### 6a) Run Brian, EDEN, ... scripts
+
+A number of scripts for other simulators which are pre installed on OSBv2 can be found in `/opt/workspace/OSBv2 Showcase/main/simulators`. Go to this location in the terminal and try running these, e.g. `brian2_example.py`.
+
+```{figure} ../images/GT63.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Running Brian simulation in the Terminal
+```
