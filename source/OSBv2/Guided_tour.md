@@ -69,11 +69,13 @@ NWB Explorer main interface
 ```
 The column on the left lists a number of the files of known types (e.g. NWB files, Python notebooks). Select **LanoreEtAl2019.nwb** in this column, and that NWB file will be loaded in to the NWB Explorer interface.
 
+This [dataset](https://www.biorxiv.org/content/10.1101/567172v1) contains electrophysiological recordings of Golgi cells from the cerebellum. The left hand column below gives general information on the data set extracted fro the metadata of the NWB file. The study examined the spiking behaviour under different conditions: 1) prior to application of a drug norepinephrine, 2) following application of the drug, and 3) after wash out of the drug from the brain slices. The top right panel, **Acquisition** shows the acquired data, membrane potential traces, under these conditions. Typing *Prior* into the text box on the top right selects just the traces prior to application of the drug. Pressing the eye (&#x1F441;) beside one of the individual traces will plot that trace, or the one at the bottom with "41 Matching results" will plot all of these in one figure. Similar traces for the currents injected during these trials can be found under **Stimulus**.
+
 ```{figure} ../images/GT21.png
 :alt: Guided tour...
 :align: center
 :width: 600px
-NWB Explorer view of Lanore et al. 2019 dataset. 
+NWB Explorer view of Lanore et al. 2019 dataset.
 ```
 
 (osbv2:guidedtour:netpyne)=
