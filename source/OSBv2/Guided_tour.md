@@ -92,7 +92,7 @@ The interface below should be displayed after NetPyNE opens.
 NetPyNE interface before a model is loaded/created.
 ```
 
-There is a simple example network included in the OSBv2 repo. To open this, select menu item File -> Open... and locate the JSON file at `/home/jovyan/netpyne/workspace/OSBv2 Showcase/main/NetPyNE/HHTut/HHTut_data.json` (or paste this path into the top text field in the dialog)
+There is a simple example network included in the OSBv2 repo. To open this, select menu item *File -> Open...* and locate the JSON file at `/home/jovyan/netpyne/workspace/OSBv2 Showcase/main/NetPyNE/HHTut/HHTut_data.json` (or paste this path into the top text field in the dialog)
 
 
 ```{figure} ../images/GT32.png
@@ -142,6 +142,17 @@ On the left as shown below is the **File browser**, which contains all the copie
 Main interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
 ```
 
+The image below shows some of the interfaces and file types which are supported by JupyterLab. On the top right is a command line **Terminal** for running commands and executing scripts, top left is a preview of a **Markdown file** (*.md, which can also be modified in a text browser), bottom left a **Python script**, and bottom right a **JSON file**. It also illustrates the lighter version of the JupyterLab interface, which can be accessed in the menu: *Settings -> Theme -> JupyterLab Light*.
+
+
+
+```{figure} ../images/GT41a.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>` with Terminal and viewing Markdown and JSON files, and a Python script.
+```
+
 Navigate to `OSBv2 Showcase/main/notebooks` and double click on `LoadNWBData.ipynb`. This opens a notebook which an be used to programatically read the contents of the NWB file previously visualised in NWB Explorer, **LanoreEtAl2019.nwb**. It uses [pyNWB](https://pynwb.readthedocs.io/en/stable/) to load in the file, and selects the entries in `nwbfile.acquisition` which match "Control", i.e. the recordings prior to applying the drug, and plots these.
 
 To rerun the notebook, press the double arrow (&#x25B6;&#x25B6;) (to the left of **Code**) in the icon bar on the notebook panel.
@@ -188,4 +199,13 @@ A number of scripts for other simulators which are pre installed on OSBv2 can be
 :align: center
 :width: 600px
 Running Brian simulation in the Terminal
+```
+
+Another example included demonstrates how to create a simple network in Arbor.
+
+```{figure} ../images/GT64.png
+:alt: Guided tour...
+:align: center
+:width: 600px
+Running an Arbor simulation in a notebook
 ```
