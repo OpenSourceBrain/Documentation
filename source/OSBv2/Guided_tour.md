@@ -132,7 +132,7 @@ After creating and simulating the model.
 
 Next, open the same workspace in {ref}`JupyterLab <osbv2:applications:jupyterlab>` (again click the 3 dots (**...**), or go to the homepage).
 
-On the left as shown below is the **File browser**, which contains all the copied in from the [OSBv2 Showcase GitHub repository](https://github.com/OpenSourceBrain/OSBv2_Showcase). On the right is the **Launcher**, where you can create new files of various types, or open a **Terminal** to enter shell commands. A new Launcher can always be created by pressing the big blue button with the **+**.
+On the left as shown below is the **File browser**, which contains all the files copied in from the [OSBv2 Showcase GitHub repository](https://github.com/OpenSourceBrain/OSBv2_Showcase). On the right is the **Launcher**, where you can create new files of various types, or open a **Terminal** to enter shell commands. A new Launcher can always be created by pressing the big blue button with the **+**.
 
 
 ```{figure} ../images/GT41.png
@@ -142,7 +142,7 @@ On the left as shown below is the **File browser**, which contains all the copie
 Main interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>`.
 ```
 
-The image below shows some of the interfaces and file types which are supported by JupyterLab. On the top right is a command line **Terminal** for running commands and executing scripts, top left is a preview of a **Markdown file** (*.md, which can also be modified in a text browser), bottom left a **Python script**, and bottom right a **JSON file**. It also illustrates the lighter version of the JupyterLab interface, which can be accessed in the menu: *Settings -> Theme -> JupyterLab Light*.
+The image below shows some of the interfaces and file types which are supported by JupyterLab. The top left of the 4 panels is a command line **Terminal** for running commands and executing scripts, top right is a preview of a **Markdown file** (which can also be modified in a text editor), bottom left is a **Python script**, and bottom right is a **JSON file**. It also illustrates the lighter version of the JupyterLab interface, which can be accessed in the menu: *Settings -> Theme -> JupyterLab Light*.
 
 
 
@@ -150,7 +150,7 @@ The image below shows some of the interfaces and file types which are supported 
 :alt: Guided tour...
 :align: center
 :width: 600px
-Interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>` with Terminal and viewing Markdown and JSON files, and a Python script.
+Interface of {ref}`JupyterLab <osbv2:applications:jupyterlab>` (in light theme) showing the Terminal and viewing Markdown and JSON files, and a Python script.
 ```
 
 Navigate to `OSBv2 Showcase/main/notebooks` and double click on `LoadNWBData.ipynb`. This opens a notebook which an be used to programatically read the contents of the NWB file previously visualised in NWB Explorer, **LanoreEtAl2019.nwb**. It uses [pyNWB](https://pynwb.readthedocs.io/en/stable/) to load in the file, and selects the entries in `nwbfile.acquisition` which match "Control", i.e. the recordings prior to applying the drug, and plots these.
