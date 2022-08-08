@@ -1,5 +1,4 @@
 # To build the docs using jupyter-book
-jupyter-book>=0.11
-matplotlib
-numpy
+jupyter-book>=0.13
 ghp-import
+sphinx-jupyterbook-latex

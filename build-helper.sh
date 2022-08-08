@@ -10,6 +10,11 @@ VENV_DIR="$(readlink -f .venv)"
 VENV_ACTIVATE_SCRIPT="$VENV_DIR/bin/activate"
 VENV_STATUS="inactive"
 
+if [[ -z "${PYTHON}" ]]
+then
+    PYTHON="python3"
+fi
+
 function enable_virtenv() {
     if [[ -z "${VIRTUAL_ENV}" ]];
     then
@@ -50,12 +55,13 @@ function create_virtenv() {
         echo "Please delete it and re-run to create a new one."
     else
         echo "Setting up new virtual environment in $VENV_DIR."
-        python -m venv "$VENV_DIR"
+        $PYTHON -m venv "$VENV_DIR"
 
         echo "Activating virtual environment."
         source "$VENV_ACTIVATE_SCRIPT"
 
         echo "Installing required dependencies in virtual environment."
+        pip install wheel
         pip install -r requirements-book.txt
         # pip install -r requirements.txt
 
@@ -89,12 +95,23 @@ function watch_and_build () {
     then
         echo "inotifywait command could not be found. Please install inotify-tools."
     else
+        build_book
         while true
         do
             echo "Watching source dir for changes and re-building as required. Use Ctrl C to stop."
             inotifywait -q -e modify,create,delete,move -r source && echo "Change detected, rebuilding.." && build_book
         done
     fi
+}
+
+build_pdf () {
+    enable_virtenv
+    echo "Building book PDF using LaTeX."
+    rm -rf ./source/_build/latex/*
+    jupyter-book build ./source --builder pdflatex
+
+    echo "Installing book to _static directory"
+    mv source/_build/latex/neuroml-documentation.pdf source/_static/
 }
 
 function usage() {
@@ -104,6 +121,7 @@ function usage() {
     echo "-h: print help message"
     echo "-c: create new virtual environment in $VENV and install packages."
     echo "-b: build book"
+    echo "-f: build pdf (using LaTeX)"
     echo "-w: watch source directory for changes and build as necessary, requires inotifywait"
     echo "-p: publish book to GitHub pages (requires commit access to repo)"
     echo "-X: clean book"
@@ -116,7 +134,7 @@ then
 fi
 
 # parse options
-while getopts "bpchwX" OPTION
+while getopts "bpchwfX" OPTION
 do
     case $OPTION in
         b)
@@ -125,6 +143,10 @@ do
             ;;
         w)
             watch_and_build
+            exit 0
+            ;;
+        f)
+            build_pdf
             exit 0
             ;;
         p)
