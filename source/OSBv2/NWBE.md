@@ -43,8 +43,9 @@ Please note that the URL of the file must be the "raw" URL so that NWBE can down
 (osbv2:applications:nwbe:links:dandi)=
 ## File hosted on DANDI
 
-For NWB files hosted on DANDI, one can use the direct URL to files, e.g.:
+For NWB files hosted on DANDI, one can use the direct URL to files obtained by right clicking the "download" button, e.g.:
 
 ```
-http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://dandiarchive.org/dandiset/000245/draft/files?location=sub-20211223002%2F
+http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/0acc0d47-a8c6-4971-8130-32b0b331c838/download/
 ```
+
