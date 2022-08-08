@@ -49,3 +49,11 @@ For NWB files hosted on DANDI, one can use the direct URL to files obtained by r
 http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/0acc0d47-a8c6-4971-8130-32b0b331c838/download/
 ```
 
+(osbv2:applications:nwbe:links:figshare)=
+## File hosted on Figshare
+
+For NWB files hosted on Figshare, one can use the direct URL to files obtained by right clicking the "download" button, e.g.:
+```
+http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://figshare.com/ndownloader/files/22248861
+```
+
