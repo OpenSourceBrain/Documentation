@@ -27,6 +27,10 @@ parts:
     chapters:
         - file: OSBv2/Overview
         - file: OSBv2/Repositories
+          sections:
+            - file: OSBv2/GitHub
+            - file: OSBv2/DANDI
+            - file: OSBv2/Figshare
         - file: OSBv2/Workspaces
         - file: OSBv2/Applications
           sections:
