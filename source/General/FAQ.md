@@ -17,6 +17,11 @@ While the models can be collaboratively developed in any simulator format, the u
 ```
 
 
+## Which version of OSB should I use?
+
+We are actively developing version 2 of the OSB platform. A discussion of the features of the various versions can be found {ref}`here <getting_started_osb>`. 
+
+
 (faq:funding)=
 ## Who's behind OSB?
 

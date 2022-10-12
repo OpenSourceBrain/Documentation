@@ -7,4 +7,4 @@ OSBv2 currently includes three applications:
 - {ref}`NetPyNE <osbv2:applications:netpyne>` for interactive construction and simulation of models
 - {ref}`JupyterLab <osbv2:applications:jupyterlab>` as a general purpose Python integrated development environment
 
-All workspaces can be opened in all of these applications.
+All {ref}`workspaces <osbv2:workspaces>` can be opened in any of these applications (though they may not contain appropriate content, e.g. no NWB files).

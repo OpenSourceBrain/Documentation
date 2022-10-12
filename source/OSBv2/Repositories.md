@@ -1,9 +1,9 @@
 (osbv2:repositories)=
 # Repositories
 
-Repositories are views of files and data in public resources like [GitHub](https://github.com) and [DANDI](https://gui.dandiarchive.org).
+Repositories are views of files and data in public resources like {ref}`GitHub <osbv2:github>` and {ref}`DANDI Archive <osbv2:dandi>`.
 They show the **current contents** of the source.
-Currently, [GitHub](https://github.com), [Figshare](https://figshare.com) and [DANDI](https://gui.dandiarchive.org) are supported, with support for more sources also planned.
+Currently, {ref}`GitHub <osbv2:github>`, {ref}`Figshare <osbv2:figshare>` and {ref}`DANDI <osbv2:dandi>` are supported, with support for more sources also planned.
 
 Repositories are currently public, so all users can browse repositories that have been added to OSBv2.
 
