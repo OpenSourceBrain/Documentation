@@ -6,7 +6,7 @@ The beta release of OSBv2 is available at https://www.v2.opensourcebrain.org. Pl
 ```
 
 Open Source Brain (OSB) v2 is a new integrated research platform that builds on the features of {ref}`OSBv1 <v1:getting_started>`.
-It is currently under heavy development, and initial releases for use by the research community are planned for mid 2022.
+It is currently under active development, and a beta release of the platform is available for users to try out.
 
 OSBv2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
 
