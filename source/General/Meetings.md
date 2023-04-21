@@ -1,19 +1,23 @@
 (meetings)=
 # Events
 
-<p align="centre"><a href="http://www.opensourcebrain.org/docs/Help/Meetings#Sardinia_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/osbbanner.png" height="80"/></a>  &nbsp;&nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Hackathon_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/OSBHackathon1.png" height="80"/></a>  &nbsp; &nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2014"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/OSBalghero.png" height="80"/></a>  &nbsp; &nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/osb2015.png" height="80"/></a> </p>
+<p align="centre"><a href="http://www.opensourcebrain.org/docs/Help/Meetings#Sardinia_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/osbbanner.png" height="80"/></a>  &nbsp;&nbsp;
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Hackathon_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/OSBHackathon1.png" height="80"/></a>  &nbsp; &nbsp;
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2014"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/OSBalghero.png" height="80"/></a>  &nbsp; &nbsp;
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/osb2015.png" height="80"/></a> </p>
 
-<p align="centre"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.opensourcebrain.org/docs/Help/Meetings#CNS_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/CNS2105_WS.png" height="80"/></a>  &nbsp; &nbsp;
+<p align="centre"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.opensourcebrain.org/docs/Help/Meetings#CNS_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/CNS2105_WS.png" height="80"/></a>  &nbsp; &nbsp;
 <a href="http://www.cnsorg.org/cns-2018-tutorials"><img src="https://raw.githubusercontent.com/NeuralEnsemble/NeuroinformaticsTutorial/master/Exercises/images/Logos.png" height="80"/></a>   &nbsp;&nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Neuroinformatics_2018"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/osb2018.png" height="80"/></a> </p>
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Neuroinformatics_2018"><img src="https://raw.githubusercontent.com/OpenSourceBrain/Documentation/main/source/images/osb2018.png" height="80"/></a> </p>
 
-A number of meetings have been organised/are planned to promote OSB, including:
+A number of meetings have been organised/are planned to promote OSB and related technologies such as NeuroML, including:
 
 - [NeuroDataShare 2023](https://www.neurodatashare.org/), a workshop and hackathon at the [Sainsbury Wellcome Centre](http://www.sainsburywellcome.org/) on Feb 20-23, 2023. 
 - {ref}`A tutorial <meetings:cns2022>` introducing the Open Source Brain v2 integrated web research platform at the [CNS*2022 satellite tutorials](https://ocns.github.io/SoftwareWG/pages/software-wg-satellite-tutorials-at-cns-2022.html).
+- October 2021: [NeuroML development workshop](https://docs.neuroml.org/Events/202109-COMBINE.html) at COMBINE 2021 meeting
+- August 2021: [NeuroML tutorial](https://docs.neuroml.org/Events/202108-INCF-Training-Week.html) at INCF Training Weeks
+- July 2021: [NeuroML tutorial](https://docs.neuroml.org/Events/202107-CNS2021.html) at CNS*2021
+- March 2021: [NeuroML hackathon](https://docs.neuroml.org/Events/202103-Harmony.html) at HARMONY 2021.
 - A workshop at the online [CNS*2020](https://www.cnsorg.org/cns-2020) on [Tools and resources for developing and sharing models in computational neuroscience](https://neuralensemble.github.io/Networks_SIG/CNS2020).
 - {ref}`OSB 2019 <meetings:sardinia2019>` in Sardinia in September 2019
 - A workshop on Open Source Brain at {ref}`Neuroinformatics 2018 <meetings:neuroinformatics2018>`
