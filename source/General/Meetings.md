@@ -1,9 +1,9 @@
 (meetings)=
 # Events
 
-<p align="centre"><a href="http://www.opensourcebrain.org/docs/Help/Meetings#Sardinia_2013"><img src="http://opensourcebrain.org/attachments/download/42/osbbanner.png" height="80"/></a>  &nbsp;&nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Hackathon_2013"><img src="http://opensourcebrain.org/attachments/download/106/OSBHackathon1.png" height="80"/></a>  &nbsp; &nbsp;
-<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2014"><img src="http://opensourcebrain.org/attachments/download/176/OSBalghero.png" height="80"/></a>  &nbsp; &nbsp;
+<p align="centre"><a href="http://www.opensourcebrain.org/docs/Help/Meetings#Sardinia_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/osbbanner.png" height="80"/></a>  &nbsp;&nbsp;
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#Hackathon_2013"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/OSBHackathon1.png" height="80"/></a>  &nbsp; &nbsp;
+<a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2014"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/OSBalghero.png" height="80"/></a>  &nbsp; &nbsp;
 <a href="http://www.opensourcebrain.org/docs/Help/Meetings#OSB_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/osb2015.png" height="80"/></a> </p>
 
 <p align="centre"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.opensourcebrain.org/docs/Help/Meetings#CNS_2015"><img src="https://raw.githubusercontent.com/OpenSourceBrain/OSB_Documentation/master/resources/images/CNS2105_WS.png" height="80"/></a>  &nbsp; &nbsp;
