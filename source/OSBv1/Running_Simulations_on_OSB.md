@@ -1,5 +1,5 @@
 (v1:runsims)=
-# Running simulations on OSB
+# Running simulations on OSBv1
 
 It is possible to run simulations on OSBv1 directly from your browser, without installing any additional software.
 

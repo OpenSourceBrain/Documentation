@@ -1,5 +1,5 @@
 (v1:tutorials)=
-# Creating tutorials on OSB
+# Creating tutorials on OSBv1
 
 We encourage users to turn their OSB projects into new tutorials.
 
