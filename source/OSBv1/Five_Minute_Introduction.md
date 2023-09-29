@@ -3,7 +3,9 @@
 
 Hello! Let's go through the basics of Open Source Brain (OSB), **this will take only 5 minutes to read!** (yes, it's that easy).
 
-**Note: this information is specific to OSBv1!**
+```{admonition} **Note:** this information is specific to OSBv1.
+This guide describes the features of [OSBv1](https://v1.opensourcebrain.org). For a guided tour of [OSBv2](https://v2.opensourcebrain.org) see {ref}`here <osbv2:guidedtour>`.
+```
 
 This is the help section of your home screen, feel free to come back here every time you are lost, most of the anwsers you'll ever need are here! From your home screen you can work with any project and model available in OSB or even create your own ones. To search for available projects you can click on the Explore OSB link in the top bar or use the search box.
 

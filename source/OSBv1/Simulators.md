@@ -3,9 +3,9 @@
 
 An overview of the main target simulators for models in OSB
 
-**Note: not all simulators will be able to execute all models.** See [here](https://www.opensourcebrain.org/status) for more information on the simulators supported by each of the models on OSB.
+**Note: not all simulators will be able to execute all models.** See [here](https://v1.opensourcebrain.org/status) for more information on the simulators supported by each of the models on OSB.
 
-For more tools (e.g. for visualization, analysis of models) which can handle the NeuroML elements of the models on OSB see [here](http://www.neuroml.org/tool_support.php).
+For more tools (e.g. for visualization, analysis of models) which can handle the NeuroML elements of the models on OSB see [here](https://docs.neuroml.org/Userdocs/Software/SupportingTools.html).
 
 ## Brian
 

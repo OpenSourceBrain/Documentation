@@ -2,11 +2,11 @@
 # Open Source Brain v2
 
 ```{admonition} OSBv2 is under active development
-The beta release of OSBv2 is available at https://www.v2.opensourcebrain.org. Please do {ref}`get in touch <contact>` if you have any queries or would like to help with user testing.
+The latest release of OSBv2 is available at https://www.v2.opensourcebrain.org. Please do {ref}`get in touch <contact>` if you have any queries or would like to help with user testing.
 ```
 
 Open Source Brain (OSB) v2 is a new integrated research platform that builds on the features of {ref}`OSBv1 <v1:getting_started>`.
-It is currently under active development, and a beta release of the platform is available for users to try out.
+It is currently under active development, but is stable enough for users to start using it in their research.
 
 OSBv2 is structured around 3 key concepts: **Repositories**, **Workspaces** and **Applications**.
 
@@ -22,10 +22,10 @@ Relationship between Repositories, Workspaces and Applications on OSBv2.
 (repositories)=
 ## Repositories
 
-Repositories are views of files and data in public resources like [GitHub](https://github.com), [Figshare](https://figshare.com) and [DANDI](https://gui.dandiarchive.org).
+Repositories are views of sets of files and data in public resources like {ref}`GitHub <osbv2:github>`, {ref}`Figshare <osbv2:figshare>` and {ref}`DANDI Archive <osbv2:dandi>`.
 
 - A repository on OSBv2 lists the **current contents** of the remote resource
-- Repositories are public: all users can browse repositories that have been added to OSBv2
+- Repositories are public: all users can [browse repositories](https://v2.opensourcebrain.org/repositories) that have been added to OSBv2
 - Private repositories, and interfaces to other neuroinformatics resources are also planned
 
 More details on repositories can be found {ref}`here <osbv2:repositories>`.

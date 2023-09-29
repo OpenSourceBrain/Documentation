@@ -1,10 +1,10 @@
 (getting_started_osb)=
 # Getting started with OSB
 
-There are currently two versions of OSB: OSBv1, and the new version that is under development, OSBv2.
+There are currently two versions of OSB: OSBv1, and the new version that is under active development, OSBv2.
 
-- **{ref}`OSBv1 <v1:getting_started>`** is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species. This is the version described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
-- **{ref}`OSBv2 <osbv2>`** is a new integrated research platform that builds on the features of OSBv1.
+- **[OSBv1](https://v1.opensourcebrain.org)** is a web platform for sharing, viewing, analysing, and simulating models standardized in the [NeuroML 2](https://docs.neuroml.org) format from different brain regions and species. This is the version described in detail in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1).
+- **[OSBv2](https://v2.opensourcebrain.org)** is a new integrated research platform that builds on the features of OSBv1.
   It aims to help neuroscientists close the loop between experimental data and data-driven computational/theoretical modelling.
   It integrates:
 
@@ -18,12 +18,12 @@ There are currently two versions of OSB: OSBv1, and the new version that is unde
 (getting_started_osb:which)=
 ## Which version of OSB should I use?
 
-Please use {ref}`OSBv1 <v1:getting_started>`:
+Please use [OSBv1](https://v1.opensourcebrain.org):
 
 - if you want to explore the models described in [Gleeson et al. 2019](https://www.cell.com/neuron/fulltext/S0896-6273(19)30444-1) {cite}`Gleeson2019`
 - if you want to visualise, analyse and simulate [NeuroML 2](https://docs.neuroml.org) models in your web browser
 
-Please use {ref}`OSBv2 <osbv2>`:
+Please use [OSBv2](https://v2.opensourcebrain.org):
 
 - if you want to share, visualise, and analyse neuroscience data in standardised formats
 - if you want to create, simulate, and share computational models using the {ref}`NetPyNE <osbv2:applications:netpyne>` platform

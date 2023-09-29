@@ -1,5 +1,5 @@
 (v1:API)=
-# API for OSB
+# API for OSBv1
 
 An API for getting access to information contained in OSB projects has been developed.
 
