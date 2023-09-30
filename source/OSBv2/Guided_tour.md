@@ -3,6 +3,17 @@
 
 This guide provides a quick tour through the main features of the OSBv2 platform, using the contents of the [OSBv2 showcase repository](https://www.v2.opensourcebrain.org/repositories/38).
 
+<table>
+<tr>
+<td><a href="#create-a-new-workspace"><img src="../_images/GT1.png" height=170/></a>&nbsp;&nbsp;</td>
+<td><a href="#explore-nwb-datasets"><img src="../_images/GT20.png" height=170/></a></td>
+</tr>
+<tr>
+<td><p align="centre"><a href="#create-a-network-simulation-using-netpyne"><img src="../_images/GT34.png" height=180/></a></p></td>
+<td><p align="centre"><a href="#open-notebooks-in-jupyterlab"><img src="../_images/GT41a.png" height=180/></a></p></td>
+</tr>
+</table>
+
 (osbv2:guidedtour:register)=
 ## 1) Register & sign in to OSBv2
 
