@@ -5,12 +5,12 @@ This guide provides a quick tour through the main features of the OSBv2 platform
 
 <table>
 <tr>
-<td><a href="#create-a-new-workspace"><img src="../_images/GT1.png" height=170/></a>&nbsp;&nbsp;</td>
-<td><a href="#explore-nwb-datasets"><img src="../_images/GT20.png" height=170/></a></td>
+<td style="padding: 10px"><a href="#create-a-new-workspace"><img src="../_images/GT1.png" height=170 title="Create a workspace"/></a>&nbsp;&nbsp;</td>
+<td style="padding: 10px"><a href="#explore-nwb-datasets"><img src="../_images/GT20.png" height=170 title="NWB Explorer"/></a></td>
 </tr>
 <tr>
-<td><p align="centre"><a href="#create-a-network-simulation-using-netpyne"><img src="../_images/GT34.png" height=180/></a></p></td>
-<td><p align="centre"><a href="#open-notebooks-in-jupyterlab"><img src="../_images/GT41a.png" height=180/></a></p></td>
+<td style="padding: 10px"><p align="centre"><a href="#create-a-network-simulation-using-netpyne"><img src="../_images/GT34.png" height=180 title="NetPyNE"/></a></p></td>
+<td style="padding: 10px"><p align="centre"><a href="#open-notebooks-in-jupyterlab"><img src="../_images/GT41a.png" height=180 title="JupyterLab"/></a></p></td>
 </tr>
 </table>
 
