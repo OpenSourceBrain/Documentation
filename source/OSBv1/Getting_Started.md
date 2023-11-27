@@ -1,5 +1,7 @@
 (v1:getting_started)=
-# Welcome to Open Source Brain!
+# Welcome to OSBv1!
+
+Open Source Brain version 1 is live at **https://v1.opensourcebrain.org**.
 
 ## Quick Introduction to OSBv1
 

@@ -10,13 +10,13 @@ Users need to register and log in to OSBv2 to open a {ref}`workspace <osbv2:work
 Currently there is no overlap between the user database of {ref}`OSBv1 <v1:getting_started>` and OSBv2. You will need to create a new user account to use OSBv2.
 ```
 
-To register for an OSBv2 user account [click here](https://accounts.v2.opensourcebrain.org/auth/realms/osb2/login-actions/authenticate?client_id=web-client).
+To register for an OSBv2 user account [click here](https://www.v2.opensourcebrain.org/register).
 
 
 (osbv2:useraccounts:signin)=
 ## Signing in
 
-Once registered, users can sign in by clicking the link on the top right of the homepage, or by [clicking here](https://accounts.v2.opensourcebrain.org/auth/realms/osb2/login-actions/authenticate?client_id=web-client).
+Once registered, users can sign in by clicking the link on the top right of the homepage, or by [clicking here](https://www.v2.opensourcebrain.org/login).
 
 
 (osbv2:useraccounts:storage)=
@@ -46,4 +46,10 @@ The easiest way to browse these locations is by opening the {ref}`JupyterLab <os
 (osbv2:useraccounts:quotas)=
 ## User quotas
 
-Currently there are no user quotas imposed on storage or numbers of workspaces while we are in beta testing. However, we are planning to incorporate these as the resource grows in size.
+Currently, new users are allowed a small number of workspaces which they can create, and there are limits to the number of applications they can run in parallel. 
+
+To view your current quotas, click on your username on the top right when logged in and select **My account**. You can view and stop/delete your currently running workspaces by clicking the link to **Manage Running Workspaces** or by clicking [here](https://notebooks.v2.opensourcebrain.org/hub/home). 
+
+```{admonition} Need more resources?
+We're happy to provide additional resources to users and groups who wish to help test the OSBv2 infrastructure. Please {ref}`get in contact <contact>` with your requirements to discuss this further.  
+```
