@@ -17,7 +17,7 @@ This guide provides a quick tour through the main features of the OSBv2 platform
 (osbv2:guidedtour:register)=
 ## 1) Register & sign in to OSBv2
 
-To create and open the workspaces mentioned below, you need to have an OSBv2 account (OSBv1 username/password will not work...). To register for a free OSBv2 user account [head to OSBv2](https://v2.opensourcebrain.org) and click on "Sign in" in the top right hand corner.
+To create and open the workspaces mentioned below, you need to have an OSBv2 account (OSBv1 username/password will not work...). To register for a free OSBv2 user account, click [here](https://www.v2.opensourcebrain.org/register), or [head to OSBv2](https://v2.opensourcebrain.org) and click on "Sign in" in the top right hand corner.
 
 ```{figure} ../images/GT0.png
 :alt: Guided tour...
