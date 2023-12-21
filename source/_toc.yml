@@ -6,6 +6,7 @@ parts:
     chapters:
     - file: General/GettingStarted
     - file: General/FAQ
+    - file: General/Funding
     - url: https://status.opensourcebrain.org/
       title: Infrastructure status
   - caption: OSB version 1
