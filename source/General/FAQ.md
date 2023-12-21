@@ -25,11 +25,11 @@ We are actively developing version 2 of the OSB platform. A discussion of the fe
 (faq:funding)=
 ## Who's behind OSB?
 
-This project was started in the [Silver Lab](http://silverlab.org) at UCL as part of a [Wellcome Trust](http://www.wellcome.ac.uk) funded project to encourage collaborative development of models in computational neuroscience.
+This project was started in the [Silver Lab](http://silverlab.org) at UCL as part of a [Wellcome](http://www.wellcome.ac.uk) funded project to encourage collaborative development of models in computational neuroscience.
 
 ```{image} ../images/wtlogo.png
 :align: center
-:alt: Wellcome Trust
+:alt: Wellcome
 :width: 100px
 ```
 
