@@ -18,7 +18,7 @@ Click on the "View repositories" button, or the "Repositories" drop down in the 
 :align: center
 :width: 600px
 
-Click on the "View repositories" button, or the "Repositories" drop down in the top right hand corner to view the repository list page:
+Click on the "Repositories" button in the dashboard to view all repositories, or use the "Create" drop down button to create a new one.
 
 ```
 
@@ -30,7 +30,7 @@ Once on the repository list page, you can search/filter for and view information
 ```{figure} ../images/osbv2-repositories-page-with-text.png
 :alt: Figure showing the repository list page
 :align: center
-:width: 600px
+:width: 800px
 
 You can view, edit, and add new repositories using the repository list page.
 ```
@@ -63,7 +63,7 @@ Here, you can fill in the necessary information to add your repository to OSBv2.
 ```{figure} ../images/osbv2-add-repository-with-text.png
 :alt: The "Add new repository" dialogue box
 :align: center
-:width: 500px
+:width: 700px
 
 Fill in the "Add new repository" dialogue box.
 ```
