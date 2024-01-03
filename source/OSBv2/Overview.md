@@ -1,7 +1,7 @@
 (osbv2)=
 # Open Source Brain v2
 
-```{admonition} OSBv2 is under active development
+```{admonition} OSBv2 is live!
 The latest release of OSBv2 is available at **https://v2.opensourcebrain.org**. Please do {ref}`get in touch <contact>` if you have any queries or would like to help with user testing.
 ```
 
