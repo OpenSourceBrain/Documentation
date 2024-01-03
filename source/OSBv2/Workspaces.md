@@ -72,7 +72,7 @@ Here, you can select what repository you would want to use to include files from
 ```{figure} ../images/osbv2-workspaces-from-repo-dialog.png
 :alt: Figure showing repository selection dialogue box for new workspace creation.
 :align: center
-:width: 500px
+:width: 600px
 
 Select a repository from the list.
 
@@ -83,7 +83,7 @@ Select the files you want you would like to include, and click "Continue" to pro
 ```{figure} ../images/osbv2-workspaces-from-repo-file-select-dialog.png
 :alt: Figure showing file selection dialogue box for new workspace creation.
 :align: center
-:width: 500px
+:width: 600px
 
 Select files to include in your workspace from the list.
 ```
