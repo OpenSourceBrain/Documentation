@@ -19,7 +19,7 @@ Users can select the appropriate tab to switch between different types of worksp
 ```{figure} ../images/osbv2-workspaces-homepage-with-text.png
 :alt: Figure showing workspaces listed on the OSBv2 homepage
 :align: center
-:width: 600px
+:width: 700px
 
 Workspaces can be seen on the OSBv2 homepage.
 
