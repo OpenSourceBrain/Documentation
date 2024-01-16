@@ -17,14 +17,8 @@ You can also report any issues you run into on the **issue trackers** for
 
 ## Chat
 
-You can speak to the Open Source Brain community over its chat channels:
-
-- [Matrix/Element](https://matrix.to/#/%23OpenSourceBrain_community:gitter.im?utm_source=gitter)
-- [Gitter](https://gitter.im/OpenSourceBrain/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-
-The channel is bridged between the two, so either service may be used.
-We suggest you use Matrix as it is the newer platform that will [replace Gitter in the future](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix#whats-next).
-Matrix's Element application can be used in browsers, or it can be downloaded to most platforms, including mobile phones.
+You can speak to the Open Source Brain community over its chat channels on [Matrix/Element](https://matrix.to/#/%23OpenSourceBrain_community:gitter.im?utm_source=gitter).
+Matrix's Element application can be used in browsers and it can also be downloaded to most platforms, including mobile phones.
 
 ## Mailing lists
 
