@@ -12,7 +12,7 @@ Note for GitHub based repositories and workspaces:
 
 ## Using git on workspace contents in JupyterLab
 
-When a workspace created from a GitHub based OSB repository is opened in {ref}`JupyterLab <osbv2:applications:jupyterlab>` (e.g. from the {ref}`Guided tour OSBv2 showcase <osbv2:guidedtour>`), you can use the `git` command line tool to investigate changes in your files from the cloned version, and pull any changes from the remote repository:
+When a workspace created from a GitHub based OSB repository is opened in {ref}`JupyterLab <osbv2:applications:jupyterlab>` (e.g. from the {ref}`Guided tour OSBv2 showcase <osbv2:guidedtour>`), you can use the `git` command line tool to investigate changes in your files from the version when the workspace was created, and pull any changes from the remote repository:
 
 
 ```{figure} ../images/github_jlab.png

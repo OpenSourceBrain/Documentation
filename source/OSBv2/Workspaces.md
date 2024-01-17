@@ -36,14 +36,14 @@ This can be done either directly from the homepage by using the context menu for
 The workspace information page shows details about the workspace, including what resources it includes.
 
 ```
-Workspaces include files, and they can also include **resources**.
+Workspaces contain files, some of which are identified as **resources**.
 Resources are special files that OSBv2 knows can be opened in one of the {ref}`OSBv2 applications <osbv2:applications>`.
 These can be seen in the resources side bar in the left hand pane in workspaces and applications.
 
 Clicking on a resource will open it in the associated application:
 
-- NWB files will open in {ref}`NWB Explorer <osbv2:applications:nwbe>`
-- Jupyter Notebooks open {ref}`JupyterLab <osbv2:applications:jupyterlab>` (application will open but [not yet the notebook itself](https://github.com/OpenSourceBrain/OSBv2/issues/302))
+- NWB files (*.nwb files) will open in {ref}`NWB Explorer <osbv2:applications:nwbe>`
+- Jupyter Notebooks (*.ipynb files) open {ref}`JupyterLab <osbv2:applications:jupyterlab>`
 - NetPyNE files will open in {ref}`NetPyNE <osbv2:applications:netpyne>` ([coming soon...](https://github.com/OpenSourceBrain/OSBv2/issues/304))
 
 (osbv2:workspaces:creating)=
