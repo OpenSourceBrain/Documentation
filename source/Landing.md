@@ -3,7 +3,7 @@
 
 *Welcome to the Open Source Brain (OSB) documentation!*
 
-```{admonition} **Note:** The OSB documentation is currently being restructured and significantly updated.
+```{admonition} **Note:** The OSB documentation has recently been restructured and significantly updated.
 Please {ref}`contact <contact>` the OSB community for any issues you find with this new documentation.
 ```
 The Open Source Brain (OSB) initiative develops web based infrastructure for collaborative, open neuroscience research.

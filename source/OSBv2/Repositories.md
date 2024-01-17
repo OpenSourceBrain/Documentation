@@ -23,7 +23,7 @@ Click on the "Repositories" button in the dashboard to view all repositories, or
 ```
 
 Users do not need to be signed to view repositories.
-However, you will need to {ref}`sign in <osbv2:useraccounts:signin>` to use them.
+However, you will need to {ref}`sign in <osbv2:useraccounts:signin>` to use them, e.g. for populating {ref}`workspaces <osbv2:workspaces>` with data from them.
 
 Once on the repository list page, you can search/filter for and view information on repositories of interest, view your own repositories, and also add new or edit your repositories.
 
@@ -46,14 +46,14 @@ Here, you can see a preview of the repository as it is at that time.
 You can view information on repositories here, and select files to add to your workspaces.
 ```
 
-You can also use the file selector on the right to select files to add to your existing workspaces, or use them to create a completely new workspace.
+You can also use the file selector on the right to select files to add to your existing {ref}`workspaces <osbv2:workspaces>`, or use them to create a completely new workspace.
 
 (osbv2:repositories:adding)=
 ## Adding new and editing repositories
 
 Any user can add a repository to OSBv2 following these steps:
 
-- {ref}`Login to OSBv2 <osbv2:useraccounts:signin>`
+- {ref}`Log in to OSBv2 <osbv2:useraccounts:signin>`
 - Go to the repository list page, as shown above
 - Click the "Add new repository" button
 

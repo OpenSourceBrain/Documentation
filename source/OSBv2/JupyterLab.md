@@ -1,7 +1,7 @@
 (osbv2:applications:jupyterlab)=
 # JupyterLab
 
-OSBv2 hosts a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/user/index.html) instance as one of its {ref}`applications <osbv2:applications>`.
+OSBv2 hosts a [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/user/index.html) instance as one of its {ref}`applications <osbv2:applications>`. Our JupyterLab application provides a web interface for interactive, exploratory computing, mainly in Python, with a number of neuroscience modelling and data analysis packages pre installed. 
 
 ```{figure} ../images/jlab.png
 :alt: JupyterLab on OSBv2

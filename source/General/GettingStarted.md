@@ -25,9 +25,9 @@ Please use **{ref}`OSBv1 <v1:getting_started>`**:
 
 Please use **{ref}`OSBv2 <osbv2>`**:
 
-- if you want to share, visualise, and analyse neuroscience data in standardised formats
+- if you want to share, visualise, and analyse neuroscience data in standardised {ref}`NWB <osbv2:applications:nwbe>` format
 - if you want to create, simulate, and share computational models using the {ref}`NetPyNE <osbv2:applications:netpyne>` platform
-- if you want to create and share general Python based workflows using packages from the Python ecosystem (including [NeuroML 2](https://docs.neuroml.org))
+- if you want to create and share general Python based workflows using packages from the {ref}`Python ecosystem <osbv2:applications:jupyterlab>` (including [NeuroML 2](https://docs.neuroml.org))
 
 Since OSBv2 uses cloud based infrastructure, you can save your work and data on the provided cloud storage itself, and continue where you left off at a later time.
 
