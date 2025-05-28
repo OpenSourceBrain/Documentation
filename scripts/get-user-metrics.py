@@ -15,6 +15,7 @@ import requests
 import logging
 import matplotlib
 import matplotlib.pyplot as plt
+import json
 from dateutil.relativedelta import relativedelta
 
 logging.basicConfig(level=logging.DEBUG)
@@ -22,13 +23,15 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 
-def run(keycloak_user, keycloak_password):
+def run(keycloak_user, keycloak_password, save_json=False):
     """Main runner method.
 
     :param keycloak_user: keycloak username
     :type keycloak_user: string
     :param keycloak_password: keycloak password
     :type keycloak_password: string
+    :param save_json: whether the downloaded user data should be saved to file
+    :type save_json: bool
 
     """
     keycloak_url = "https://accounts.v2.opensourcebrain.org/auth"
@@ -69,6 +72,11 @@ def run(keycloak_user, keycloak_password):
 
     resp.raise_for_status()
     data = resp.json()
+
+    if save_json:
+        with open("osbv2-user-data.json", 'w') as f:
+            json.dump(data, f)
+
     get_user_trends(data)
 
 
