@@ -44,6 +44,7 @@ parts:
   - caption: Community
     chapters:
       - file: General/CoC
+      - file: General/Metrics
       - file: General/Contacts
       - file: General/Contribute_To_OSB
       - file: General/Contribute_To_OSB_docs
