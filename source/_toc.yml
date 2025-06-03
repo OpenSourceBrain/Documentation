@@ -62,8 +62,9 @@ parts:
       - file: Reference/zBibliography
   - caption: Contribute
     chapters:
-      - file: General/Contribute_To_OSB
-      - file: General/Contribute_To_OSB_docs
+      - file: Contribute/Contribute_To_OSB_docs
+      - file: Contribute/Contribute_To_OSB
+      - file: Contribute/Test_OSB
   - caption: Useful Information
     chapters:
       - file: General/Background_Information/01_Introduction_to_Source_Control
