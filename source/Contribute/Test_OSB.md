@@ -44,5 +44,21 @@ The more complete the test list/matrix, the more robust and reliable OSB will be
 
 ## Authentication
 
-- 
+- Login button goes to the login page: PASS
+
+### New user registration
+
+- New user registration link works: PASS
+- Form validation for e-mail works: PASS
+- Form validation for username works: FAIL
+- Register with Orcid goes to ORCID authentication: PASS
+- Register with GitHub goes to GitHub authentication: PASS
+
+### Login
+
+- Logging in with valid username/password works: PASS
+- Logging in with invalid username/passworkd works: PASS
+
+
+
 ```
