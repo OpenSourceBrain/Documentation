@@ -14,6 +14,7 @@ import datetime
 import requests
 import logging
 import matplotlib
+matplotlib.use('qtagg')
 import matplotlib.pyplot as plt
 import json
 from dateutil.relativedelta import relativedelta
