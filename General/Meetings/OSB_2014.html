@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OSB Workshop 2014: Building and sharing models of the cortex &#8212; Open Source Brain Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'General/Meetings/OSB_2014';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="OSB Hackathon 2013" href="Hackathon_2013.html" />
+    <link rel="prev" title="Neuroinformatics 2014: Open collaboration in computational neuroscience" href="Neuroinformatics_2014.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../Landing.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/OSB logo new dark notext.png" class="logo__image only-light" alt="Open Source Brain Documentation - Home"/>
+    <script>document.write(`<img src="../../_static/OSB logo new dark notext.png" class="logo__image only-dark" alt="Open Source Brain Documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">User documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GettingStarted.html">Getting started with OSB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Funding.html">Funding for OSB</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://status.opensourcebrain.org/">Infrastructure status</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Getting_Started.html">Welcome to OSBv1!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Five_Minute_Introduction.html">Five minute introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Creating_Your_Own_Project.html">Creating your own OSBv1 project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Write_Your_Project_Documentation.html">Document your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Using_neuroConstruct_Based_Projects.html">Using neuroConstruct based projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Interaction_With_Other_Neuroinformatics_Resources.html">Interaction with other Neuroinformatics resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Simulators.html">Simulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/OSB_API.html">API for OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Converting_To_NeuroML2.html">Why should you convert your model to NeuroML 2?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Running_Simulations_on_OSB.html">Running simulations on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Creating_Tutorials.html">Creating tutorials on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv1/Troubleshooting_3d_explorer.html">Troubleshooting the 3D explorer</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv2/Overview.html">Open Source Brain v2</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../OSBv2/Repositories.html">Repositories</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/GitHub.html">Interacting with GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/DANDI.html">Interacting with DANDI Archive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/Figshare.html">Interacting with Figshare</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv2/Workspaces.html">Workspaces</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../OSBv2/Applications.html">Applications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/NWBE.html">NWB Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/NetPyNE.html">NetPyNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../OSBv2/JupyterLab.html">JupyterLab</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv2/User_Accounts.html">User Accounts on OSBv2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv2/Guided_tour.html">Guided tour of OSBv2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../OSBv2/Developer.html">Developer documentation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Community</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../CoC.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Metrics.html">Usage metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contacts.html">Get in touch</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Meetings.html">Events</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="CNS_2022.html">OSBv2 tutorial at CNS*2022 satellite tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSB_2019.html">OSB Meeting in Sardinia, 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Neuroinformatics_2018.html">Neuroinformatics 2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CNS_2018.html">CNS*2018: Developing, standardising and sharing large scale cortical network models</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="Janelia_Research_Campus_2016.html">Collaborative Development of Data-Driven Models of Neural Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CNS_2015.html">Open collaboration in computational neuroscience: A workshop at CNS 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSB_2015.html">OSB Workshop 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Neuroinformatics_2014.html">Neuroinformatics 2014: Open collaboration in computational neuroscience</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">OSB Workshop 2014: Building and sharing models of the cortex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Hackathon_2013.html">OSB Hackathon 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sardinia_2013.html">OSB Kick off meeting, Sardinia, 13-15 May 2013</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../PrivacyPolicy.html">Privacy policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Reference/zBibliography.html">Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/Contribute_To_OSB_docs.html">Contribute to OSB documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/Contribute_To_OSB.html">Contribute to OSB development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute/Test_OSB.html">Test OSB</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Useful Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Background_Information/01_Introduction_to_Source_Control.html">Introduction to Source Control</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../Background_Information/02_Introduction_to_Computational_Neuroscience.html">Computational Neuroscience</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/edit/main/source/General/Meetings/OSB_2014.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/issues/new?title=Issue%20on%20page%20%2FGeneral/Meetings/OSB_2014.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/General/Meetings/OSB_2014.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>OSB Workshop 2014: Building and sharing models of the cortex</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#focus-of-the-meeting">Focus of the meeting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speakers">Speakers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">Agenda</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-14th-may-9am-6pm">Wednesday 14th May, 9am - 6pm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-15th-may-9am-6pm">Thursday 15th May, 9am - 6pm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-16th-may-9am-6pm">Friday 16th May, 9am - 6pm</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enquiries">Enquiries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support">Support</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="osb-workshop-2014-building-and-sharing-models-of-the-cortex">
+<span id="meetings-osb2014"></span><h1>OSB Workshop 2014: Building and sharing models of the cortex<a class="headerlink" href="#osb-workshop-2014-building-and-sharing-models-of-the-cortex" title="Link to this heading">#</a></h1>
+<p><img alt="" src="http://opensourcebrain.org/attachments/download/176/OSBalghero.png" /></p>
+<p>This meeting was the second main meeting of the <a class="reference external" href="http://www.opensourcebrain.org">Open Source Brain initiative</a>.</p>
+<p>Dates: <strong>9am Wednesday 14th - 5pm Friday 16th May, 2014</strong></p>
+<p>Location: <a class="reference external" href="http://www.hotelcalabona.com/">Hotel Calabona</a>, <a class="reference external" href="http://www.alghero-turismo.it/en/">Alghero</a>, Sardinia</p>
+<p>Local organisers: <a class="reference external" href="https://www.opensourcebrain.org/users/23">Sergio Solinas</a>), Irene Solinas
+Organising committee: <a class="reference external" href="https://www.opensourcebrain.org/users/4">Padraig Gleeson</a>), <a class="reference external" href="https://www.opensourcebrain.org/users/3">Eugenio Piasini</a>, <a class="reference external" href="https://www.opensourcebrain.org/users/6">Angus Silver</a>, <a class="reference external" href="https://www.opensourcebrain.org/users/67">Boris Marin</a></p>
+<section id="focus-of-the-meeting">
+<h2>Focus of the meeting<a class="headerlink" href="#focus-of-the-meeting" title="Link to this heading">#</a></h2>
+<p>There are an increasing number of cortical cell and network models being developed and made publicly available, from networks of leaky integrate and fire neurons based on cortical connectivity and firing properties, to multicompartmental, conductance based cell models. Many of these are being reused, reimplemented and extended to address new scientific questions by labs around the world.</p>
+<p>In this meeting, we looked at the range cortico-thalamic models out there which are of widespread interest and discussed the best ways to get these into public, open source repositories, in standardised formats such as NeuroML and PyNN. We investigated the steps needed to ensure these models are well tested, annotated and ready for use as research tools by the attendees and the wider community.</p>
+<p>There were presentations from experimentalists who are producing the data to constrain these models, as well as simulator and application developers who are creating the infrastructure to build, simulate, analyse and share the models.</p>
+</section>
+<section id="speakers">
+<h2>Speakers<a class="headerlink" href="#speakers" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="http://people.epfl.ch/giuseppe.chindemi">Giuseppe Chindemi</a>, <a class="reference external" href="http://bluebrain.epfl.ch">Blue Brain Project</a>, EPFL, Switzerland</p>
+<p><a class="reference external" href="https://www.opensourcebrain.org/users/8">Sharon Crook</a>), Arizona State University, USA</p>
+<p><a class="reference external" href="http://www-5.unipv.it/dangelo/">Egidio D’Angelo</a>, University of Pavia, ITALY</p>
+<p><a class="reference external" href="http://www.fz-juelich.de/SharedDocs/Personen/INM/INM-6/EN/Diesmann_Markus.html?nn=724694">Markus Diesmann</a>, Research Center Jülich, Germany</p>
+<p><a class="reference external" href="http://www.rwth-aachen.de/go/id/cznk/?lidx=1">Dirk Feldmeyer</a>, Aachen University, Germany</p>
+<p><a class="reference external" href="https://www.opensourcebrain.org/users/190">Alon Korngreen</a>), Bar-Ilan University, Israel</p>
+<p><a class="reference external" href="http://incf.org/about/who-we-are/staff">Linda Lanyon</a>, International Neuroinformatics Coordinating Facility, Stockholm, Sweden</p>
+<p><a class="reference external" href="https://www.opensourcebrain.org/users/90">Dave Lester</a>), <a class="reference external" href="http://apt.cs.man.ac.uk/projects/SpiNNaker/">SpiNNaker project</a>, University of Manchester, UK</p>
+<p><a class="reference external" href="http://senselab.med.yale.edu">Robert A. McDougal</a>, Yale University School of Medicine, USA</p>
+<p><a class="reference external" href="http://www.pa.ibf.cnr.it/personale/migliore/index.html">Michele Migliore</a>, National Research Council, Italy &amp; Yale University School of Medicine, USA</p>
+<p><a class="reference external" href="http://noggin.pdn.cam.ac.uk/Group/OlePaulsen">Ole Paulsen</a>, University of Cambridge, UK</p>
+<p><a class="reference external" href="http://web.njit.edu/~horacio/">Horacio G. Rotstein</a>, New Jersey Institute of Technology, Newark (NJ) USA</p>
+<p><a class="reference external" href="https://www.opensourcebrain.org/users/6">Angus Silver</a>), University College London</p>
+<p><a class="reference external" href="http://bluebrain.epfl.ch/page-68317-en.html">Werner Van Geit</a>, <a class="reference external" href="http://bluebrain.epfl.ch">Blue Brain Project</a>, EPFL, Switzerland</p>
+<p><a class="reference external" href="http://www.cncb.ox.ac.uk/team/group-leaders/tim/">Tim Vogels</a>, University of Oxford, UK</p>
+<p><a class="reference external" href="https://www.opensourcebrain.org/users/74">Daniel Wójcik</a>), Nencki Institute, Poland</p>
+</section>
+<section id="agenda">
+<h2>Agenda<a class="headerlink" href="#agenda" title="Link to this heading">#</a></h2>
+<p>There was a <a class="reference external" href="http://www.neuroml.org/editors.php">NeuroML Editorial Board</a> meeting held prior to the main OSB meeting on <strong>Tues 13th May</strong>.</p>
+<p>Minutes of this meeting can be found <a class="reference external" href="http://www.neuroml.org/files/NeuroMLEditorialBoardMay2014.pdf">here</a>.</p>
+<section id="wednesday-14th-may-9am-6pm">
+<h3>Wednesday 14th May, 9am - 6pm<a class="headerlink" href="#wednesday-14th-may-9am-6pm" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Morning Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><em>Welcome &amp; background to the Open Source Brain initiative</em></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Angus Silver</strong></p></td>
+<td class="text-left"><p>Introduction</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/198/Intro_OSB_RAS_For%20web.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Padraig Gleeson</strong></p></td>
+<td class="text-left"><p>Overview of OSB &amp; relationship to NeuroML</p></td>
+<td class="text-left"><p><a class="reference external" href="http://opensourcebrain.org/attachments/download/188/OSBIntro-Sardinia2014-public.ppt">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Adrian Quintana</strong></p></td>
+<td class="text-left"><p>Using Open Source Brain</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/193/OSBSardinia2014_Quintana.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><em>Relationship to other initiatives</em></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Robert McDougal</strong></p></td>
+<td class="text-left"><p>ModelView: extracting model structure and presenting it on the web with NEURON</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/199/modelview-2014-05-14.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Linda Lanyon</strong></p></td>
+<td class="text-left"><p>The International Neuroinformatics Coordinating Facility</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/190/OSB-Lanyon.pdf">Slides</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>12:30-13:30  Lunch</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Afternoon Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><em>Detailed modelling of individual cortical neurons</em></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Alon Korngreen</strong></p></td>
+<td class="text-left"><p>Realistic modelling of cortical pyramidal neurons</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/192/AlonKorngreen_OSB.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Angus Silver</strong></p></td>
+<td class="text-left"><p>Glutamate-Bound NMDARs Arising from In Vivo-like Network Activity Extend Spatio-temporal Integration in a L5 Cortical Pyramidal Cell Model</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Guy Eyal</strong></p></td>
+<td class="text-left"><p>Dendrites impact the encoding capabilities of the axon</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/189/OSB_2014_Guy_Eyal.pptx">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Werner Van Geit</strong></p></td>
+<td class="text-left"><p>Reconstruction of a neocortical microcircuit: Neurons</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="thursday-15th-may-9am-6pm">
+<h3>Thursday 15th May, 9am - 6pm<a class="headerlink" href="#thursday-15th-may-9am-6pm" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Morning Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><em>Enabling technologies</em></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Dave Lester</strong></p></td>
+<td class="text-left"><p>SpiNNaker Software and Open Standards</p></td>
+<td class="text-left"><p><a class="reference external" href="https://docs.google.com/presentation/d/1bmM7yJ-J6y6-7ROiXYkLT6lSj8a8xS497qXxVz65uLo/edit?usp=sharing">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Matteo Cantarelli</strong></p></td>
+<td class="text-left"><p>Geppetto: A web based multiscale simulator</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/195/Geppetto_OSB_2014.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Robert Cannon</strong></p></td>
+<td class="text-left"><p>New features &amp; capabilities under development for NeuroML &amp; LEMS</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/196/lems-lems-lite.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Network models of the cortex</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Tim Vogels</strong></p></td>
+<td class="text-left"><p>The dance of excitation and inhibition</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>12:30-13:30  Lunch</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Afternoon Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Markus Diesmann</strong></p></td>
+<td class="text-left"><p>A full-scale spiking model of the local cortical network</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/194/Sardinia14_Diesmann_published.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Giuseppe Chindemi</strong></p></td>
+<td class="text-left"><p>Reconstruction of a neocortical microcircuit: connectivity &amp; synapses</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Daniel Wójcik</strong></p></td>
+<td class="text-left"><p>From generation to publication of simulated data in a large-scale model of  thalamo-cortical loop</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/203/OSB2014_Wojcik.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Chaitanya Chintaluri</strong></p></td>
+<td class="text-left"><p>Modeling extracellular potentials in a cortical slice preparation</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/197/Modeling_extracellular_potentials_in_cortical_slices.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Dirk Feldmeyer</strong></p></td>
+<td class="text-left"><p>Excitatory and inhibitory neuron morphologies and their implication for synaptic connectivity</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="friday-16th-may-9am-6pm">
+<h3>Friday 16th May, 9am - 6pm<a class="headerlink" href="#friday-16th-may-9am-6pm" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Morning Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>OSB Symposium: Oscillation and resonance in CNS network loops</p></td>
+<td class="text-left"><p><strong>Organiser: <a class="reference external" href="https://www.opensourcebrain.org/users/23">Sergio Solinas</a>)</strong> This symposium aims to cluster the neuroscientists actively working in the field of neuronal network oscillations within the framework of OSB in order to promote the integration of models and tools in this area. For more information see here: [[Symposium2014]]</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Horacio G. Rotstein</strong></p></td>
+<td class="text-left"><p>Inhibition-based theta resonance in a hippocampal network: a modeling study</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/200/RotsteinHG_TalkOSBAlghero_2014-05-16.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Ole Paulsen</strong></p></td>
+<td class="text-left"><p>Oscillations and resonance in hippocampal neurons.</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Michele Migliore</strong></p></td>
+<td class="text-left"><p>Modeling the effects of electric fields from power lines on hippocampal CA1 pyramidal neurons.</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Egidio D’Angelo</strong></p></td>
+<td class="text-left"><p>Theta-frequency resonance at the cerebellum input stage improves spike timing on the millisecond time-scale</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>12:30-13:30  Lunch</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p><strong>Afternoon Session</strong></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><em>Future plans</em></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Boris Marin</strong></p></td>
+<td class="text-left"><p>Model testing &amp; validation framework for OSB</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.opensourcebrain.org/attachments/download/191/OSBValidationBorisMarin.pdf">Slides</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Sharon Crook</strong></p></td>
+<td class="text-left"><p>NeuroML developments: <a class="reference external" href="http://www.neuroml.org/files/NeuroMLEditorialBoardMay2014.pdf">Editorial Board Report</a> &amp; plans for NeuroML Database</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Padraig Gleeson</strong></p></td>
+<td class="text-left"><p>Requirements gathering for OSB: What is needed for truly collaborative model development in computational neuroscience?</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="enquiries">
+<h2>Enquiries<a class="headerlink" href="#enquiries" title="Link to this heading">#</a></h2>
+<p>If you have any enquiries about this meeting, please don’t hesitate to contact: <a class="reference external" href="mailto:p&#46;gleeson&#37;&#52;&#48;ucl&#46;ac&#46;uk">p<span>&#46;</span>gleeson<span>&#64;</span>ucl<span>&#46;</span>ac<span>&#46;</span>uk</a>.</p>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading">#</a></h2>
+<p>This meeting was generously supported by:</p>
+<p><img alt="" src="http://www.opensourcebrain.org/images/wellcomelogo.png" />       <img alt="" src="http://www.neuroml.org/images/nih.png" />
+ 
+Symposium sponsors:
+<img alt="" src="http://www.opensourcebrain.org/attachments/download/186/logo_ministero-della-salute.png" />     <img alt="" src="http://www.opensourcebrain.org/attachments/download/185/cropped-mondino-logo.png" />       <img alt="" src="http://www.opensourcebrain.org/attachments/download/187/colore_positivo_RGB.png" />
+ </p>
+<p><em>Illustration courtesy of <a class="reference external" href="https://www.opensourcebrain.org/users/34">Matteo Farinella</a>)  </em></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "OpenSourceBrain/Documentation",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./General/Meetings"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Neuroinformatics_2014.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Neuroinformatics 2014: Open collaboration in computational neuroscience</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Hackathon_2013.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">OSB Hackathon 2013</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#focus-of-the-meeting">Focus of the meeting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#speakers">Speakers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agenda">Agenda</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-14th-may-9am-6pm">Wednesday 14th May, 9am - 6pm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-15th-may-9am-6pm">Thursday 15th May, 9am - 6pm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-16th-may-9am-6pm">Friday 16th May, 9am - 6pm</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enquiries">Enquiries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#support">Support</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the Open Source Brain project contributors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Five minute introduction &#8212; Open Source Brain Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'OSBv1/Five_Minute_Introduction';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creating your own OSBv1 project" href="Creating_Your_Own_Project.html" />
+    <link rel="prev" title="Welcome to OSBv1!" href="Getting_Started.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../Landing.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/OSB logo new dark notext.png" class="logo__image only-light" alt="Open Source Brain Documentation - Home"/>
+    <script>document.write(`<img src="../_static/OSB logo new dark notext.png" class="logo__image only-dark" alt="Open Source Brain Documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">User documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/GettingStarted.html">Getting started with OSB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/FAQ.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Funding.html">Funding for OSB</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://status.opensourcebrain.org/">Infrastructure status</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 1</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Getting_Started.html">Welcome to OSBv1!</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Five minute introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Creating_Your_Own_Project.html">Creating your own OSBv1 project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write_Your_Project_Documentation.html">Document your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Using_neuroConstruct_Based_Projects.html">Using neuroConstruct based projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Interaction_With_Other_Neuroinformatics_Resources.html">Interaction with other Neuroinformatics resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Simulators.html">Simulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OSB_API.html">API for OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Converting_To_NeuroML2.html">Why should you convert your model to NeuroML 2?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Running_Simulations_on_OSB.html">Running simulations on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Creating_Tutorials.html">Creating tutorials on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Troubleshooting_3d_explorer.html">Troubleshooting the 3D explorer</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 2</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../OSBv2/Overview.html">Open Source Brain v2</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../OSBv2/Repositories.html">Repositories</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/GitHub.html">Interacting with GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/DANDI.html">Interacting with DANDI Archive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/Figshare.html">Interacting with Figshare</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv2/Workspaces.html">Workspaces</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../OSBv2/Applications.html">Applications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/NWBE.html">NWB Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/NetPyNE.html">NetPyNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../OSBv2/JupyterLab.html">JupyterLab</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv2/User_Accounts.html">User Accounts on OSBv2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv2/Guided_tour.html">Guided tour of OSBv2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv2/Developer.html">Developer documentation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Community</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/CoC.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Metrics.html">Usage metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Contacts.html">Get in touch</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../General/Meetings.html">Events</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2022.html">OSBv2 tutorial at CNS*2022 satellite tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2019.html">OSB Meeting in Sardinia, 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Neuroinformatics_2018.html">Neuroinformatics 2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2018.html">CNS*2018: Developing, standardising and sharing large scale cortical network models</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Janelia_Research_Campus_2016.html">Collaborative Development of Data-Driven Models of Neural Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2015.html">Open collaboration in computational neuroscience: A workshop at CNS 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2015.html">OSB Workshop 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Neuroinformatics_2014.html">Neuroinformatics 2014: Open collaboration in computational neuroscience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2014.html">OSB Workshop 2014: Building and sharing models of the cortex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Hackathon_2013.html">OSB Hackathon 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Sardinia_2013.html">OSB Kick off meeting, Sardinia, 13-15 May 2013</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/PrivacyPolicy.html">Privacy policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/zBibliography.html">Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Contribute_To_OSB_docs.html">Contribute to OSB documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Contribute_To_OSB.html">Contribute to OSB development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Test_OSB.html">Test OSB</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Useful Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/Background_Information/01_Introduction_to_Source_Control.html">Introduction to Source Control</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../General/Background_Information/02_Introduction_to_Computational_Neuroscience.html">Computational Neuroscience</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/edit/main/source/OSBv1/Five_Minute_Introduction.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/issues/new?title=Issue%20on%20page%20%2FOSBv1/Five_Minute_Introduction.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/OSBv1/Five_Minute_Introduction.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Five minute introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-an-osb-project">What is an OSB project?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pan-and-zoom">Pan and Zoom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-models">Explore the models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-network-connections">Explore the network connections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-variables">Recording variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-parameters">Setting parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-an-experiment">Run an experiment</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="five-minute-introduction">
+<span id="v1-five-min-intro"></span><h1>Five minute introduction<a class="headerlink" href="#five-minute-introduction" title="Link to this heading">#</a></h1>
+<p>Hello! Let’s go through the basics of Open Source Brain (OSB), <strong>this will take only 5 minutes to read!</strong> (yes, it’s that easy).</p>
+<div class="admonition-note-this-information-is-specific-to-osbv1 admonition">
+<p class="admonition-title"><strong>Note:</strong> this information is specific to OSBv1.</p>
+<p>This guide describes the features of <a class="reference external" href="https://v1.opensourcebrain.org">OSBv1</a>. For a guided tour of <a class="reference external" href="https://v2.opensourcebrain.org">OSBv2</a> see <a class="reference internal" href="../OSBv2/Guided_tour.html#osbv2-guidedtour"><span class="std std-ref">here</span></a>.</p>
+</div>
+<p>This is the help section of your home screen, feel free to come back here every time you are lost, most of the anwsers you’ll ever need are here! From your home screen you can work with any project and model available in OSB or even create your own ones. To search for available projects you can click on the Explore OSB link in the top bar or use the search box.</p>
+<section id="what-is-an-osb-project">
+<span id="v1-five-min-intro-what"></span><h2>What is an OSB project?<a class="headerlink" href="#what-is-an-osb-project" title="Link to this heading">#</a></h2>
+<p>But first things first, <strong>what is an OSB project</strong>?</p>
+<p>An OSB project is a container of computational neuronal models, usually these models are directly linked to a publication, or they might all be grouped in a project by a specific technology. An OSB project is always linked to a GitHub repository which stores all the models available in the given project, so if you are already familiary with GitHub you’re good to go, otherwise <a class="reference external" href="https://guides.github.com/activities/hello-world/#what">here</a> you’ll find all you need to know. OK, so inside an OSB project there can be many models, but <strong>how do I work with a specific one</strong>? Within OSB there is an online environment that will help you both explore, simulate, and work with models. Yes that’s right, you won’t have to leave your browser to explore or even to simulate a specific model! Every project has a main model as entry point, it could be the main network, or cell, etc. for the given project, to explore this model just <strong>click on the green button “Explore model” at the top right corner</strong> when inside a project. To explore every other model available click on the “More” button next to it.</p>
+<img alt="exploreModel.png" class="align-center" src="../_images/exploreModel.png" />
+<p>The model will load inside OSB, this might take between few seconds or up to a minute depending on the size of the model, you know how complex the brain can be right? You are looking at the model now and you are in read mode which means you can poke around and look at the content of the model but you can’t run simulations…yet (keep reading!). So what can you do?</p>
+</section>
+<section id="pan-and-zoom">
+<span id="v1-five-min-intro-pan"></span><h2>Pan and Zoom<a class="headerlink" href="#pan-and-zoom" title="Link to this heading">#</a></h2>
+<p>One of the most straightforward features is simple three-dimensional pan, zoom, and rotation functionality. This works both with the mouse as well as more precise control with the navigation buttons on the left hand panel.</p>
+<img alt="Fig-1-Pan-Zoom.gif" class="align-center" src="../_images/Fig-1-Pan-Zoom.gif" />
+</section>
+<section id="explore-the-models">
+<span id="v1-five-min-intro-explorer"></span><h2>Explore the models<a class="headerlink" href="#explore-the-models" title="Link to this heading">#</a></h2>
+<p>Models in OpenSourceBrain have descriptions associated with them. You can access these descriptions by clicking on the “Model Description” button on the OSB toolbar.</p>
+<img alt="ExploreModel.gif" class="align-center" src="../_images/ExploreModel.gif" />
+<p>Clicking on individual cells in the view will let you explore further descriptions of those cells, including any inputs or Ion channels. Clicking further into the model channels will enable you to see activation variable plots for those channels.</p>
+<img alt="ExploreChannels.gif" class="align-center" src="../_images/ExploreChannels.gif" />
+<p>While you click through the cell descriptions, you can always go back to an earlier sheet using the history icon in the upper left hand corner of the information window.</p>
+<img alt="ExploreHistory.gif" class="align-center" src="../_images/ExploreHistory.gif" />
+</section>
+<section id="explore-the-network-connections">
+<span id="v1-five-min-intro-explorer-connections"></span><h2>Explore the network connections<a class="headerlink" href="#explore-the-network-connections" title="Link to this heading">#</a></h2>
+<p>OSB has a variety of widgets built in to help you explore your models. Models like this one have a significant number of connections. By clicking on the “Connectivity” button, you can explore the connection patterns of your model using a variety of graphical tools.</p>
+<img alt="Fig-2-Connectivity.gif" class="align-center" src="../_images/Fig-2-Connectivity.gif" />
+<p>What if you want to <strong>run a simulation</strong>? First of all you need to persist your model, this operation will create a snapshot of the model (a copy of whatever the latest is on GitHub) which is all yours and on which you’ll have write access! Persisting the model is very simple, just click on the star icon on the top of the screen and wait few seconds (in order to do this, you’ll need to be logged in as a registered user of Open Source Brain).</p>
+<img alt="persist.png" class="align-center" src="../_images/persist.png" />
+<p>The model is now persisted so you can work with it, <strong>let’s have a look at the experiments</strong>! Experiments represent a particular configuration of your model, for each experiment you’ll be able to decide which state variables you want to record, which values you want to give to the parameters of the model and even what simulator you’d like to use (do you know we are also connected to the San Diego Super Computer Center?), handy no?</p>
+<img alt="Fig-3-Intro.gif" class="align-center" src="../_images/Fig-3-Intro.gif" />
+<p>Once you are logged in and the project is persisted, you can begin working with your model. You can create new experiments for your model by clicking the “clone” button. This will create a new experiment that is just like the one you cloned from. You can modify parameters on any experiment you like.</p>
+<img alt="Fig-4-Clone.gif" class="align-center" src="../_images/Fig-4-Clone.gif" />
+</section>
+<section id="recording-variables">
+<span id="v1-five-min-intro-recording"></span><h2>Recording variables<a class="headerlink" href="#recording-variables" title="Link to this heading">#</a></h2>
+<p>Any state variable that exists in the model can be recorded prior to running a simulation, meaning it will be possible to subsequently plot its values once the simulation is complete. You can record a variable by searching for it in the search bar (open it using the little <i class="fas fa-search"></i> icon on the left hand side of the screen or pressing Ctrl+Space) and clicking on the Record icon <i class="fas fa-circle-blank"></i>. The icon signifying state variables that can be recorded is <i class="fas fa-superscript"></i></p>
+<img alt="RecordVariable.gif" class="align-center" src="../_images/RecordVariable.gif" />
+</section>
+<section id="setting-parameters">
+<span id="v1-five-min-intro-params"></span><h2>Setting parameters<a class="headerlink" href="#setting-parameters" title="Link to this heading">#</a></h2>
+<p>Any parameter in the model can be dynamically changed to see what the impact of different values will be. Prior to running an experiment you can modify the values by searching for the parameter name in the search bar and changing the value in the input box. The icon signifying a parameter name is <i class="fas fa-signin"></i></p>
+<img alt="SetParameters.gif" class="align-center" src="../_images/SetParameters.gif" />
+</section>
+<section id="run-an-experiment">
+<span id="v1-five-min-intro-run-exp"></span><h2>Run an experiment<a class="headerlink" href="#run-an-experiment" title="Link to this heading">#</a></h2>
+<p>Once you are happy with what variables you will record and your experiment parameters, you can run the experiment. The Run button in the upper bar should be available to you. When you click it, the status of the experiment will change to show you both that it is queued for running and that it is completed. Playback results from a completed experiment</p>
+<img alt="Fig-5-Run.gif" class="align-center" src="../_images/Fig-5-Run.gif" />
+<p>Once your experiment is finished, you can use the Play button to plot all the recorded variables that have been simulated.</p>
+<img alt="Fig-6-Playback.gif" class="align-center" src="../_images/Fig-6-Playback.gif" />
+<p>If you want to plot a specific variable that you recorded you will be able to do so using the search bar to look for that variable and using the “Plot” icon. The list of all the variables recorded in a given experiment is available clicking on the “Recorded variables” link in the Experiment table.</p>
+<img alt="Recorded.png" class="align-center" src="../_images/Recorded.png" />
+<p>Clicking on the Results button at the top of the screen will let you rapidly access some default actions, including the ability to see the cells for which you recorded the membrane potential spiking!</p>
+<img alt="Results.png" class="align-center" src="../_images/Results.png" />
+<p>Congratulations, you should now be ready to start exploring the models in OSB and run your own simulations!
+<a class="reference internal" href="Creating_Your_Own_Project.html#v1-create-project"><span class="std std-ref">Now it’s time to create your own project!</span></a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "OpenSourceBrain/Documentation",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./OSBv1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Getting_Started.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to OSBv1!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Creating_Your_Own_Project.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Creating your own OSBv1 project</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-an-osb-project">What is an OSB project?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pan-and-zoom">Pan and Zoom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-models">Explore the models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-network-connections">Explore the network connections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-variables">Recording variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-parameters">Setting parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-an-experiment">Run an experiment</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the Open Source Brain project contributors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

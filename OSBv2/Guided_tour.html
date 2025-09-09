@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Guided tour of OSBv2 &#8212; Open Source Brain Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'OSBv2/Guided_tour';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Developer documentation" href="Developer.html" />
+    <link rel="prev" title="User Accounts on OSBv2" href="User_Accounts.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../Landing.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/OSB logo new dark notext.png" class="logo__image only-light" alt="Open Source Brain Documentation - Home"/>
+    <script>document.write(`<img src="../_static/OSB logo new dark notext.png" class="logo__image only-dark" alt="Open Source Brain Documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">User documentation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/GettingStarted.html">Getting started with OSB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/FAQ.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Funding.html">Funding for OSB</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://status.opensourcebrain.org/">Infrastructure status</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Getting_Started.html">Welcome to OSBv1!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Five_Minute_Introduction.html">Five minute introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Creating_Your_Own_Project.html">Creating your own OSBv1 project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Write_Your_Project_Documentation.html">Document your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Using_neuroConstruct_Based_Projects.html">Using neuroConstruct based projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Interaction_With_Other_Neuroinformatics_Resources.html">Interaction with other Neuroinformatics resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Simulators.html">Simulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/OSB_API.html">API for OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Converting_To_NeuroML2.html">Why should you convert your model to NeuroML 2?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Running_Simulations_on_OSB.html">Running simulations on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Creating_Tutorials.html">Creating tutorials on OSBv1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OSBv1/Troubleshooting_3d_explorer.html">Troubleshooting the 3D explorer</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">OSB version 2</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Open Source Brain v2</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Repositories.html">Repositories</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="GitHub.html">Interacting with GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DANDI.html">Interacting with DANDI Archive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Figshare.html">Interacting with Figshare</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="Workspaces.html">Workspaces</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Applications.html">Applications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="NWBE.html">NWB Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NetPyNE.html">NetPyNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JupyterLab.html">JupyterLab</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="User_Accounts.html">User Accounts on OSBv2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Guided tour of OSBv2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developer.html">Developer documentation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Community</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/CoC.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Metrics.html">Usage metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/Contacts.html">Get in touch</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../General/Meetings.html">Events</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2022.html">OSBv2 tutorial at CNS*2022 satellite tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2019.html">OSB Meeting in Sardinia, 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Neuroinformatics_2018.html">Neuroinformatics 2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2018.html">CNS*2018: Developing, standardising and sharing large scale cortical network models</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Janelia_Research_Campus_2016.html">Collaborative Development of Data-Driven Models of Neural Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/CNS_2015.html">Open collaboration in computational neuroscience: A workshop at CNS 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2015.html">OSB Workshop 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Neuroinformatics_2014.html">Neuroinformatics 2014: Open collaboration in computational neuroscience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/OSB_2014.html">OSB Workshop 2014: Building and sharing models of the cortex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Hackathon_2013.html">OSB Hackathon 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../General/Meetings/Sardinia_2013.html">OSB Kick off meeting, Sardinia, 13-15 May 2013</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../General/PrivacyPolicy.html">Privacy policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reference/zBibliography.html">Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Contribute_To_OSB_docs.html">Contribute to OSB documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Contribute_To_OSB.html">Contribute to OSB development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Contribute/Test_OSB.html">Test OSB</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Useful Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../General/Background_Information/01_Introduction_to_Source_Control.html">Introduction to Source Control</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../General/Background_Information/02_Introduction_to_Computational_Neuroscience.html">Computational Neuroscience</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/edit/main/source/OSBv2/Guided_tour.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/OpenSourceBrain/Documentation/issues/new?title=Issue%20on%20page%20%2FOSBv2/Guided_tour.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/OSBv2/Guided_tour.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Guided tour of OSBv2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#register-sign-in-to-osbv2">1) Register &amp; sign in to OSBv2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-workspace">2) Create a new workspace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-nwb-datasets">3) Explore NWB datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-network-simulation-using-netpyne">4) Create a network simulation using NetPyNE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-notebooks-in-jupyterlab">5) Open notebooks in JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-nwb-data-loading">5a) NWB data loading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-netpyne-simulation-results-loading">5b) NetPyNE simulation results loading</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-simulator-scripts-in-jupyterlab">6) Run simulator scripts in JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-run-netpyne-scripts">6a) Run NetPyNE scripts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-run-brian-eden-scripts">6a) Run Brian, EDEN, … scripts</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="guided-tour-of-osbv2">
+<span id="osbv2-guidedtour"></span><h1>Guided tour of OSBv2<a class="headerlink" href="#guided-tour-of-osbv2" title="Link to this heading">#</a></h1>
+<p>This guide provides a quick tour through the main features of the OSBv2 platform, using the contents of the <a class="reference external" href="https://www.v2.opensourcebrain.org/repositories/38">OSBv2 showcase repository</a>.</p>
+<table>
+<tr>
+<td style="padding: 10px"><a href="#create-a-new-workspace"><img src="../_images/GT1.png" height=170 title="Create a workspace"/></a>&nbsp;&nbsp;</td>
+<td style="padding: 10px"><a href="#explore-nwb-datasets"><img src="../_images/GT20.png" height=170 title="NWB Explorer"/></a></td>
+</tr>
+<tr>
+<td style="padding: 10px"><p align="centre"><a href="#create-a-network-simulation-using-netpyne"><img src="../_images/GT34.png" height=180 title="NetPyNE"/></a></p></td>
+<td style="padding: 10px"><p align="centre"><a href="#open-notebooks-in-jupyterlab"><img src="../_images/GT41a.png" height=180 title="JupyterLab"/></a></p></td>
+</tr>
+</table>
+<section id="register-sign-in-to-osbv2">
+<span id="osbv2-guidedtour-register"></span><h2>1) Register &amp; sign in to OSBv2<a class="headerlink" href="#register-sign-in-to-osbv2" title="Link to this heading">#</a></h2>
+<p>To create and open the workspaces mentioned below, you need to have an OSBv2 account (OSBv1 username/password will not work…). To register for a free OSBv2 user account, click <a class="reference external" href="https://www.v2.opensourcebrain.org/register">here</a>, or <a class="reference external" href="https://v2.opensourcebrain.org">head to OSBv2</a> and click on “Sign in” in the top right hand corner.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/GT0.png"><img alt="Guided tour..." src="../_images/GT0.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Register on OSBv2</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>More details on OSBv2 user accounts (file storage, quotas, etc.) can be found <a class="reference internal" href="User_Accounts.html#osbv2-useraccounts"><span class="std std-ref">here</span></a>.</p>
+</section>
+<section id="create-a-new-workspace">
+<span id="osbv2-guidedtour-createworkspace"></span><h2>2) Create a new workspace<a class="headerlink" href="#create-a-new-workspace" title="Link to this heading">#</a></h2>
+<p>We will now create a <a class="reference internal" href="Workspaces.html#osbv2-workspaces"><span class="std std-ref">workspace</span></a> which will hold files which can be viewed and analysed in our OSBv2 <a class="reference internal" href="Applications.html#osbv2-applications"><span class="std std-ref">applications</span></a>.</p>
+<p>This workspace will be a copy of a <a class="reference internal" href="Repositories.html#osbv2-repositories"><span class="std std-ref">repository</span></a>, <strong>OSBv2 Showcase</strong> which contains a number of file types supported by OSBv2.</p>
+<p>Go to the repository page at <a class="reference external" href="https://www.v2.opensourcebrain.org/repositories/38">https://www.v2.opensourcebrain.org/repositories/38</a> to see the current contents of this repository.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/GT1.png"><img alt="Guided tour..." src="../_images/GT1.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Create a new workspace from the <a class="reference external" href="https://www.v2.opensourcebrain.org/repositories/38">OSBv2 Showcase</a> repository</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As you can see there is a link to the source of the files on GitHub, <a class="github reference external" href="https://github.com/OpenSourceBrain/OSBv2_Showcase">OpenSourceBrain/OSBv2_Showcase</a>. Any additions/changes to GitHub will be reflected in the view of it on the OSB repository page.</p>
+<p>To create the new workspace, click on the blue button <strong>CREATE NEW WORKSPACE</strong>. The dialogue that opens allows you to set the title and tags, etc. to associate with the workspace, to make it easier to find.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/GT2.png"><img alt="Guided tour..." src="../_images/GT2.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Workspace creation dialogue</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>After it is created, you will get an option to <strong>GO TO WORKSPACE</strong>. Go here and you get a view of the workspace with a number of options in the top right corner on how to proceed.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/GT3.png"><img alt="Guided tour..." src="../_images/GT3.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Options for opening the workspace can be found in the top right corner</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="explore-nwb-datasets">
+<span id="osbv2-guidedtour-nwbe"></span><h2>3) Explore NWB datasets<a class="headerlink" href="#explore-nwb-datasets" title="Link to this heading">#</a></h2>
+<p>Select <strong>Open with NWB Explorer</strong> in the drop down menu and click the blue button. The <a class="reference internal" href="NWBE.html#osbv2-applications-nwbe"><span class="std std-ref">NWB Explorer</span></a> interface will open.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/GT20.png"><img alt="Guided tour..." src="../_images/GT20.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">NWB Explorer main interface. Note the <strong>Resources panel</strong> on the left (with the list of NWB files etc.) can be opened/closed with the arrows (<strong>&gt;</strong>, <strong>&lt;</strong>) at the bottom of the panel.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The column on the left lists a number of the files of known types (e.g. NWB files, Python notebooks). Select <strong>LanoreEtAl2019.nwb</strong> in this column, and that NWB file will be loaded in to the NWB Explorer interface.</p>
+<p>This <a class="reference external" href="https://www.biorxiv.org/content/10.1101/567172v1">dataset</a> contains electrophysiological recordings of Golgi cells from the cerebellum. The left hand column below gives general information on the data set extracted fro the metadata of the NWB file. The study examined the spiking behaviour under different conditions: 1) prior to application of a drug norepinephrine, 2) following application of the drug, and 3) after wash out of the drug from the brain slices. The top right panel, <strong>Acquisition</strong> shows the acquired data, membrane potential traces, under these conditions. Typing <em>Prior</em> into the text box on the top right selects just the traces prior to application of the drug. Pressing the eye (👁) beside one of the individual traces will plot that trace, or the one at the bottom with “41 Matching results” will plot all of these in one figure. Similar traces for the currents injected during these trials can be found under <strong>Stimulus</strong>.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/GT21.png"><img alt="Guided tour..." src="../_images/GT21.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">NWB Explorer view of Lanore et al. 2019 dataset.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="create-a-network-simulation-using-netpyne">
+<span id="osbv2-guidedtour-netpyne"></span><h2>4) Create a network simulation using NetPyNE<a class="headerlink" href="#create-a-network-simulation-using-netpyne" title="Link to this heading">#</a></h2>
+<p>Now open the same workspace in NetPyNE. To do this you can either go back to the homepage (e.g. click on the OSB logo in the top left corner) and find the link to the workspace page, or from a workspace open in another application, click the 3 dots (<strong>…</strong>) at the top of the Resources panel on the left, and select: Open with NetPyNE.</p>
+<p>The interface below should be displayed after NetPyNE opens.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/GT31.png"><img alt="Guided tour..." src="../_images/GT31.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">NetPyNE interface before a model is loaded/created.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There is a simple example network included in the OSBv2 repo. To open this, select menu item <em>File -&gt; Open…</em> and locate the JSON file at <code class="docutils literal notranslate"><span class="pre">/home/jovyan/netpyne/workspace/OSBv2</span> <span class="pre">Showcase/main/NetPyNE/HHTut/HHTut_data.json</span></code> (or paste this path into the top text field in the dialog)</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/GT32.png"><img alt="Guided tour..." src="../_images/GT32.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Loading a JSON file.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>After the model has loaded, you can explore the settings, e.g. click on <strong>Populations</strong> tab and then <strong>PYR</strong>, and you will see that this is a population of 20 cells:</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/GT33.png"><img alt="Guided tour..." src="../_images/GT33.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Viewing the population present.</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Next, try viewing in 3D (Click <strong>CREATE NETWORK</strong> on the top right) and you will see the view on the left below.</p>
+<p>The network can be executed also (Click <strong>SIMULATE</strong> on the top right). To view one of the recorded membrane traces, press the icon on the left for <strong>Cell Traces</strong> and the plot on the right will appear.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/GT34.png"><img alt="Guided tour..." src="../_images/GT34.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">After creating and simulating the model.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="open-notebooks-in-jupyterlab">
+<span id="osbv2-guidedtour-jupyter"></span><h2>5) Open notebooks in JupyterLab<a class="headerlink" href="#open-notebooks-in-jupyterlab" title="Link to this heading">#</a></h2>
+<section id="a-nwb-data-loading">
+<h3>5a) NWB data loading<a class="headerlink" href="#a-nwb-data-loading" title="Link to this heading">#</a></h3>
+<p>Next, open the same workspace in <a class="reference internal" href="JupyterLab.html#osbv2-applications-jupyterlab"><span class="std std-ref">JupyterLab</span></a> (again click the 3 dots (<strong>…</strong>), or go to the homepage).</p>
+<p>On the left as shown below is the <strong>File browser</strong>, which contains all the files copied in from the <a class="reference external" href="https://github.com/OpenSourceBrain/OSBv2_Showcase">OSBv2 Showcase GitHub repository</a>. On the right is the <strong>Launcher</strong>, where you can create new files of various types, or open a <strong>Terminal</strong> to enter shell commands. A new Launcher can always be created by pressing the big blue button with the <strong>+</strong>.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/GT41.png"><img alt="Guided tour..." src="../_images/GT41.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Main interface of <a class="reference internal" href="JupyterLab.html#osbv2-applications-jupyterlab"><span class="std std-ref">JupyterLab</span></a>.</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The image below shows some of the interfaces and file types which are supported by JupyterLab. The top left of the 4 panels is a command line <strong>Terminal</strong> for running commands and executing scripts, top right is a preview of a <strong>Markdown file</strong> (which can also be modified in a text editor), bottom left is a <strong>Python script</strong>, and bottom right is a <strong>JSON file</strong>. It also illustrates the lighter version of the JupyterLab interface, which can be accessed in the menu: <em>Settings -&gt; Theme -&gt; JupyterLab Light</em>.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/GT41a.png"><img alt="Guided tour..." src="../_images/GT41a.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Interface of <a class="reference internal" href="JupyterLab.html#osbv2-applications-jupyterlab"><span class="std std-ref">JupyterLab</span></a> (in light theme) showing the Terminal and viewing Markdown and JSON files, and a Python script.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Navigate to <code class="docutils literal notranslate"><span class="pre">OSBv2</span> <span class="pre">Showcase/main/notebooks</span></code> and double click on <code class="docutils literal notranslate"><span class="pre">LoadNWBData.ipynb</span></code>. This opens a notebook which an be used to programatically read the contents of the NWB file previously visualised in NWB Explorer, <strong>LanoreEtAl2019.nwb</strong>. It uses <a class="reference external" href="https://pynwb.readthedocs.io/en/stable/">pyNWB</a> to load in the file, and selects the entries in <code class="docutils literal notranslate"><span class="pre">nwbfile.acquisition</span></code> which match “Control”, i.e. the recordings prior to applying the drug, and plots these.</p>
+<p>To rerun the notebook, press the double arrow (▶▶) (to the left of <strong>Code</strong>) in the icon bar on the notebook panel.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/GT42.png"><img alt="Guided tour..." src="../_images/GT42.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Notebook for loading NWB data.</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="b-netpyne-simulation-results-loading">
+<h3>5b) NetPyNE simulation results loading<a class="headerlink" href="#b-netpyne-simulation-results-loading" title="Link to this heading">#</a></h3>
+<p>Again in directory <code class="docutils literal notranslate"><span class="pre">OSBv2</span> <span class="pre">Showcase/main/notebooks</span></code> open <code class="docutils literal notranslate"><span class="pre">LoadNetPyNEData.ipynb</span></code>, which looks for a file generated when the NetPyNE simulation above was run (in directory <code class="docutils literal notranslate"><span class="pre">../NetPyNE/HHTut/HHTut_data.json</span></code>), and extracts the saved membrane potential trace from this.</p>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../_images/GT44.png"><img alt="Guided tour..." src="../_images/GT44.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Notebook for loading NetPyNE data.</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="run-simulator-scripts-in-jupyterlab">
+<span id="osbv2-guidedtour-simulators"></span><h2>6) Run simulator scripts in JupyterLab<a class="headerlink" href="#run-simulator-scripts-in-jupyterlab" title="Link to this heading">#</a></h2>
+<section id="a-run-netpyne-scripts">
+<h3>6a) Run NetPyNE scripts<a class="headerlink" href="#a-run-netpyne-scripts" title="Link to this heading">#</a></h3>
+<p>Next try running some simulator scripts in the terminal. Open a Terminal from the Launcher (big blue button with <strong>+</strong>), and <code class="docutils literal notranslate"><span class="pre">cd</span></code> to <code class="docutils literal notranslate"><span class="pre">/opt/workspace/OSBv2</span> <span class="pre">Showcase/main/NetPyNE/HHTut</span></code>. Type <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">HHTut_run.py</span></code> to run <em>the same simulation you ran through the graphical interface</em>.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/GT61.png"><img alt="Guided tour..." src="../_images/GT61.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Running NetPyNE simulation in the Terminal</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="a-run-brian-eden-scripts">
+<h3>6a) Run Brian, EDEN, … scripts<a class="headerlink" href="#a-run-brian-eden-scripts" title="Link to this heading">#</a></h3>
+<p>A number of scripts for other simulators which are pre installed on OSBv2 can be found in <code class="docutils literal notranslate"><span class="pre">/opt/workspace/OSBv2</span> <span class="pre">Showcase/main/simulators</span></code>. Go to this location in the terminal and try running these, e.g. <code class="docutils literal notranslate"><span class="pre">brian2_example.py</span></code>.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/GT63.png"><img alt="Guided tour..." src="../_images/GT63.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Running Brian simulation in the Terminal</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Another example included demonstrates how to create a simple network in Arbor.</p>
+<figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="../_images/GT64.png"><img alt="Guided tour..." src="../_images/GT64.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Running an Arbor simulation in a notebook</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "OpenSourceBrain/Documentation",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./OSBv2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="User_Accounts.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">User Accounts on OSBv2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Developer.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Developer documentation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#register-sign-in-to-osbv2">1) Register &amp; sign in to OSBv2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-workspace">2) Create a new workspace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-nwb-datasets">3) Explore NWB datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-network-simulation-using-netpyne">4) Create a network simulation using NetPyNE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-notebooks-in-jupyterlab">5) Open notebooks in JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-nwb-data-loading">5a) NWB data loading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-netpyne-simulation-results-loading">5b) NetPyNE simulation results loading</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-simulator-scripts-in-jupyterlab">6) Run simulator scripts in JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-run-netpyne-scripts">6a) Run NetPyNE scripts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-run-brian-eden-scripts">6a) Run Brian, EDEN, … scripts</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the Open Source Brain project contributors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
