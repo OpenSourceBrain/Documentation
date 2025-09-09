@@ -1,4 +1,4 @@
-(general:contribute_docs)=
+(contribute:docs)=
 # Contribute to OSB documentation
 
 This documentation is written using [Jupyter Book](https://jupyterbook.org).

@@ -23,7 +23,6 @@ parts:
       - file: OSBv1/Running_Simulations_on_OSB
       - file: OSBv1/Creating_Tutorials
       - file: OSBv1/Troubleshooting_3d_explorer
-
   - caption: OSB version 2
     chapters:
         - file: OSBv2/Overview
@@ -44,9 +43,8 @@ parts:
   - caption: Community
     chapters:
       - file: General/CoC
+      - file: General/Metrics
       - file: General/Contacts
-      - file: General/Contribute_To_OSB
-      - file: General/Contribute_To_OSB_docs
       - file: General/Meetings
         sections:
           - file: General/Meetings/CNS_2022
@@ -62,6 +60,11 @@ parts:
           - file: General/Meetings/Sardinia_2013
       - file: General/PrivacyPolicy
       - file: Reference/zBibliography
+  - caption: Contribute
+    chapters:
+      - file: Contribute/Contribute_To_OSB_docs
+      - file: Contribute/Contribute_To_OSB
+      - file: Contribute/Test_OSB
   - caption: Useful Information
     chapters:
       - file: General/Background_Information/01_Introduction_to_Source_Control
