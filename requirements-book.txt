@@ -1,4 +1,4 @@
 # To build the docs using jupyter-book
-jupyter-book>=0.13
+jupyter-book>=0.13,<2.0
 ghp-import
 sphinx-jupyterbook-latex
