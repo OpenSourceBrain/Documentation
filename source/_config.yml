@@ -14,7 +14,7 @@ bibtex_bibfiles:
 # See https://jupyterbook.org/content/execute.html
 # The documentation is currently all Markdown content, so notebooks are not executed.
 execute:
-  execute_notebooks: off
+  execute_notebooks: 'off'
 
 # Define the name of the latex output file for PDF builds
 latex:
