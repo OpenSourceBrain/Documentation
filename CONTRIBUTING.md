@@ -7,8 +7,7 @@
 ## Building docs locally
 
 The documentation currently uses [Jupyter-book](https://jupyterbook.org/).
-To build the documentation locally, to test before opening Pull Requests for example,
-a helper script `./build-helper.sh` is provided which automates the setup and build process.
+To build the documentation locally, to test before opening Pull Requests for example, a helper script `./build-helper.sh` is provided which automates the setup and build process.
 
 Run `./build-helper.sh -h` to see all available options.
 
