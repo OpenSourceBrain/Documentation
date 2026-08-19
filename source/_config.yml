@@ -10,7 +10,7 @@ logo: images/DARK/OSB logo new dark notext.png
 bibtex_bibfiles:
   - Reference/references.bib
 
-# Force re-execution of notebooks on each build.
+# Configure notebook execution.
 # See https://jupyterbook.org/content/execute.html
 # The documentation is currently all Markdown content, so notebooks are not executed.
 execute:
