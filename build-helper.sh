@@ -158,7 +158,7 @@ function usage() {
     echo "OPTIONS:"
     echo
     echo "-h: print help message"
-    echo "-c: create new virtual environment in $VENV and install packages."
+    echo "-c: create new virtual environment in $VENV_DIR and install packages."
     echo "-b: build book"
     echo "-s: build book as a single page html"
     echo "-m: build book as a single page html and generate single page markdown"

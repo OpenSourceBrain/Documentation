@@ -30,6 +30,6 @@ Please subscribe to the following (low volume) mailing lists:
 If you have trouble with your account, the administrators are reachable at [info@opensourcebrain.org](mailto:info@opensourcebrain.org).
 
 
-## Follow us on Twitter at @OSBTeam
+## Follow us on X
 
-Please follow us on Twitter at [@OSBTeam](https://twitter.com/OSBTeam) to keep up with updates also.
+Please follow us on X (formerly Twitter) at [@OSBTeam](https://twitter.com/OSBTeam) to keep up with updates also.
