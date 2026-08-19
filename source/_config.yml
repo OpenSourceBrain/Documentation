@@ -12,8 +12,9 @@ bibtex_bibfiles:
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
+# The documentation is currently all Markdown content, so notebooks are not executed.
 execute:
-  execute_notebooks: auto
+  execute_notebooks: off
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -33,7 +34,6 @@ html:
   use_repository_button: true
   use_edit_page_button: true
   favicon: images/favicon.ico
-  google_analytics_id: "" # To be added
   home_page_in_navbar: false
 
 
