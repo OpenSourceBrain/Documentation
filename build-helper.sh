@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Copyright 2020 Ankur Sinha
-# Author: Ankur Sinha <sanjay DOT ankur AT gmail DOT com>
+# Copyright 2026 OSB contributors
 # File : build-helper.sh
 #
 # Shell script to build and publish the book when needed
@@ -13,6 +12,13 @@ VENV_STATUS="inactive"
 if [[ -z "${PYTHON}" ]]
 then
     PYTHON="python3"
+fi
+
+if command -v uv 2>&1
+then
+    USE_UV="yes"
+else
+    USE_UV="no"
 fi
 
 function enable_virtenv() {
@@ -55,14 +61,25 @@ function create_virtenv() {
         echo "Please delete it and re-run to create a new one."
     else
         echo "Setting up new virtual environment in $VENV_DIR."
-        $PYTHON -m venv "$VENV_DIR"
+        if [ "yes" == "${USE_UV}" ]
+        then
+            uv venv "$VENV_DIR" --python=${PYTHON}
+        else
+            $PYTHON -m venv "$VENV_DIR"
+        fi
 
         echo "Activating virtual environment."
         source "$VENV_ACTIVATE_SCRIPT"
 
         echo "Installing required dependencies in virtual environment."
-        pip install wheel
-        pip install -r requirements-book.txt
+        if [ "yes" == "${USE_UV}" ]
+        then
+            uv pip install wheel
+            uv pip install -r requirements-book.txt
+        else
+            pip install wheel
+            pip install -r requirements-book.txt
+        fi
         # pip install -r requirements.txt
 
         echo
@@ -78,8 +95,30 @@ function build_book() {
     jupyter-book build ./source
 }
 
+function build_book_single_html() {
+    enable_virtenv
+    echo "Building book as single page html."
+    jupyter-book build --builder singlehtml ./source
+}
+
+function build_book_single_md() {
+    build_book_single_html
+
+    echo "Using pandoc to generate single page markdown"
+    pushd source/_build/
+        pandoc -f html -t commonmark --no-highlight --strip-comments=true -o single-markdown.md singlehtml/Landing.html
+    popd
+}
+
 function publish_book() {
     enable_virtenv
+    echo "Updating URLs for 404.html"
+    sed -i 's|src="\([[:alnum:]_]\)|src="/\1|g' ./source/_build/html/404.html
+    sed -i 's|href="\([[:alnum:]_]\)|href="/\1|g' ./source/_build/html/404.html
+    # if we also replaced "http.." with "/http..", undo that
+    sed -i 's|href="/http|href="http|g' ./source/_build/html/404.html
+    sed -i 's|src="/http|src="http|g' ./source/_build/html/404.html
+
     echo "Publishing book."
     ghp-import -c "docs.opensourcebrain.org" -n -p -f ./source/_build/html
 }
@@ -111,7 +150,7 @@ build_pdf () {
     jupyter-book build ./source --builder pdflatex
 
     echo "Installing book to _static directory"
-    mv source/_build/latex/neuroml-documentation.pdf source/_static/
+    mv source/_build/latex/opensourcebrain-documentation.pdf source/_static/files/
 }
 
 function usage() {
@@ -121,6 +160,8 @@ function usage() {
     echo "-h: print help message"
     echo "-c: create new virtual environment in $VENV and install packages."
     echo "-b: build book"
+    echo "-s: build book as a single page html"
+    echo "-m: build book as a single page html and generate single page markdown"
     echo "-f: build pdf (using LaTeX)"
     echo "-w: watch source directory for changes and build as necessary, requires inotifywait"
     echo "-p: publish book to GitHub pages (requires commit access to repo)"
@@ -134,9 +175,17 @@ then
 fi
 
 # parse options
-while getopts "bpchwfX" OPTION
+while getopts "bmspchwfX" OPTION
 do
     case $OPTION in
+        m)
+            build_book_single_md
+            exit 0
+            ;;
+        s)
+            build_book_single_html
+            exit 0
+            ;;
         b)
             build_book
             exit 0
